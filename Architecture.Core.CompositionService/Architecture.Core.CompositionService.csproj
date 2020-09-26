@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Architecture.BusinessLogic.Customer.Infra\Architecture.BusinessLogic.CustomerLogics.Infra.csproj" />
+    <ProjectReference Include="..\Architecture.BusinessLogic.CustomerLogic\Architecture.BusinessLogic.CustomerLogics.csproj" />
+    <ProjectReference Include="..\Architecture.BusinessLogic.CustomerMappers\Architecture.BusinessLogic.CustomerMappers.csproj" />
+    <ProjectReference Include="..\Architecture.BusinessLogic.CustomerViewModels\Architecture.BusinessLogic.CustomerDTOs.csproj" />
+    <ProjectReference Include="..\Architecture.Core.AutoMapper\Architecture.Core.MappingService.csproj" />
+    <ProjectReference Include="..\Architecture.DataAccess.CustomerEntities\Architecture.DataAccess.CustomerEntities.csproj" />
+    <ProjectReference Include="..\Architecture.DataAccess.CustomerRepositories\Architecture.DataAccess.CustomerRepositories.csproj" />
+  </ItemGroup>
+
+</Project>

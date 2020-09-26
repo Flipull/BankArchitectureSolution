@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Architecture.BusinessLogic.Customer.Infra\Architecture.BusinessLogic.CustomerLogics.Infra.csproj" />
+    <ProjectReference Include="..\Architecture.DataAccess.CustomerRepository.Infra\Architecture.DataAccess.CustomerRepositories.Infra.csproj" />
+  </ItemGroup>
+
+</Project>
