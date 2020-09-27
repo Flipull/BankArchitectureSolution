@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_architecture_1_1_core_1_1_generic_repository" kind="namespace">
+    <compoundname>Architecture::Core::GenericRepository</compoundname>
+    <innerclass refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4" prot="public">Architecture::Core::GenericRepository::IRepository&lt; TEntity &gt;</innerclass>
+    <innerclass refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4" prot="public">Architecture::Core::GenericRepository::RepositoryAbstract&lt; TEntity &gt;</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository/IRepository.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,26 +1,37 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Collections.Generic;
+using Architecture.DataAccess.CustomerRepositories;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore.Metadata.Conventions;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Architecture.Core.GenericDAL
+namespace Architecture.Core.CompositionService
 {
+    public class CompositionModel : DbContext
+    {
+        public CompositionModel(DbContextOptions options) : base(options)
+        { }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.ApplyConfiguration(new CustomerEntityConfiguration());
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+        }
+    }
+    /*
     public class CompositionModel : IModel
     {
     }
 
-    public class CompositionDbContext: DbContext
+    public class CompositionDbContext : DbContext
     {
         private readonly MutableModelExtensions
         private readonly ModelBuilder _builder;
-        public CompositionDbContext(DbContextOptions options): base(options)
+        public CompositionDbContext(DbContextOptions options) : base(options)
         {
             IMutableModel
-            var _builder = new ModelBuilder();
+            var _builder = new ModelBuilder(ConventionSet.);
             EntityTypeConfiguration;
             EntityTypeBuilder;
         }
@@ -41,4 +52,5 @@ namespace Architecture.Core.GenericDAL
         }
 
     }
+    */
 }

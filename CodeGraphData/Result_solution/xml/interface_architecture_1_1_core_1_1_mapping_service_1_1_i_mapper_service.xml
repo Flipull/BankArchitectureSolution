@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service" kind="interface" prot="public">
+    <compoundname>Architecture::Core::MappingService::IMapperService</compoundname>
+    <derivedcompoundref refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_service" prot="public" virt="non-virtual">Architecture.Core.MappingService.MapperService</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_1af46ac9270d344179b1ca7af3b6e034b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T Architecture.Core.MappingService.IMapperService.Convert&lt; S, T &gt;</definition>
+        <argsstring>(S source)</argsstring>
+        <name>Convert&lt; S, T &gt;</name>
+        <reimplementedby refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_service_1a30ece89cdbf679ee55fd3be3de3425d6">Convert&lt; S, T &gt;</reimplementedby>
+        <param>
+          <type>S</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperService.cs" line="5" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="87">
+        <label>Architecture.Core.MappingService.MapperService</label>
+        <link refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_service"/>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>Architecture.Core.MappingService.IMapperService</label>
+        <link refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperService.cs" line="4" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperService.cs" bodystart="3" bodyend="6"/>
+    <listofallmembers>
+      <member refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_1af46ac9270d344179b1ca7af3b6e034b1" prot="public" virt="non-virtual"><scope>Architecture::Core::MappingService::IMapperService</scope><name>Convert&lt; S, T &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_0cc38ced9a1500791ea1843b348e09b1" kind="dir">
+    <compoundname>C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.BankEntities</compoundname>
+    <innerfile refid="_account_8cs">Account.cs</innerfile>
+    <innerfile refid="_transaction_8cs">Transaction.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.BankEntities/"/>
+  </compounddef>
+</doxygen>

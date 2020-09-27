@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_architecture_1_1_business_logic_1_1_customer_logics" kind="namespace">
+    <compoundname>Architecture::BusinessLogic::CustomerLogics</compoundname>
+    <innerclass refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic" prot="public">Architecture::BusinessLogic::CustomerLogics::CustomerLogic</innerclass>
+    <innernamespace refid="namespace_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra">Architecture::BusinessLogic::CustomerLogics::Infra</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

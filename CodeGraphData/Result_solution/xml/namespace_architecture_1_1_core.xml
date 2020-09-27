@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_architecture_1_1_core" kind="namespace">
+    <compoundname>Architecture::Core</compoundname>
+    <innernamespace refid="namespace_architecture_1_1_core_1_1_composition_service">Architecture::Core::CompositionService</innernamespace>
+    <innernamespace refid="namespace_architecture_1_1_core_1_1_dependency_service">Architecture::Core::DependencyService</innernamespace>
+    <innernamespace refid="namespace_architecture_1_1_core_1_1_generic_factory">Architecture::Core::GenericFactory</innernamespace>
+    <innernamespace refid="namespace_architecture_1_1_core_1_1_generic_repository">Architecture::Core::GenericRepository</innernamespace>
+    <innernamespace refid="namespace_architecture_1_1_core_1_1_mapping_service">Architecture::Core::MappingService</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="[generated]" line="1" column="1"/>
+  </compounddef>
+</doxygen>

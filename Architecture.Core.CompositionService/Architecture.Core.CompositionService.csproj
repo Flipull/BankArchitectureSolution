@@ -11,12 +11,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Architecture.BusinessLogic.Customer.Infra\Architecture.BusinessLogic.CustomerLogics.Infra.csproj" />
+    <ProjectReference Include="..\Architecture.BusinessLogic.CustomerDTOFactories\Architecture.BusinessLogic.CustomerDTOFactories.csproj" />
     <ProjectReference Include="..\Architecture.BusinessLogic.CustomerLogic\Architecture.BusinessLogic.CustomerLogics.csproj" />
     <ProjectReference Include="..\Architecture.BusinessLogic.CustomerMappers\Architecture.BusinessLogic.CustomerMappers.csproj" />
     <ProjectReference Include="..\Architecture.BusinessLogic.CustomerViewModels\Architecture.BusinessLogic.CustomerDTOs.csproj" />
-    <ProjectReference Include="..\Architecture.Core.AutoMapper\Architecture.Core.MappingService.csproj" />
     <ProjectReference Include="..\Architecture.DataAccess.CustomerEntities\Architecture.DataAccess.CustomerEntities.csproj" />
+    <ProjectReference Include="..\Architecture.DataAccess.CustomerFactories\Architecture.DataAccess.CustomerFactories.csproj" />
     <ProjectReference Include="..\Architecture.DataAccess.CustomerRepositories\Architecture.DataAccess.CustomerRepositories.csproj" />
   </ItemGroup>
 

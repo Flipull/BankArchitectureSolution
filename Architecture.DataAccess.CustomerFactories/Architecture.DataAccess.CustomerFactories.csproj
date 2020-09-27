@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Architecture.Core.GenericFactory\Architecture.Core.GenericFactory.csproj" />
+    <ProjectReference Include="..\Architecture.DataAccess.CustomerEntities\Architecture.DataAccess.CustomerEntities.csproj" />
+  </ItemGroup>
+
+</Project>

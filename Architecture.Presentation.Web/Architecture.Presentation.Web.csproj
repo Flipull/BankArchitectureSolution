@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Architecture.Core.CompositionService\Architecture.Core.CompositionService.csproj" />
+    <ProjectReference Include="..\Architecture.Core.DependencyService\Architecture.Core.DependencyService.csproj" />
+  </ItemGroup>
+
+</Project>

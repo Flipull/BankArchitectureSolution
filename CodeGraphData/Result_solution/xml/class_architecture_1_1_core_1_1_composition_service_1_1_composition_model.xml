@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_architecture_1_1_core_1_1_composition_service_1_1_composition_model" kind="class" prot="public">
+    <compoundname>Architecture::Core::CompositionService::CompositionModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">DbContext</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_architecture_1_1_core_1_1_composition_service_1_1_composition_model_1ab2d370aeb7d58adfae361eab6915b148" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Architecture.Core.CompositionService.CompositionModel.CompositionModel</definition>
+        <argsstring>(DbContextOptions options)</argsstring>
+        <name>CompositionModel</name>
+        <param>
+          <type>DbContextOptions</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" line="12" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" bodystart="12" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_architecture_1_1_core_1_1_composition_service_1_1_composition_model_1a94ed60007c82fb5d41758e3a84be194f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Architecture.Core.CompositionService.CompositionModel.OnModelCreating</definition>
+        <argsstring>(ModelBuilder builder)</argsstring>
+        <name>OnModelCreating</name>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>builder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" line="14" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_architecture_1_1_core_1_1_composition_service_1_1_composition_model_1a96ce1a8831021060615a4267cc3bfacd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Architecture.Core.CompositionService.CompositionModel.OnConfiguring</definition>
+        <argsstring>(DbContextOptionsBuilder optionsBuilder)</argsstring>
+        <name>OnConfiguring</name>
+        <param>
+          <type>DbContextOptionsBuilder</type>
+          <declname>optionsBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" line="18" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" bodystart="18" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Architecture.Core.CompositionService.CompositionModel</label>
+        <link refid="class_architecture_1_1_core_1_1_composition_service_1_1_composition_model"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>DbContext</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>Architecture.Core.CompositionService.CompositionModel</label>
+        <link refid="class_architecture_1_1_core_1_1_composition_service_1_1_composition_model"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>DbContext</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" line="11" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" bodystart="10" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_composition_model_1ab2d370aeb7d58adfae361eab6915b148" prot="public" virt="non-virtual"><scope>Architecture::Core::CompositionService::CompositionModel</scope><name>CompositionModel</name></member>
+      <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_composition_model_1a96ce1a8831021060615a4267cc3bfacd" prot="protected" virt="non-virtual"><scope>Architecture::Core::CompositionService::CompositionModel</scope><name>OnConfiguring</name></member>
+      <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_composition_model_1a94ed60007c82fb5d41758e3a84be194f" prot="protected" virt="non-virtual"><scope>Architecture::Core::CompositionService::CompositionModel</scope><name>OnModelCreating</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

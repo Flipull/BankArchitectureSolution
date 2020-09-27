@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_architecture_1_1_data_access_1_1_customer_repositories" kind="namespace">
+    <compoundname>Architecture::DataAccess::CustomerRepositories</compoundname>
+    <innerclass refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_entity_configuration" prot="public">Architecture::DataAccess::CustomerRepositories::CustomerEntityConfiguration</innerclass>
+    <innerclass refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_repository" prot="public">Architecture::DataAccess::CustomerRepositories::CustomerRepository</innerclass>
+    <innernamespace refid="namespace_architecture_1_1_data_access_1_1_customer_repositories_1_1_infra">Architecture::DataAccess::CustomerRepositories::Infra</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerRepositories/CustomerEntityConfiguration.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

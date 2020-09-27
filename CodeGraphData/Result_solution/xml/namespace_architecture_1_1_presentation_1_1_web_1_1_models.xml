@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_architecture_1_1_presentation_1_1_web_1_1_models" kind="namespace">
+    <compoundname>Architecture::Presentation::Web::Models</compoundname>
+    <innerclass refid="class_architecture_1_1_presentation_1_1_web_1_1_models_1_1_error_view_model" prot="public">Architecture::Presentation::Web::Models::ErrorViewModel</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Models/ErrorViewModel.cs" line="2" column="1"/>
+  </compounddef>
+</doxygen>

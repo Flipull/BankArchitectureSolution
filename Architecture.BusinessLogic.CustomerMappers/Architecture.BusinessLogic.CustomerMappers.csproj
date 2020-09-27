@@ -5,9 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Architecture.BusinessLogic.CustomerDTOFactories\Architecture.BusinessLogic.CustomerDTOFactories.csproj" />
     <ProjectReference Include="..\Architecture.BusinessLogic.CustomerViewModels\Architecture.BusinessLogic.CustomerDTOs.csproj" />
     <ProjectReference Include="..\Architecture.Core.AutoMapper\Architecture.Core.MappingService.csproj" />
     <ProjectReference Include="..\Architecture.DataAccess.CustomerEntities\Architecture.DataAccess.CustomerEntities.csproj" />
+    <ProjectReference Include="..\Architecture.DataAccess.CustomerFactories\Architecture.DataAccess.CustomerFactories.csproj" />
   </ItemGroup>
 
 </Project>

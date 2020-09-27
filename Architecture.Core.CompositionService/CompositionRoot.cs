@@ -1,53 +1,58 @@
-﻿using Architecture.BusinessLogic.CustomerDTOs;
+﻿using Architecture.BusinessLogic.CustomerDTOFactories;
+using Architecture.BusinessLogic.CustomerDTOs;
 using Architecture.BusinessLogic.CustomerLogics;
 using Architecture.BusinessLogic.CustomerLogics.Infra;
 using Architecture.BusinessLogic.CustomerMappers;
-using Architecture.Core.MappingService;
 using Architecture.DataAccess.CustomerEntities;
+using Architecture.DataAccess.CustomerFactories;
 using Architecture.DataAccess.CustomerRepositories;
 using Architecture.DataAccess.CustomerRepositories.Infra;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Architecture.Core.CompositionService
 {
-    static class CompositionRoot
+    public static class CompositionRoot
     {
         public static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
         {
-            
             services.AddTransient<DbContext>(
-                        (srvprov) => new DbContext(
-                                new DbContextOptionsBuilder<DbContext>()
-                                .UseSqlServer( configuration.GetConnectionString("BankDatabase") )
-                                .UseModel(null)
-                                .Options
-                            )
-                    );
-
-            services.AddSingleton<IMapperService, MapperService>(
                         (srvprov) =>
                         {
-                            var mappings = new MapperServicecollection();
-                            mappings.RegisterMapping<Customer, CustomerDTO>(
-                                    () => new CustomerDTOMapper()
+                            //todo: build a DbContext-MutableModel
+
+                            //use loaded config and above build model to configure EF
+                            return new CompositionModel(
+                                    new DbContextOptionsBuilder<DbContext>()
+                                    .UseSqlServer(configuration.GetConnectionString("BankDatabase"))
+                                    //.UseModel(null)//supresses DbContext.onModelCreating in favor of custom code
+                                    .Options
                                 );
-                            mappings.RegisterMapping<CustomerDTO, Customer>(
-                                    () => new CustomerEntityMapper()
-                                );
-                            return new MapperService(mappings);
                         }
                     );
 
+
+            //register Entities
             services.AddTransient<Customer>();
+            //register EntityFactories
+            services.AddTransient<CustomerFactory>();
+            //register Repositories
             services.AddTransient<ICustomerRepository, CustomerRepository>();
-            services.AddSingleton<ICustomerLogic, CustomerLogic>();
+
+            //register DTOs
             services.AddTransient<CustomerDTO>();
+            //register DTOFactories
+            services.AddTransient<CustomerDTOFactory>();
+            //register BusinessLogic
+            services.AddSingleton<ICustomerLogic, CustomerLogic>();
+
+
+            //register DTOToEntityMappers
+            services.AddSingleton<CustomerEntityDTOMapper>();
+            //register EntityToDTOMappers
+            services.AddSingleton<CustomerDTOEntityMapper>();
+
         }
     }
 }

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_7fa402e3b161ed2175e6bdca5cf51c0c" kind="dir">
+    <compoundname>C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.Customer.Infra</compoundname>
+    <innerfile refid="_i_customer_logic_8cs">ICustomerLogic.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.Customer.Infra/"/>
+  </compounddef>
+</doxygen>

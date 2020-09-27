@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Architecture.BusinessLogic.Customer.Infra\Architecture.BusinessLogic.CustomerLogics.Infra.csproj" />
+    <ProjectReference Include="..\Architecture.BusinessLogic.CustomerMappers\Architecture.BusinessLogic.CustomerMappers.csproj" />
     <ProjectReference Include="..\Architecture.DataAccess.CustomerRepository.Infra\Architecture.DataAccess.CustomerRepositories.Infra.csproj" />
   </ItemGroup>
 

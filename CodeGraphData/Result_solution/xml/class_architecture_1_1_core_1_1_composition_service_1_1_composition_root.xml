@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_architecture_1_1_core_1_1_composition_service_1_1_composition_root" kind="class" prot="public">
+    <compoundname>Architecture::Core::CompositionService::CompositionRoot</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_architecture_1_1_core_1_1_composition_service_1_1_composition_root_1a7139824e907627ba1a8f151d85f4c577" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Architecture.Core.CompositionService.CompositionRoot.ConfigureServices</definition>
+        <argsstring>(IServiceCollection services, IConfiguration configuration)</argsstring>
+        <name>ConfigureServices</name>
+        <param>
+          <type>IServiceCollection</type>
+          <declname>services</declname>
+        </param>
+        <param>
+          <type>IConfiguration</type>
+          <declname>configuration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionRoot.cs" line="18" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionRoot.cs" bodystart="18" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionRoot.cs" line="17" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionRoot.cs" bodystart="16" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_composition_root_1a7139824e907627ba1a8f151d85f4c577" prot="public" virt="non-virtual"><scope>Architecture::Core::CompositionService::CompositionRoot</scope><name>ConfigureServices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

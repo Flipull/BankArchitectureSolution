@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor" kind="class" prot="public">
+    <compoundname>Architecture::Core::DependencyService::ServiceDescriptor</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor_1a517cbfe2db52280a69af073489dc7dd8" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Type</type>
+        <definition>Type Architecture.Core.DependencyService.ServiceDescriptor.ServiceType</definition>
+        <argsstring></argsstring>
+        <name>ServiceType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" line="11" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor_1a7d462d0a5a0d7e442b629595a33d7ce7" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Type</type>
+        <definition>Type Architecture.Core.DependencyService.ServiceDescriptor.ImplementationType</definition>
+        <argsstring></argsstring>
+        <name>ImplementationType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" line="12" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor_1aa1fc50facbef836e008bec67dbb1347d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Factory</type>
+        <definition>Factory Architecture.Core.DependencyService.ServiceDescriptor.Factory</definition>
+        <argsstring></argsstring>
+        <name>Factory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" line="13" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor_1ae37094e50dc12e55098d453a5780c7dd" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>object</type>
+        <definition>object Architecture.Core.DependencyService.ServiceDescriptor.Implementation</definition>
+        <argsstring></argsstring>
+        <name>Implementation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" line="14" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_architecture_1_1_core_1_1_dependency_service_1_1_dependency_injector_1a4c0113e265fa1202a083d1cd526362b1" compoundref="_dependency_injector_8cs" startline="69" endline="101">Architecture.Core.DependencyService.DependencyInjector.GetService</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor_1a7b0aebb12f45a67c61d07d413eddd239" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_architecture_1_1_core_1_1_dependency_service_1a6f6f95293efdf593aa0583e1766c27c9" kindref="member">ServiceLifetime</ref></type>
+        <definition>ServiceLifetime Architecture.Core.DependencyService.ServiceDescriptor.Lifetime</definition>
+        <argsstring></argsstring>
+        <name>Lifetime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" line="15" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" line="10" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" bodystart="9" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor_1aa1fc50facbef836e008bec67dbb1347d" prot="public" virt="non-virtual"><scope>Architecture::Core::DependencyService::ServiceDescriptor</scope><name>Factory</name></member>
+      <member refid="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor_1ae37094e50dc12e55098d453a5780c7dd" prot="public" virt="non-virtual"><scope>Architecture::Core::DependencyService::ServiceDescriptor</scope><name>Implementation</name></member>
+      <member refid="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor_1a7d462d0a5a0d7e442b629595a33d7ce7" prot="public" virt="non-virtual"><scope>Architecture::Core::DependencyService::ServiceDescriptor</scope><name>ImplementationType</name></member>
+      <member refid="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor_1a7b0aebb12f45a67c61d07d413eddd239" prot="public" virt="non-virtual"><scope>Architecture::Core::DependencyService::ServiceDescriptor</scope><name>Lifetime</name></member>
+      <member refid="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor_1a517cbfe2db52280a69af073489dc7dd8" prot="public" virt="non-virtual"><scope>Architecture::Core::DependencyService::ServiceDescriptor</scope><name>ServiceType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

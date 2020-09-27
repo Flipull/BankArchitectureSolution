@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Architecture.Core.MappingService
 {
@@ -8,7 +7,7 @@ namespace Architecture.Core.MappingService
     {
         IConcreteMapper<S, T> GetMapper<S, T>();
     }
-    public class MapperServicecollection: IMapperServiceCollection
+    public class MapperServicecollection : IMapperServiceCollection
     {
         private readonly Dictionary<Tuple<Type, Type>, Func<object>> _mappers =
                             new Dictionary<Tuple<Type, Type>, Func<object>>();
@@ -21,7 +20,7 @@ namespace Architecture.Core.MappingService
             }
             else
             {
-                throw new InvalidProgramException("Invalid mapper provided: " + mapper.ToString() );
+                throw new InvalidProgramException("Invalid mapper provided: " + mapper.ToString());
             }
         }
         public IConcreteMapper<S, T> GetMapper<S, T>()

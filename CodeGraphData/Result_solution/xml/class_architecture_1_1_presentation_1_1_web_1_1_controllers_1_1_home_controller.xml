@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller" kind="class" prot="public">
+    <compoundname>Architecture::Presentation::Web::Controllers::HomeController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Controller</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a3a7542c73ab8a5f3b76499de78a6177d" prot="private" static="no" mutable="no">
+        <type>readonly ILogger&lt; <ref refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller" kindref="compound">HomeController</ref> &gt;</type>
+        <definition>readonly ILogger&lt;HomeController&gt; Architecture.Presentation.Web.Controllers.HomeController._logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="13" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1abcb9a566f4396dc24c2eac9a6e829a64" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic" kindref="compound">ICustomerLogic</ref></type>
+        <definition>readonly ICustomerLogic Architecture.Presentation.Web.Controllers.HomeController._customerLogic</definition>
+        <argsstring></argsstring>
+        <name>_customerLogic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="14" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1aea062ddcf7e8947e61c6c0ad6a1d1d6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Architecture.Presentation.Web.Controllers.HomeController.HomeController</definition>
+        <argsstring>(ICustomerLogic customerlogic, ILogger&lt; HomeController &gt; logger)</argsstring>
+        <name>HomeController</name>
+        <param>
+          <type><ref refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic" kindref="compound">ICustomerLogic</ref></type>
+          <declname>customerlogic</declname>
+        </param>
+        <param>
+          <type>ILogger&lt; <ref refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller" kindref="compound">HomeController</ref> &gt;</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="15" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a2bc96c4a5e5b3fe81d4b201a11333584" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Architecture.Presentation.Web.Controllers.HomeController.Index</definition>
+        <argsstring>()</argsstring>
+        <name>Index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="21" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="21" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a2b925ca496316ec7970be4a339a71109" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Architecture.Presentation.Web.Controllers.HomeController.Privacy</definition>
+        <argsstring>()</argsstring>
+        <name>Privacy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="31" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a7ae5f14a24abc81e5a567960162ea793" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Architecture.Presentation.Web.Controllers.HomeController.Error</definition>
+        <argsstring>()</argsstring>
+        <name>Error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="37" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="37" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="68">
+        <label>Architecture.Presentation.Web.Controllers.HomeController</label>
+        <link refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>Controller</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="72">
+        <label>Architecture.BusinessLogic.CustomerLogics.Infra.ICustomerLogic</label>
+        <link refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic"/>
+      </node>
+      <node id="70">
+        <label>Architecture.Presentation.Web.Controllers.HomeController</label>
+        <link refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller"/>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+        <childnode refid="72" relation="usage">
+          <edgelabel>_customerLogic</edgelabel>
+        </childnode>
+      </node>
+      <node id="71">
+        <label>Controller</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="12" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="11" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1abcb9a566f4396dc24c2eac9a6e829a64" prot="private" virt="non-virtual"><scope>Architecture::Presentation::Web::Controllers::HomeController</scope><name>_customerLogic</name></member>
+      <member refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a3a7542c73ab8a5f3b76499de78a6177d" prot="private" virt="non-virtual"><scope>Architecture::Presentation::Web::Controllers::HomeController</scope><name>_logger</name></member>
+      <member refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a7ae5f14a24abc81e5a567960162ea793" prot="public" virt="non-virtual"><scope>Architecture::Presentation::Web::Controllers::HomeController</scope><name>Error</name></member>
+      <member refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1aea062ddcf7e8947e61c6c0ad6a1d1d6f" prot="public" virt="non-virtual"><scope>Architecture::Presentation::Web::Controllers::HomeController</scope><name>HomeController</name></member>
+      <member refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a2bc96c4a5e5b3fe81d4b201a11333584" prot="public" virt="non-virtual"><scope>Architecture::Presentation::Web::Controllers::HomeController</scope><name>Index</name></member>
+      <member refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a2b925ca496316ec7970be4a339a71109" prot="public" virt="non-virtual"><scope>Architecture::Presentation::Web::Controllers::HomeController</scope><name>Privacy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="interface_architecture_1_1_data_access_1_1_customer_repositories_1_1_infra_1_1_i_customer_repository" kind="interface" prot="public">
+    <compoundname>Architecture::DataAccess::CustomerRepositories::Infra::ICustomerRepository</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IRepository&lt; Customer &gt;</basecompoundref>
+    <derivedcompoundref refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_repository" prot="public" virt="non-virtual">Architecture.DataAccess.CustomerRepositories.CustomerRepository</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_architecture_1_1_data_access_1_1_customer_repositories_1_1_infra_1_1_i_customer_repository_1aa4fe9fcf7ad493d2c9779c29e0a919cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_architecture_1_1_data_access_1_1_customer_entities_1_1_customer" kindref="compound">Customer</ref></type>
+        <definition>Customer Architecture.DataAccess.CustomerRepositories.Infra.ICustomerRepository.GetByGuid</definition>
+        <argsstring>(Guid guid)</argsstring>
+        <name>GetByGuid</name>
+        <reimplementedby refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_repository_1a59b4c3dc449571929a9eade14d061767">GetByGuid</reimplementedby>
+        <param>
+          <type>Guid</type>
+          <declname>guid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerRepository.Infra/ICustomerRepository.cs" line="9" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="80">
+        <label>Architecture.DataAccess.CustomerRepositories.CustomerRepository</label>
+        <link refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_repository"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>IRepository&lt; Customer &gt;</label>
+      </node>
+      <node id="78">
+        <label>Architecture.DataAccess.CustomerRepositories.Infra.ICustomerRepository</label>
+        <link refid="interface_architecture_1_1_data_access_1_1_customer_repositories_1_1_infra_1_1_i_customer_repository"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="82">
+        <label>IRepository&lt; Customer &gt;</label>
+      </node>
+      <node id="81">
+        <label>Architecture.DataAccess.CustomerRepositories.Infra.ICustomerRepository</label>
+        <link refid="interface_architecture_1_1_data_access_1_1_customer_repositories_1_1_infra_1_1_i_customer_repository"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerRepository.Infra/ICustomerRepository.cs" line="8" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerRepository.Infra/ICustomerRepository.cs" bodystart="7" bodyend="10"/>
+    <listofallmembers>
+      <member refid="interface_architecture_1_1_data_access_1_1_customer_repositories_1_1_infra_1_1_i_customer_repository_1aa4fe9fcf7ad493d2c9779c29e0a919cd" prot="public" virt="non-virtual"><scope>Architecture::DataAccess::CustomerRepositories::Infra::ICustomerRepository</scope><name>GetByGuid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

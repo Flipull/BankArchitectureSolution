@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_i_customer_logic_8cs" kind="file">
+    <compoundname>ICustomerLogic.cs</compoundname>
+    <innerclass refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic" prot="public">Architecture::BusinessLogic::CustomerLogics::Infra::ICustomerLogic</innerclass>
+    <innernamespace refid="namespace_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra">Architecture::BusinessLogic::CustomerLogics::Infra</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Architecture.BusinessLogic.CustomerDTOs;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="namespace_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Architecture.BusinessLogic.CustomerLogics.Infra</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic" kindref="compound">ICustomerLogic</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_architecture_1_1_business_logic_1_1_customer_d_t_os_1_1_customer_d_t_o" kindref="compound">CustomerDTO</ref><sp/>CreateCustomer(<ref refid="class_architecture_1_1_business_logic_1_1_customer_d_t_os_1_1_customer_d_t_o" kindref="compound">CustomerDTO</ref><sp/>customer);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_architecture_1_1_business_logic_1_1_customer_d_t_os_1_1_customer_d_t_o" kindref="compound">CustomerDTO</ref><sp/>UpdateCustomer(<ref refid="class_architecture_1_1_business_logic_1_1_customer_d_t_os_1_1_customer_d_t_o" kindref="compound">CustomerDTO</ref><sp/>customer);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_architecture_1_1_business_logic_1_1_customer_d_t_os_1_1_customer_d_t_o" kindref="compound">CustomerDTO</ref><sp/>ViewCustomer(Guid<sp/>guid);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.Customer.Infra/ICustomerLogic.cs"/>
+  </compounddef>
+</doxygen>

@@ -6,4 +6,8 @@
     <AssemblyName>Architecture.BusinessLogic.CustomerLogics.Infra</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Architecture.BusinessLogic.CustomerViewModels\Architecture.BusinessLogic.CustomerDTOs.csproj" />
+  </ItemGroup>
+
 </Project>

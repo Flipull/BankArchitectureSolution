@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_1505eb70443f858323de792ca5f3b347" kind="dir">
+    <compoundname>C:/Users/Mark/source/repos/BankArchitectureSolution</compoundname>
+    <innerdir refid="dir_7fa402e3b161ed2175e6bdca5cf51c0c">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.Customer.Infra</innerdir>
+    <innerdir refid="dir_1080b1071ccf392e018c14f067b5684f">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerDTOFactories</innerdir>
+    <innerdir refid="dir_558ed622328752448cd4ffb97f636e15">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic</innerdir>
+    <innerdir refid="dir_42203545b8adf1c8c10f19dc633b3b48">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers</innerdir>
+    <innerdir refid="dir_4e205ae38868fb94d6b3ca68b904819d">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerViewModels</innerdir>
+    <innerdir refid="dir_335ad149f3b6251bee42775838041c20">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper</innerdir>
+    <innerdir refid="dir_538ac13d14cb39711fd95fa78264acdc">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService</innerdir>
+    <innerdir refid="dir_3c9382ecd7b00740c4512b036b13f9bd">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService</innerdir>
+    <innerdir refid="dir_ec3351085dbc1c6f529d8d39d3035964">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericFactory</innerdir>
+    <innerdir refid="dir_1fb22651b151845f0ad28cddcdb4cf51">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository</innerdir>
+    <innerdir refid="dir_0cc38ced9a1500791ea1843b348e09b1">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.BankEntities</innerdir>
+    <innerdir refid="dir_620827ab52583b2c76c7870b4b90acad">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerEntities</innerdir>
+    <innerdir refid="dir_9335206a9544ba620edd86be3643d1c6">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerFactories</innerdir>
+    <innerdir refid="dir_9358b8446356ea0d7186886a108ea027">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerRepositories</innerdir>
+    <innerdir refid="dir_607933f6ca967d864449dcc72c5e74ae">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerRepository.Infra</innerdir>
+    <innerdir refid="dir_4736dafa1f51727cc7ecbc804459d4c2">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Console</innerdir>
+    <innerdir refid="dir_0cdc5fabd3d5fe362b728d194fcffc4f">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/"/>
+  </compounddef>
+</doxygen>

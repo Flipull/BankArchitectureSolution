@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Architecture.Core.DependencyService
 {
@@ -15,7 +14,7 @@ namespace Architecture.Core.DependencyService
         public object Implementation { get; set; }
         public ServiceLifetime Lifetime { get; set; }
     }
-    
+
     public class DependencyInjector : IServiceProvider
     {
         //services - DI Container

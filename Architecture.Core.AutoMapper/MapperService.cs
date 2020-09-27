@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Architecture.Core.MappingService
+﻿namespace Architecture.Core.MappingService
 {
     public interface IMapperService
     {
         T Convert<S, T>(S source);
     }
-    public class MapperService: IMapperService
+    public class MapperService : IMapperService
     {
         private readonly IMapperServiceCollection _mappingservice;
         public MapperService(IMapperServiceCollection mappingservice)
