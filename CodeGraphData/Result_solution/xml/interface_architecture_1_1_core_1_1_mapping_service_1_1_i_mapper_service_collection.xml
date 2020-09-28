@@ -24,14 +24,14 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="89">
+      <node id="95">
         <label>Architecture.Core.MappingService.IMapperServiceCollection</label>
         <link refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_collection"/>
       </node>
-      <node id="90">
+      <node id="96">
         <label>Architecture.Core.MappingService.MapperServicecollection</label>
         <link refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection"/>
-        <childnode refid="89" relation="public-inheritance">
+        <childnode refid="95" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

@@ -29,26 +29,26 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="65">
+      <node id="69">
         <label>IFactory&lt; T &gt;</label>
         <link refid="interface_architecture_1_1_core_1_1_generic_factory_1_1_i_factory_3_01_t_01_4"/>
       </node>
-      <node id="64">
+      <node id="68">
         <label>Architecture.Core.GenericFactory.GenericFactory&lt; T &gt;</label>
         <link refid="class_architecture_1_1_core_1_1_generic_factory_1_1_generic_factory_3_01_t_01_4"/>
-        <childnode refid="65" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="67">
+      <node id="71">
         <label>IFactory&lt; T &gt;</label>
         <link refid="interface_architecture_1_1_core_1_1_generic_factory_1_1_i_factory_3_01_t_01_4"/>
       </node>
-      <node id="66">
+      <node id="70">
         <label>Architecture.Core.GenericFactory.GenericFactory&lt; T &gt;</label>
         <link refid="class_architecture_1_1_core_1_1_generic_factory_1_1_generic_factory_3_01_t_01_4"/>
-        <childnode refid="67" relation="public-inheritance">
+        <childnode refid="71" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

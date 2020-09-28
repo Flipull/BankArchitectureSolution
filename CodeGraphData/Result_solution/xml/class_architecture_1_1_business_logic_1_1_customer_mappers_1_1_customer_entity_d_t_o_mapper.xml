@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper" kind="class" prot="public">
     <compoundname>Architecture::BusinessLogic::CustomerMappers::CustomerEntityDTOMapper</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IConcreteCopier&lt; Customer, CustomerDTO &gt;</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">IConcreteMapper&lt; Customer, CustomerDTO &gt;</basecompoundref>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper_1a6029eb333f960322ec556c1d41c589ab" prot="private" static="no" mutable="no">
@@ -15,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" line="11" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" bodystart="11" bodyend="-1"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" line="12" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" bodystart="12" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -34,13 +35,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" line="12" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" bodystart="12" bodyend="15"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" line="13" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" bodystart="13" bodyend="16"/>
       </memberdef>
-      <memberdef kind="function" id="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper_1a2ec741bd36064507f8435e32ba4742bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper_1a1f11a558df4c3b397a508b9152869827" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_architecture_1_1_business_logic_1_1_customer_d_t_os_1_1_customer_d_t_o" kindref="compound">CustomerDTO</ref></type>
-        <definition>CustomerDTO Architecture.BusinessLogic.CustomerMappers.CustomerEntityDTOMapper.Convert</definition>
+        <definition>CustomerDTO Architecture.BusinessLogic.CustomerMappers.CustomerEntityDTOMapper.Map</definition>
         <argsstring>(Customer source)</argsstring>
-        <name>Convert</name>
+        <name>Map</name>
         <param>
           <type><ref refid="class_architecture_1_1_data_access_1_1_customer_entities_1_1_customer" kindref="compound">Customer</ref></type>
           <declname>source</declname>
@@ -51,7 +52,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" line="16" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" bodystart="16" bodyend="24"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" line="17" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper_1ad8287a2bd1a0a3308c74e6510d4dbedb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Architecture.BusinessLogic.CustomerMappers.CustomerEntityDTOMapper.CopyTo</definition>
+        <argsstring>(Customer source, CustomerDTO target)</argsstring>
+        <name>CopyTo</name>
+        <param>
+          <type><ref refid="class_architecture_1_1_data_access_1_1_customer_entities_1_1_customer" kindref="compound">Customer</ref></type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type><ref refid="class_architecture_1_1_business_logic_1_1_customer_d_t_os_1_1_customer_d_t_o" kindref="compound">CustomerDTO</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" line="23" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" bodystart="23" bodyend="29"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -59,44 +81,55 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="26">
+      <node id="36">
         <label>Architecture.BusinessLogic.CustomerMappers.CustomerEntityDTOMapper</label>
         <link refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper"/>
-        <childnode refid="27" relation="public-inheritance">
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+        <childnode refid="38" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="27">
+      <node id="38">
         <label>IConcreteMapper&lt; Customer, CustomerDTO &gt;</label>
+      </node>
+      <node id="37">
+        <label>IConcreteCopier&lt; Customer, CustomerDTO &gt;</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="28">
+      <node id="39">
         <label>Architecture.BusinessLogic.CustomerMappers.CustomerEntityDTOMapper</label>
         <link refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="40" relation="public-inheritance">
         </childnode>
-        <childnode refid="30" relation="usage">
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+        <childnode refid="42" relation="usage">
           <edgelabel>_factory</edgelabel>
         </childnode>
       </node>
-      <node id="29">
+      <node id="41">
         <label>IConcreteMapper&lt; Customer, CustomerDTO &gt;</label>
       </node>
-      <node id="31">
+      <node id="43">
         <label>GenericFactory&lt; CustomerDTO &gt;</label>
       </node>
-      <node id="30">
+      <node id="40">
+        <label>IConcreteCopier&lt; Customer, CustomerDTO &gt;</label>
+      </node>
+      <node id="42">
         <label>Architecture.BusinessLogic.CustomerDTOFactories.CustomerDTOFactory</label>
         <link refid="class_architecture_1_1_business_logic_1_1_customer_d_t_o_factories_1_1_customer_d_t_o_factory"/>
-        <childnode refid="31" relation="public-inheritance">
+        <childnode refid="43" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" line="10" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" bodystart="9" bodyend="25"/>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" line="11" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerMappers/CustomerMappers.cs" bodystart="9" bodyend="30"/>
     <listofallmembers>
       <member refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper_1a6029eb333f960322ec556c1d41c589ab" prot="private" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerMappers::CustomerEntityDTOMapper</scope><name>_factory</name></member>
-      <member refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper_1a2ec741bd36064507f8435e32ba4742bc" prot="public" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerMappers::CustomerEntityDTOMapper</scope><name>Convert</name></member>
+      <member refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper_1ad8287a2bd1a0a3308c74e6510d4dbedb" prot="public" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerMappers::CustomerEntityDTOMapper</scope><name>CopyTo</name></member>
       <member refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper_1a8ab222db5421e74834b632b77790d537" prot="public" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerMappers::CustomerEntityDTOMapper</scope><name>CustomerEntityDTOMapper</name></member>
+      <member refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper_1a1f11a558df4c3b397a508b9152869827" prot="public" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerMappers::CustomerEntityDTOMapper</scope><name>Map</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

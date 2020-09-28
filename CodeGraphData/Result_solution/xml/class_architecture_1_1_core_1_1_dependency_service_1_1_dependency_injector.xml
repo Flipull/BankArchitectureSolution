@@ -113,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" line="69" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" bodystart="69" bodyend="101"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" line="67" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" bodystart="67" bodyend="99"/>
         <references refid="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor_1ae37094e50dc12e55098d453a5780c7dd" compoundref="_dependency_injector_8cs" startline="14">Architecture.Core.DependencyService.ServiceDescriptor.Implementation</references>
       </memberdef>
       <memberdef kind="function" id="class_architecture_1_1_core_1_1_dependency_service_1_1_dependency_injector_1ab99e5d0d0fc8e6ee5b38cb9875868466" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" line="103" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" bodystart="103" bodyend="106"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" line="101" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" bodystart="101" bodyend="104"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -135,28 +135,28 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="58">
+      <node id="62">
         <label>Architecture.Core.DependencyService.DependencyInjector</label>
         <link refid="class_architecture_1_1_core_1_1_dependency_service_1_1_dependency_injector"/>
-        <childnode refid="59" relation="public-inheritance">
+        <childnode refid="63" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="59">
+      <node id="63">
         <label>IServiceProvider</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="60">
+      <node id="64">
         <label>Architecture.Core.DependencyService.DependencyInjector</label>
         <link refid="class_architecture_1_1_core_1_1_dependency_service_1_1_dependency_injector"/>
-        <childnode refid="61" relation="public-inheritance">
+        <childnode refid="65" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="61">
+      <node id="65">
         <label>IServiceProvider</label>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" line="19" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" bodystart="18" bodyend="108"/>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" line="19" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" bodystart="18" bodyend="106"/>
     <listofallmembers>
       <member refid="class_architecture_1_1_core_1_1_dependency_service_1_1_dependency_injector_1a4c0113e265fa1202a083d1cd526362b1" prot="public" virt="non-virtual"><scope>Architecture::Core::DependencyService::DependencyInjector</scope><name>GetService</name></member>
       <member refid="class_architecture_1_1_core_1_1_dependency_service_1_1_dependency_injector_1ab99e5d0d0fc8e6ee5b38cb9875868466" prot="public" virt="non-virtual"><scope>Architecture::Core::DependencyService::DependencyInjector</scope><name>GetService&lt; T &gt;</name></member>

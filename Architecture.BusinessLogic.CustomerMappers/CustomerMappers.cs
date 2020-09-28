@@ -6,38 +6,48 @@ using Architecture.DataAccess.CustomerFactories;
 
 namespace Architecture.BusinessLogic.CustomerMappers
 {
-    public class CustomerEntityDTOMapper : IConcreteMapper<Customer, CustomerDTO>
+    public class CustomerEntityDTOMapper : IConcreteCopier<Customer, CustomerDTO>,
+                                            IConcreteMapper<Customer, CustomerDTO>
     {
         private readonly CustomerDTOFactory _factory;
         public CustomerEntityDTOMapper(CustomerDTOFactory dtofactory)
         {
             _factory = dtofactory;
         }
-        public CustomerDTO Convert(Customer source)
+        public CustomerDTO Map(Customer source)
         {
             var newdto = _factory.Construct();
-            newdto.Guid = source.Guid;
-            newdto.FirstName = source.FirstName;
-            newdto.Initials = source.Initials;
-            newdto.LastName = source.LastName;
+            CopyTo(source, newdto);
             return newdto;
         }
+        public void CopyTo(Customer source, CustomerDTO target)
+        {
+            target.Guid = source.Guid;
+            target.FirstName = source.FirstName;
+            target.Initials = source.Initials;
+            target.LastName = source.LastName;
+        }
     }
-    public class CustomerDTOEntityMapper : IConcreteMapper<CustomerDTO, Customer>
+    public class CustomerDTOEntityMapper : IConcreteMapper<CustomerDTO, Customer>,
+                                            IConcreteCopier<CustomerDTO, Customer>
     {
         private readonly CustomerFactory _factory;
         public CustomerDTOEntityMapper(CustomerFactory entityfactory)
         {
             _factory = entityfactory;
         }
-        public Customer Convert(CustomerDTO source)
+        public Customer Map(CustomerDTO source)
         {
-            var newentity = _factory.Construct();
-            newentity.Guid = source.Guid;
-            newentity.FirstName = source.FirstName;
-            newentity.Initials = source.Initials;
-            newentity.LastName = source.LastName;
+            Customer newentity = _factory.Construct();
+            CopyTo(source, newentity);
             return newentity;
+        }
+        public void CopyTo(CustomerDTO source, Customer target)
+        {
+            target.Guid = source.Guid;
+            target.FirstName = source.FirstName;
+            target.Initials = source.Initials;
+            target.LastName = source.LastName;
         }
     }
 }

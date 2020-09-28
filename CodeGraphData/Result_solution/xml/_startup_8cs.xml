@@ -5,7 +5,6 @@
     <innerclass refid="class_architecture_1_1_presentation_1_1_web_1_1_startup" prot="public">Architecture::Presentation::Web::Startup</innerclass>
     <innernamespace refid="namespace_architecture_1_1_presentation_1_1_web">Architecture::Presentation::Web</innernamespace>
     <innernamespace refid="namespace_microsoft_1_1_asp_net_core_1_1_builder">Microsoft::AspNetCore::Builder</innernamespace>
-    <innernamespace refid="namespace_microsoft_1_1_extensions_1_1_configuration">Microsoft::Extensions::Configuration</innernamespace>
     <innernamespace refid="namespace_microsoft_1_1_extensions_1_1_dependency_injection">Microsoft::Extensions::DependencyInjection</innernamespace>
     <briefdescription>
     </briefdescription>

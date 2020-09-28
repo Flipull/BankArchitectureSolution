@@ -64,13 +64,13 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="76">
+      <node id="82">
         <label>Architecture.BusinessLogic.CustomerLogics.CustomerLogic</label>
         <link refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic"/>
-        <childnode refid="75" relation="public-inheritance">
+        <childnode refid="81" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="75">
+      <node id="81">
         <label>Architecture.BusinessLogic.CustomerLogics.Infra.ICustomerLogic</label>
         <link refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic"/>
       </node>

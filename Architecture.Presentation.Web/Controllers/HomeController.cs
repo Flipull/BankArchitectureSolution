@@ -3,7 +3,6 @@ using Architecture.BusinessLogic.CustomerLogics.Infra;
 using Architecture.Presentation.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
 using System.Diagnostics;
 
 namespace Architecture.Presentation.Web.Controllers
@@ -25,7 +24,7 @@ namespace Architecture.Presentation.Web.Controllers
             new_customer.LastName = "Di Daggio";
             new_customer.FirstName = "Marco";
             var updated_customer = _customerLogic.UpdateCustomer(new_customer);
-            return View(_customerLogic.ViewCustomer(new_customer.Guid) );
+            return View(_customerLogic.ViewCustomer(new_customer.Guid));
         }
 
         public IActionResult Privacy()

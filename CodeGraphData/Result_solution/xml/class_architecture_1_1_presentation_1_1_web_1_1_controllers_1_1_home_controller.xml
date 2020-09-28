@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="13" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="13" bodyend="-1"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="12" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1abcb9a566f4396dc24c2eac9a6e829a64" prot="private" static="no" mutable="no">
         <type>readonly <ref refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic" kindref="compound">ICustomerLogic</ref></type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="14" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="14" bodyend="-1"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="13" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="13" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="15" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="15" bodyend="19"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="14" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="14" bodyend="18"/>
       </memberdef>
       <memberdef kind="function" id="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a2bc96c4a5e5b3fe81d4b201a11333584" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IActionResult</type>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="21" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="21" bodyend="29"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="20" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="20" bodyend="28"/>
       </memberdef>
       <memberdef kind="function" id="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a2b925ca496316ec7970be4a339a71109" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IActionResult</type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="31" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="31" bodyend="34"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="30" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="30" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a7ae5f14a24abc81e5a567960162ea793" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IActionResult</type>
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="37" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="37" bodyend="40"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="36" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="36" bodyend="39"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -98,35 +98,35 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="68">
+      <node id="72">
         <label>Architecture.Presentation.Web.Controllers.HomeController</label>
         <link refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller"/>
-        <childnode refid="69" relation="public-inheritance">
+        <childnode refid="73" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="69">
+      <node id="73">
         <label>Controller</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="72">
+      <node id="76">
         <label>Architecture.BusinessLogic.CustomerLogics.Infra.ICustomerLogic</label>
         <link refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic"/>
       </node>
-      <node id="70">
+      <node id="74">
         <label>Architecture.Presentation.Web.Controllers.HomeController</label>
         <link refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller"/>
-        <childnode refid="71" relation="public-inheritance">
+        <childnode refid="75" relation="public-inheritance">
         </childnode>
-        <childnode refid="72" relation="usage">
+        <childnode refid="76" relation="usage">
           <edgelabel>_customerLogic</edgelabel>
         </childnode>
       </node>
-      <node id="71">
+      <node id="75">
         <label>Controller</label>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="12" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="11" bodyend="41"/>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" line="11" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers/HomeController.cs" bodystart="10" bodyend="40"/>
     <listofallmembers>
       <member refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1abcb9a566f4396dc24c2eac9a6e829a64" prot="private" virt="non-virtual"><scope>Architecture::Presentation::Web::Controllers::HomeController</scope><name>_customerLogic</name></member>
       <member refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a3a7542c73ab8a5f3b76499de78a6177d" prot="private" virt="non-virtual"><scope>Architecture::Presentation::Web::Controllers::HomeController</scope><name>_logger</name></member>

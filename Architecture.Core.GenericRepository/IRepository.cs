@@ -13,5 +13,6 @@ namespace Architecture.Core.GenericRepository
         TEntity GetByID(object id);
         void Insert(TEntity entity);
         void Update(TEntity entityToUpdate);
+        void SaveChanges();
     }
 }

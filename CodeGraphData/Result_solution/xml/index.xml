@@ -11,6 +11,12 @@
     <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_composition_model_1a94ed60007c82fb5d41758e3a84be194f" kind="function"><name>OnModelCreating</name></member>
     <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_composition_model_1a96ce1a8831021060615a4267cc3bfacd" kind="function"><name>OnConfiguring</name></member>
   </compound>
+  <compound refid="class_architecture_1_1_presentation_1_1_web_1_1_composition_model_factory" kind="class"><name>Architecture::Presentation::Web::CompositionModelFactory</name>
+    <member refid="class_architecture_1_1_presentation_1_1_web_1_1_composition_model_factory_1a3dd39650e4bafa244683a8eddc04ec03" kind="function"><name>CreateDbContext</name></member>
+  </compound>
+  <compound refid="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_composition_model_model_snapshot" kind="class"><name>Architecture::Core::CompositionService::Migrations::CompositionModelModelSnapshot</name>
+    <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_composition_model_model_snapshot_1a66166f0662637902dd7d7b9720063603" kind="function"><name>BuildModel</name></member>
+  </compound>
   <compound refid="class_architecture_1_1_core_1_1_composition_service_1_1_composition_root" kind="class"><name>Architecture::Core::CompositionService::CompositionRoot</name>
     <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_composition_root_1a7139824e907627ba1a8f151d85f4c577" kind="function"><name>ConfigureServices</name></member>
   </compound>
@@ -30,7 +36,8 @@
   <compound refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_d_t_o_entity_mapper" kind="class"><name>Architecture::BusinessLogic::CustomerMappers::CustomerDTOEntityMapper</name>
     <member refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_d_t_o_entity_mapper_1adaaa9da84fb7fe520dcac73a61098bd2" kind="variable"><name>_factory</name></member>
     <member refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_d_t_o_entity_mapper_1a5e331de91248284898f8a5b79933f5a8" kind="function"><name>CustomerDTOEntityMapper</name></member>
-    <member refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_d_t_o_entity_mapper_1ad9dee43f8b711117e81300b995b9f590" kind="function"><name>Convert</name></member>
+    <member refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_d_t_o_entity_mapper_1a9bf118492e291c70e1423e57864eab46" kind="function"><name>Map</name></member>
+    <member refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_d_t_o_entity_mapper_1a9fcd391da6a9241c7fb75ca50fc2753e" kind="function"><name>CopyTo</name></member>
   </compound>
   <compound refid="class_architecture_1_1_business_logic_1_1_customer_d_t_o_factories_1_1_customer_d_t_o_factory" kind="class"><name>Architecture::BusinessLogic::CustomerDTOFactories::CustomerDTOFactory</name>
   </compound>
@@ -40,15 +47,12 @@
   <compound refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper" kind="class"><name>Architecture::BusinessLogic::CustomerMappers::CustomerEntityDTOMapper</name>
     <member refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper_1a6029eb333f960322ec556c1d41c589ab" kind="variable"><name>_factory</name></member>
     <member refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper_1a8ab222db5421e74834b632b77790d537" kind="function"><name>CustomerEntityDTOMapper</name></member>
-    <member refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper_1a2ec741bd36064507f8435e32ba4742bc" kind="function"><name>Convert</name></member>
+    <member refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper_1a1f11a558df4c3b397a508b9152869827" kind="function"><name>Map</name></member>
+    <member refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper_1ad8287a2bd1a0a3308c74e6510d4dbedb" kind="function"><name>CopyTo</name></member>
   </compound>
   <compound refid="class_architecture_1_1_data_access_1_1_customer_factories_1_1_customer_factory" kind="class"><name>Architecture::DataAccess::CustomerFactories::CustomerFactory</name>
   </compound>
   <compound refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic" kind="class"><name>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</name>
-    <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a00b879eaa356c5efdc00ebfbe8cb96a5" kind="variable"><name>_repository</name></member>
-    <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a0e2d3d8a37c443c754385b05adc20afa" kind="variable"><name>_dtoMapper</name></member>
-    <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a532d3d75c8072cf6c0d7a55fce826935" kind="variable"><name>_entityMapper</name></member>
-    <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a8dd1ca0fb98f870cc8cc79b2559de3d6" kind="function"><name>CustomerLogic</name></member>
     <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a2b51fd5fd804dfe0f5d94aeca7d7f719" kind="function"><name>CreateCustomer</name></member>
     <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a679c2ec56b47681677992f8fa3712ceb" kind="function"><name>UpdateCustomer</name></member>
     <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a583e3b769abbf4b2b633452b71009fd6" kind="function"><name>ViewCustomer</name></member>
@@ -82,8 +86,11 @@
     <member refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a2b925ca496316ec7970be4a339a71109" kind="function"><name>Privacy</name></member>
     <member refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a7ae5f14a24abc81e5a567960162ea793" kind="function"><name>Error</name></member>
   </compound>
+  <compound refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_concrete_copier_3_01in_01_s_00_01in_01_t_01_4" kind="interface"><name>Architecture::Core::MappingService::IConcreteCopier&lt; in S, in T &gt;</name>
+    <member refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_concrete_copier_3_01in_01_s_00_01in_01_t_01_4_1a852e11aae9752f18af7b77e32ae681bd" kind="function"><name>CopyTo</name></member>
+  </compound>
   <compound refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_concrete_mapper_3_01in_01_s_00_01out_01_t_01_4" kind="interface"><name>Architecture::Core::MappingService::IConcreteMapper&lt; in S, out T &gt;</name>
-    <member refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_concrete_mapper_3_01in_01_s_00_01out_01_t_01_4_1a806066e0cd1bbb53efffa4df7e872e65" kind="function"><name>Convert</name></member>
+    <member refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_concrete_mapper_3_01in_01_s_00_01out_01_t_01_4_1a7351edba57806a3f5f629b6224af8f02" kind="function"><name>Map</name></member>
   </compound>
   <compound refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic" kind="interface"><name>Architecture::BusinessLogic::CustomerLogics::Infra::ICustomerLogic</name>
     <member refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic_1a9b8eab0dde7ee83e008748c23539fdda" kind="function"><name>CreateCustomer</name></member>
@@ -102,6 +109,11 @@
   <compound refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_collection" kind="interface"><name>Architecture::Core::MappingService::IMapperServiceCollection</name>
     <member refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_collection_1a3970068707d60a1ff48437fae66bb940" kind="function"><name>GetMapper&lt; S, T &gt;</name></member>
   </compound>
+  <compound refid="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init" kind="class"><name>Architecture::Core::CompositionService::Migrations::Init</name>
+    <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init_1a05d7e68b5140991db71a2f35187bb7a3" kind="function"><name>Up</name></member>
+    <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init_1aba242a1decddc391f0cb18359613b900" kind="function"><name>Down</name></member>
+    <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init_1a2a64d9589de5b6ef4738841fc68a9003" kind="function"><name>BuildTargetModel</name></member>
+  </compound>
   <compound refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4" kind="interface"><name>Architecture::Core::GenericRepository::IRepository&lt; TEntity &gt;</name>
     <member refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4_1a5c281c08c9d8541dea3486953237b31f" kind="function"><name>Delete</name></member>
     <member refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4_1a8661577b8fbbaa2dbe94cd767ea3f8d8" kind="function"><name>Delete</name></member>
@@ -109,6 +121,13 @@
     <member refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4_1a8148bcd5768fa4e4f52425b7a6228df6" kind="function"><name>GetByID</name></member>
     <member refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4_1a05d348ba2181191dffb2ceeb684c236f" kind="function"><name>Insert</name></member>
     <member refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4_1a015b1a9b8613ea85e323730c3d11ba11" kind="function"><name>Update</name></member>
+    <member refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4_1aa8d7d147520f14aa56933b5229275898" kind="function"><name>SaveChanges</name></member>
+  </compound>
+  <compound refid="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4" kind="class"><name>Architecture::Core::GenericLogic::LogicAbstract&lt; R, E, D, EDM, DEM &gt;</name>
+    <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1a33d43d9b38ffe41d624b5e444ebaf965" kind="variable"><name>_repository</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1aa252122aa758e38deacaea6785844894" kind="variable"><name>_dtoMapper</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1a5a83fccc1e77a735bccb736f5959f7d4" kind="variable"><name>_entityMapper</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1a9cb130e353984f6ca48f13b5b1caeeaa" kind="function"><name>LogicAbstract</name></member>
   </compound>
   <compound refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_service" kind="class"><name>Architecture::Core::MappingService::MapperService</name>
     <member refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_service_1aa108820fe6ee9fa7b96f1f7de51fad96" kind="variable"><name>_mappingservice</name></member>
@@ -120,16 +139,16 @@
     <member refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection_1a242b547615c7fbe53ba73fb2e6e9a2f2" kind="function"><name>RegisterMapping&lt; S, T &gt;</name></member>
     <member refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection_1a93c0d29438b57b5b34ec5d5f95d92f4c" kind="function"><name>GetMapper&lt; S, T &gt;</name></member>
   </compound>
-  <compound refid="class_architecture_1_1_presentation_1_1_console_app_1_1_program" kind="class"><name>Architecture::Presentation::ConsoleApp::Program</name>
-    <member refid="class_architecture_1_1_presentation_1_1_console_app_1_1_program_1a2a0cac9a9444dabfb3f0d97977a13a34" kind="function"><name>Main</name></member>
-  </compound>
   <compound refid="class_architecture_1_1_presentation_1_1_web_1_1_program" kind="class"><name>Architecture::Presentation::Web::Program</name>
     <member refid="class_architecture_1_1_presentation_1_1_web_1_1_program_1a0956ca0e2db1aba444ddf48e64230a35" kind="function"><name>Main</name></member>
     <member refid="class_architecture_1_1_presentation_1_1_web_1_1_program_1a28950385b0ab5f5b3f019639e77c8bdc" kind="function"><name>CreateHostBuilder</name></member>
   </compound>
+  <compound refid="class_architecture_1_1_presentation_1_1_console_app_1_1_program" kind="class"><name>Architecture::Presentation::ConsoleApp::Program</name>
+    <member refid="class_architecture_1_1_presentation_1_1_console_app_1_1_program_1a2a0cac9a9444dabfb3f0d97977a13a34" kind="function"><name>Main</name></member>
+  </compound>
   <compound refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4" kind="class"><name>Architecture::Core::GenericRepository::RepositoryAbstract&lt; TEntity &gt;</name>
-    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a21adda0bcef1651ed0b701d0b0fde8e8" kind="variable"><name>context</name></member>
-    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1ab3076d6d939e71a304d65b4b827ccc0e" kind="variable"><name>entitySet</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1ac2d08d3d22261da2a8c6da6b5b1823fa" kind="variable"><name>_context</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a4fe543b10e46b29c8fc3fd8f2a0b7e90" kind="variable"><name>_entitySet</name></member>
     <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1ad2224166b554dd38864219a834d862ce" kind="function"><name>RepositoryAbstract</name></member>
     <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1ab4561a5b8730ab2be9ec31c28993520b" kind="function"><name>Get</name></member>
     <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a8791daa2bdbe5dfe2b26fe2ae82f5856" kind="function"><name>GetByID</name></member>
@@ -137,6 +156,7 @@
     <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a31ade6d8674ee6e66e774174d7c1b079" kind="function"><name>Delete</name></member>
     <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1af30afeda1539fd737fa583903466a2bb" kind="function"><name>Delete</name></member>
     <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a76acef6b7d583392d59019d7e995f167" kind="function"><name>Update</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a7174e7dc005e260f18fd7ca657256dd3" kind="function"><name>SaveChanges</name></member>
   </compound>
   <compound refid="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor" kind="class"><name>Architecture::Core::DependencyService::ServiceDescriptor</name>
     <member refid="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor_1a517cbfe2db52280a69af073489dc7dd8" kind="property"><name>ServiceType</name></member>
@@ -177,6 +197,8 @@
   </compound>
   <compound refid="namespace_architecture_1_1_core_1_1_composition_service" kind="namespace"><name>Architecture::Core::CompositionService</name>
   </compound>
+  <compound refid="namespace_architecture_1_1_core_1_1_composition_service_1_1_migrations" kind="namespace"><name>Architecture::Core::CompositionService::Migrations</name>
+  </compound>
   <compound refid="namespace_architecture_1_1_core_1_1_dependency_service" kind="namespace"><name>Architecture::Core::DependencyService</name>
     <member refid="namespace_architecture_1_1_core_1_1_dependency_service_1a6f6f95293efdf593aa0583e1766c27c9" kind="enum"><name>ServiceLifetime</name></member>
     <member refid="namespace_architecture_1_1_core_1_1_dependency_service_1a6f6f95293efdf593aa0583e1766c27c9a6ff5f73c8b5ebd311406568c8ef50bfd" kind="enumvalue"><name>Singleton</name></member>
@@ -185,6 +207,8 @@
     <member refid="namespace_architecture_1_1_core_1_1_dependency_service_1a53696411b22e2363ba6860e4d963253b" kind="function"><name>Factory</name></member>
   </compound>
   <compound refid="namespace_architecture_1_1_core_1_1_generic_factory" kind="namespace"><name>Architecture::Core::GenericFactory</name>
+  </compound>
+  <compound refid="namespace_architecture_1_1_core_1_1_generic_logic" kind="namespace"><name>Architecture::Core::GenericLogic</name>
   </compound>
   <compound refid="namespace_architecture_1_1_core_1_1_generic_repository" kind="namespace"><name>Architecture::Core::GenericRepository</name>
   </compound>
@@ -220,11 +244,17 @@
   </compound>
   <compound refid="namespace_microsoft_1_1_entity_framework_core" kind="namespace"><name>Microsoft::EntityFrameworkCore</name>
   </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_design" kind="namespace"><name>Microsoft::EntityFrameworkCore::Design</name>
+  </compound>
   <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_infrastructure" kind="namespace"><name>Microsoft::EntityFrameworkCore::Infrastructure</name>
   </compound>
   <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_metadata" kind="namespace"><name>Microsoft::EntityFrameworkCore::Metadata</name>
   </compound>
   <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_metadata_1_1_builders" kind="namespace"><name>Microsoft::EntityFrameworkCore::Metadata::Builders</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_migrations" kind="namespace"><name>Microsoft::EntityFrameworkCore::Migrations</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_storage_1_1_value_conversion" kind="namespace"><name>Microsoft::EntityFrameworkCore::Storage::ValueConversion</name>
   </compound>
   <compound refid="namespace_microsoft_1_1_extensions_1_1_configuration" kind="namespace"><name>Microsoft::Extensions::Configuration</name>
   </compound>
@@ -240,6 +270,8 @@
   </compound>
   <compound refid="namespace_system_1_1_diagnostics" kind="namespace"><name>System::Diagnostics</name>
   </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
   <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
   </compound>
   <compound refid="namespace_system_1_1_linq_1_1_expressions" kind="namespace"><name>System::Linq::Expressions</name>
@@ -254,7 +286,7 @@
   </compound>
   <compound refid="_customer_d_t_o_8cs" kind="file"><name>CustomerDTO.cs</name>
   </compound>
-  <compound refid="_i_concrete_mapper_8cs" kind="file"><name>IConcreteMapper.cs</name>
+  <compound refid="_concrete_interfaces_8cs" kind="file"><name>ConcreteInterfaces.cs</name>
   </compound>
   <compound refid="_mapper_service_8cs" kind="file"><name>MapperService.cs</name>
   </compound>
@@ -264,11 +296,19 @@
   </compound>
   <compound refid="_composition_root_8cs" kind="file"><name>CompositionRoot.cs</name>
   </compound>
+  <compound refid="20200927175219___init_8cs" kind="file"><name>20200927175219_Init.cs</name>
+  </compound>
+  <compound refid="20200927175219___init_8_designer_8cs" kind="file"><name>20200927175219_Init.Designer.cs</name>
+  </compound>
+  <compound refid="_composition_model_model_snapshot_8cs" kind="file"><name>CompositionModelModelSnapshot.cs</name>
+  </compound>
   <compound refid="_dependency_injector_8cs" kind="file"><name>DependencyInjector.cs</name>
   </compound>
   <compound refid="_generic_factory_8cs" kind="file"><name>GenericFactory.cs</name>
   </compound>
   <compound refid="_i_factory_8cs" kind="file"><name>IFactory.cs</name>
+  </compound>
+  <compound refid="_logic_abstract_8cs" kind="file"><name>LogicAbstract.cs</name>
   </compound>
   <compound refid="_i_repository_8cs" kind="file"><name>IRepository.cs</name>
   </compound>
@@ -291,6 +331,8 @@
   <compound refid="_architecture_8_presentation_8_console_2_program_8cs" kind="file"><name>Program.cs</name>
   </compound>
   <compound refid="_architecture_8_presentation_8_web_2_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_composition_model_factory_8cs" kind="file"><name>CompositionModelFactory.cs</name>
   </compound>
   <compound refid="_home_controller_8cs" kind="file"><name>HomeController.cs</name>
   </compound>
@@ -320,6 +362,8 @@
   </compound>
   <compound refid="dir_ec3351085dbc1c6f529d8d39d3035964" kind="dir"><name>C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericFactory</name>
   </compound>
+  <compound refid="dir_73ab230d4e632fe741e14e4abcf1370d" kind="dir"><name>C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericLogic</name>
+  </compound>
   <compound refid="dir_1fb22651b151845f0ad28cddcdb4cf51" kind="dir"><name>C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository</name>
   </compound>
   <compound refid="dir_0cc38ced9a1500791ea1843b348e09b1" kind="dir"><name>C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.BankEntities</name>
@@ -341,6 +385,8 @@
   <compound refid="dir_7b613e5f1d3c55843f6458cb55bad289" kind="dir"><name>C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers</name>
   </compound>
   <compound refid="dir_9eeb55a5c7be8a371ace9e8d6086c712" kind="dir"><name>C:/Users/Mark</name>
+  </compound>
+  <compound refid="dir_3f41a24c27f8c0135b7a5d270c94a2b1" kind="dir"><name>C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/Migrations</name>
   </compound>
   <compound refid="dir_63ef457774b857fcea2799f44cd4c72d" kind="dir"><name>C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Models</name>
   </compound>

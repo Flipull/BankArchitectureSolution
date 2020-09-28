@@ -3,6 +3,7 @@
   <compounddef id="namespace_architecture_1_1_core_1_1_mapping_service" kind="namespace">
     <compoundname>Architecture::Core::MappingService</compoundname>
     <innerclass refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_concrete_mapper_3_01in_01_s_00_01out_01_t_01_4" prot="public">Architecture::Core::MappingService::IConcreteMapper&lt; in S, out T &gt;</innerclass>
+    <innerclass refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_concrete_copier_3_01in_01_s_00_01in_01_t_01_4" prot="public">Architecture::Core::MappingService::IConcreteCopier&lt; in S, in T &gt;</innerclass>
     <innerclass refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service" prot="public">Architecture::Core::MappingService::IMapperService</innerclass>
     <innerclass refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_service" prot="public">Architecture::Core::MappingService::MapperService</innerclass>
     <innerclass refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_collection" prot="public">Architecture::Core::MappingService::IMapperServiceCollection</innerclass>
@@ -11,6 +12,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/IConcreteMapper.cs" line="2" column="1"/>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/ConcreteInterfaces.cs" line="2" column="1"/>
   </compounddef>
 </doxygen>

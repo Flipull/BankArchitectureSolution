@@ -4,6 +4,7 @@
     <compoundname>C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web</compoundname>
     <innerdir refid="dir_7b613e5f1d3c55843f6458cb55bad289">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Controllers</innerdir>
     <innerdir refid="dir_63ef457774b857fcea2799f44cd4c72d">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presentation.Web/Models</innerdir>
+    <innerfile refid="_composition_model_factory_8cs">CompositionModelFactory.cs</innerfile>
     <innerfile refid="_architecture_8_presentation_8_web_2_program_8cs">Program.cs</innerfile>
     <innerfile refid="_startup_8cs">Startup.cs</innerfile>
     <briefdescription>

@@ -28,13 +28,13 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="87">
+      <node id="93">
         <label>Architecture.Core.MappingService.MapperService</label>
         <link refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_service"/>
-        <childnode refid="86" relation="public-inheritance">
+        <childnode refid="92" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="86">
+      <node id="92">
         <label>Architecture.Core.MappingService.IMapperService</label>
         <link refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service"/>
       </node>

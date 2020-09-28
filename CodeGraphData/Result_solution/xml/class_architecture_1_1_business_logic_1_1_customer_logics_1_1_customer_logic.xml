@@ -2,74 +2,9 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic" kind="class" prot="public">
     <compoundname>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">GenericLogic&lt; ICustomerRepository, Customer, CustomerDTO, CustomerEntityDTOMapper, CustomerDTOEntityMapper &gt;</basecompoundref>
     <basecompoundref refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic" prot="public" virt="non-virtual">Architecture.BusinessLogic.CustomerLogics.Infra.ICustomerLogic</basecompoundref>
-      <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a00b879eaa356c5efdc00ebfbe8cb96a5" prot="private" static="no" mutable="no">
-        <type>readonly <ref refid="interface_architecture_1_1_data_access_1_1_customer_repositories_1_1_infra_1_1_i_customer_repository" kindref="compound">ICustomerRepository</ref></type>
-        <definition>readonly ICustomerRepository Architecture.BusinessLogic.CustomerLogics.CustomerLogic._repository</definition>
-        <argsstring></argsstring>
-        <name>_repository</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="11" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="11" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a0e2d3d8a37c443c754385b05adc20afa" prot="private" static="no" mutable="no">
-        <type>readonly <ref refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper" kindref="compound">CustomerEntityDTOMapper</ref></type>
-        <definition>readonly CustomerEntityDTOMapper Architecture.BusinessLogic.CustomerLogics.CustomerLogic._dtoMapper</definition>
-        <argsstring></argsstring>
-        <name>_dtoMapper</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="12" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="12" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a532d3d75c8072cf6c0d7a55fce826935" prot="private" static="no" mutable="no">
-        <type>readonly <ref refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_d_t_o_entity_mapper" kindref="compound">CustomerDTOEntityMapper</ref></type>
-        <definition>readonly CustomerDTOEntityMapper Architecture.BusinessLogic.CustomerLogics.CustomerLogic._entityMapper</definition>
-        <argsstring></argsstring>
-        <name>_entityMapper</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="13" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="13" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a8dd1ca0fb98f870cc8cc79b2559de3d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type></type>
-        <definition>Architecture.BusinessLogic.CustomerLogics.CustomerLogic.CustomerLogic</definition>
-        <argsstring>(ICustomerRepository repo, CustomerEntityDTOMapper dtomapper, CustomerDTOEntityMapper entitymapper)</argsstring>
-        <name>CustomerLogic</name>
-        <param>
-          <type><ref refid="interface_architecture_1_1_data_access_1_1_customer_repositories_1_1_infra_1_1_i_customer_repository" kindref="compound">ICustomerRepository</ref></type>
-          <declname>repo</declname>
-        </param>
-        <param>
-          <type><ref refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper" kindref="compound">CustomerEntityDTOMapper</ref></type>
-          <declname>dtomapper</declname>
-        </param>
-        <param>
-          <type><ref refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_d_t_o_entity_mapper" kindref="compound">CustomerDTOEntityMapper</ref></type>
-          <declname>entitymapper</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="14" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="14" bodyend="22"/>
-      </memberdef>
       <memberdef kind="function" id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a2b51fd5fd804dfe0f5d94aeca7d7f719" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_architecture_1_1_business_logic_1_1_customer_d_t_os_1_1_customer_d_t_o" kindref="compound">CustomerDTO</ref></type>
         <definition>CustomerDTO Architecture.BusinessLogic.CustomerLogics.CustomerLogic.CreateCustomer</definition>
@@ -86,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="24" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="24" bodyend="29"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="14" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="14" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a679c2ec56b47681677992f8fa3712ceb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_architecture_1_1_business_logic_1_1_customer_d_t_os_1_1_customer_d_t_o" kindref="compound">CustomerDTO</ref></type>
@@ -104,7 +39,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="31" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="31" bodyend="43"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="18" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="18" bodyend="21"/>
       </memberdef>
       <memberdef kind="function" id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a583e3b769abbf4b2b633452b71009fd6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_architecture_1_1_business_logic_1_1_customer_d_t_os_1_1_customer_d_t_o" kindref="compound">CustomerDTO</ref></type>
@@ -122,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="45" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="45" bodyend="52"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="22" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="22" bodyend="25"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -130,96 +65,42 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="37">
+      <node id="50">
         <label>ICustomerLogic</label>
         <link refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic"/>
       </node>
-      <node id="36">
+      <node id="48">
         <label>Architecture.BusinessLogic.CustomerLogics.CustomerLogic</label>
         <link refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic"/>
-        <childnode refid="37" relation="public-inheritance">
+        <childnode refid="49" relation="public-inheritance">
         </childnode>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>GenericLogic&lt; ICustomerRepository, Customer, CustomerDTO, CustomerEntityDTOMapper, CustomerDTOEntityMapper &gt;</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="46">
-        <label>Architecture.BusinessLogic.CustomerMappers.CustomerEntityDTOMapper</label>
-        <link refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_entity_d_t_o_mapper"/>
-        <childnode refid="47" relation="public-inheritance">
-        </childnode>
-        <childnode refid="48" relation="usage">
-          <edgelabel>_factory</edgelabel>
-        </childnode>
-      </node>
-      <node id="39">
+      <node id="53">
         <label>ICustomerLogic</label>
         <link refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic"/>
       </node>
-      <node id="38">
+      <node id="51">
         <label>Architecture.BusinessLogic.CustomerLogics.CustomerLogic</label>
         <link refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic"/>
-        <childnode refid="39" relation="public-inheritance">
+        <childnode refid="52" relation="public-inheritance">
         </childnode>
-        <childnode refid="40" relation="usage">
-          <edgelabel>_repository</edgelabel>
-        </childnode>
-        <childnode refid="42" relation="usage">
-          <edgelabel>_entityMapper</edgelabel>
-        </childnode>
-        <childnode refid="46" relation="usage">
-          <edgelabel>_dtoMapper</edgelabel>
+        <childnode refid="53" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="47">
-        <label>IConcreteMapper&lt; Customer, CustomerDTO &gt;</label>
-      </node>
-      <node id="41">
-        <label>IRepository&lt; Customer &gt;</label>
-      </node>
-      <node id="49">
-        <label>GenericFactory&lt; CustomerDTO &gt;</label>
-      </node>
-      <node id="40">
-        <label>Architecture.DataAccess.CustomerRepositories.Infra.ICustomerRepository</label>
-        <link refid="interface_architecture_1_1_data_access_1_1_customer_repositories_1_1_infra_1_1_i_customer_repository"/>
-        <childnode refid="41" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="45">
-        <label>GenericFactory&lt; Customer &gt;</label>
-      </node>
-      <node id="44">
-        <label>Architecture.DataAccess.CustomerFactories.CustomerFactory</label>
-        <link refid="class_architecture_1_1_data_access_1_1_customer_factories_1_1_customer_factory"/>
-        <childnode refid="45" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="43">
-        <label>IConcreteMapper&lt; CustomerDTO, Customer &gt;</label>
-      </node>
-      <node id="48">
-        <label>Architecture.BusinessLogic.CustomerDTOFactories.CustomerDTOFactory</label>
-        <link refid="class_architecture_1_1_business_logic_1_1_customer_d_t_o_factories_1_1_customer_d_t_o_factory"/>
-        <childnode refid="49" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="42">
-        <label>Architecture.BusinessLogic.CustomerMappers.CustomerDTOEntityMapper</label>
-        <link refid="class_architecture_1_1_business_logic_1_1_customer_mappers_1_1_customer_d_t_o_entity_mapper"/>
-        <childnode refid="43" relation="public-inheritance">
-        </childnode>
-        <childnode refid="44" relation="usage">
-          <edgelabel>_factory</edgelabel>
-        </childnode>
+      <node id="52">
+        <label>GenericLogic&lt; ICustomerRepository, Customer, CustomerDTO, CustomerEntityDTOMapper, CustomerDTOEntityMapper &gt;</label>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="10" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="9" bodyend="54"/>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="13" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="9" bodyend="26"/>
     <listofallmembers>
-      <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a0e2d3d8a37c443c754385b05adc20afa" prot="private" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</scope><name>_dtoMapper</name></member>
-      <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a532d3d75c8072cf6c0d7a55fce826935" prot="private" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</scope><name>_entityMapper</name></member>
-      <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a00b879eaa356c5efdc00ebfbe8cb96a5" prot="private" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</scope><name>_repository</name></member>
       <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a2b51fd5fd804dfe0f5d94aeca7d7f719" prot="public" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</scope><name>CreateCustomer</name></member>
-      <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a8dd1ca0fb98f870cc8cc79b2559de3d6" prot="public" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</scope><name>CustomerLogic</name></member>
       <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a679c2ec56b47681677992f8fa3712ceb" prot="public" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</scope><name>UpdateCustomer</name></member>
       <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a583e3b769abbf4b2b633452b71009fd6" prot="public" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</scope><name>ViewCustomer</name></member>
     </listofallmembers>

@@ -104,10 +104,12 @@ INPUT = "C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Presen
      "C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerFactories" \
      "C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.BankEntities" \
      "C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService" \
+     "C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/Migrations" \
      "C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService" \
      "C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository" \
      "C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper" \
-     "C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericFactory"
+     "C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericFactory" \
+     "C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericLogic"
 INPUT_ENCODING = UTF-8
 FILE_PATTERNS = *.c \
      *.cc \

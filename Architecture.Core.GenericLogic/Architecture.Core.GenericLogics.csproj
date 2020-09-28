@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Architecture.Core.AutoMapper\Architecture.Core.MappingService.csproj" />
+    <ProjectReference Include="..\Architecture.Core.GenericRepository\Architecture.Core.GenericRepository.csproj" />
+  </ItemGroup>
+
+</Project>

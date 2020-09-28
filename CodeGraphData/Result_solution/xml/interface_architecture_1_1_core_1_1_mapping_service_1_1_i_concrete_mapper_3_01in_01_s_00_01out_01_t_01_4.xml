@@ -15,11 +15,11 @@
       </param>
     </templateparamlist>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_concrete_mapper_3_01in_01_s_00_01out_01_t_01_4_1a806066e0cd1bbb53efffa4df7e872e65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_concrete_mapper_3_01in_01_s_00_01out_01_t_01_4_1a7351edba57806a3f5f629b6224af8f02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>T</type>
-        <definition>T Architecture.Core.MappingService.IConcreteMapper&lt; in S, out T &gt;.Convert</definition>
+        <definition>T Architecture.Core.MappingService.IConcreteMapper&lt; in S, out T &gt;.Map</definition>
         <argsstring>(S source)</argsstring>
-        <name>Convert</name>
+        <name>Map</name>
         <param>
           <type>S</type>
           <declname>source</declname>
@@ -30,16 +30,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/IConcreteMapper.cs" line="5" column="1"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/ConcreteInterfaces.cs" line="5" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/IConcreteMapper.cs" line="4" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/IConcreteMapper.cs" bodystart="3" bodyend="6"/>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/ConcreteInterfaces.cs" line="4" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/ConcreteInterfaces.cs" bodystart="3" bodyend="6"/>
     <listofallmembers>
-      <member refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_concrete_mapper_3_01in_01_s_00_01out_01_t_01_4_1a806066e0cd1bbb53efffa4df7e872e65" prot="public" virt="non-virtual"><scope>Architecture::Core::MappingService::IConcreteMapper&lt; in S, out T &gt;</scope><name>Convert</name></member>
+      <member refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_concrete_mapper_3_01in_01_s_00_01out_01_t_01_4_1a7351edba57806a3f5f629b6224af8f02" prot="public" virt="non-virtual"><scope>Architecture::Core::MappingService::IConcreteMapper&lt; in S, out T &gt;</scope><name>Map</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

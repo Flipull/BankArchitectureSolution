@@ -64,8 +64,6 @@ namespace Architecture.Core.DependencyService
             return true;
         }
 
-
-
         public object GetService(Type serviceType)
         {
             ServiceDescriptor descr;

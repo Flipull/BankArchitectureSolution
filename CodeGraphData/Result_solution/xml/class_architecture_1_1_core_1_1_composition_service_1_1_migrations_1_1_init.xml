@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init" kind="class" prot="public">
+    <compoundname>Architecture::Core::CompositionService::Migrations::Init</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Migration</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init_1a05d7e68b5140991db71a2f35187bb7a3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Architecture.Core.CompositionService.Migrations.Init.Up</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Up</name>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/Migrations/20200927175219_Init.cs" line="21" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/Migrations/20200927175219_Init.cs" bodystart="21" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init_1aba242a1decddc391f0cb18359613b900" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Architecture.Core.CompositionService.Migrations.Init.Down</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Down</name>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/Migrations/20200927175219_Init.cs" line="46" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/Migrations/20200927175219_Init.cs" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init_1a2a64d9589de5b6ef4738841fc68a9003" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Architecture.Core.CompositionService.Migrations.Init.BuildTargetModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildTargetModel</name>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/Migrations/20200927175219_Init.Designer.cs" line="16" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/Migrations/20200927175219_Init.Designer.cs" bodystart="16" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="99">
+        <label>Migration</label>
+      </node>
+      <node id="98">
+        <label>Architecture.Core.CompositionService.Migrations.Init</label>
+        <link refid="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init"/>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="101">
+        <label>Migration</label>
+      </node>
+      <node id="100">
+        <label>Architecture.Core.CompositionService.Migrations.Init</label>
+        <link refid="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init"/>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/Migrations/20200927175219_Init.cs" line="20" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/Migrations/20200927175219_Init.cs" bodystart="19" bodyend="51"/>
+    <listofallmembers>
+      <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init_1a2a64d9589de5b6ef4738841fc68a9003" prot="protected" virt="non-virtual"><scope>Architecture::Core::CompositionService::Migrations::Init</scope><name>BuildTargetModel</name></member>
+      <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init_1aba242a1decddc391f0cb18359613b900" prot="protected" virt="non-virtual"><scope>Architecture::Core::CompositionService::Migrations::Init</scope><name>Down</name></member>
+      <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init_1a05d7e68b5140991db71a2f35187bb7a3" prot="protected" virt="non-virtual"><scope>Architecture::Core::CompositionService::Migrations::Init</scope><name>Up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

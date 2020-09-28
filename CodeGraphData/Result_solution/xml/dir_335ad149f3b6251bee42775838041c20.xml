@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="dir_335ad149f3b6251bee42775838041c20" kind="dir">
     <compoundname>C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper</compoundname>
-    <innerfile refid="_i_concrete_mapper_8cs">IConcreteMapper.cs</innerfile>
+    <innerfile refid="_concrete_interfaces_8cs">ConcreteInterfaces.cs</innerfile>
     <innerfile refid="_mapper_service_8cs">MapperService.cs</innerfile>
     <innerfile refid="_mapper_service_collection_8cs">MapperServiceCollection.cs</innerfile>
     <briefdescription>

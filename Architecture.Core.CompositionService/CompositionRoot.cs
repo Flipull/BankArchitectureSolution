@@ -20,18 +20,17 @@ namespace Architecture.Core.CompositionService
             services.AddTransient<DbContext>(
                         (srvprov) =>
                         {
-                            //todo: build a DbContext-MutableModel
+                            //todo: build a MutableModel without using an ugly DbContext derivative
 
                             //use loaded config and above build model to configure EF
                             return new CompositionModel(
                                     new DbContextOptionsBuilder<DbContext>()
-                                    .UseSqlServer(configuration.GetConnectionString("BankDatabase"))
-                                    //.UseModel(null)//supresses DbContext.onModelCreating in favor of custom code
-                                    .Options
+                                        .UseSqlServer(configuration.GetConnectionString("BankDatabase"))
+                                        //.UseModel(null)//supresses DbContext.onModelCreating in favor of custom code
+                                        .Options
                                 );
                         }
                     );
-
 
             //register Entities
             services.AddTransient<Customer>();
@@ -46,7 +45,6 @@ namespace Architecture.Core.CompositionService
             services.AddTransient<CustomerDTOFactory>();
             //register BusinessLogic
             services.AddSingleton<ICustomerLogic, CustomerLogic>();
-
 
             //register DTOToEntityMappers
             services.AddSingleton<CustomerEntityDTOMapper>();

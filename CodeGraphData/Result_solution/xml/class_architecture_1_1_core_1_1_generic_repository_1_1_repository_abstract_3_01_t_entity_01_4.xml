@@ -9,11 +9,11 @@
       </param>
     </templateparamlist>
       <sectiondef kind="protected-attrib">
-      <memberdef kind="variable" id="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a21adda0bcef1651ed0b701d0b0fde8e8" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1ac2d08d3d22261da2a8c6da6b5b1823fa" prot="protected" static="no" mutable="no">
         <type>DbContext</type>
-        <definition>DbContext Architecture.Core.GenericRepository.RepositoryAbstract&lt; TEntity &gt;.context</definition>
+        <definition>DbContext Architecture.Core.GenericRepository.RepositoryAbstract&lt; TEntity &gt;._context</definition>
         <argsstring></argsstring>
-        <name>context</name>
+        <name>_context</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -22,11 +22,11 @@
         </inbodydescription>
         <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository/RepositoryAbstract.cs" line="11" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository/RepositoryAbstract.cs" bodystart="11" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1ab3076d6d939e71a304d65b4b827ccc0e" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a4fe543b10e46b29c8fc3fd8f2a0b7e90" prot="protected" static="no" mutable="no">
         <type>DbSet&lt; TEntity &gt;</type>
-        <definition>DbSet&lt;TEntity&gt; Architecture.Core.GenericRepository.RepositoryAbstract&lt; TEntity &gt;.entitySet</definition>
+        <definition>DbSet&lt;TEntity&gt; Architecture.Core.GenericRepository.RepositoryAbstract&lt; TEntity &gt;._entitySet</definition>
         <argsstring></argsstring>
-        <name>entitySet</name>
+        <name>_entitySet</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -173,45 +173,60 @@
         </inbodydescription>
         <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository/RepositoryAbstract.cs" line="72" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository/RepositoryAbstract.cs" bodystart="72" bodyend="76"/>
       </memberdef>
+      <memberdef kind="function" id="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a7174e7dc005e260f18fd7ca657256dd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Architecture.Core.GenericRepository.RepositoryAbstract&lt; TEntity &gt;.SaveChanges</definition>
+        <argsstring>()</argsstring>
+        <name>SaveChanges</name>
+        <reimplements refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4_1aa8d7d147520f14aa56933b5229275898">SaveChanges</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository/RepositoryAbstract.cs" line="78" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository/RepositoryAbstract.cs" bodystart="78" bodyend="81"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="109">
+      <node id="121">
         <label>IRepository&lt; TEntity &gt;</label>
         <link refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4"/>
       </node>
-      <node id="108">
+      <node id="120">
         <label>Architecture.Core.GenericRepository.RepositoryAbstract&lt; TEntity &gt;</label>
         <link refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4"/>
-        <childnode refid="109" relation="public-inheritance">
+        <childnode refid="121" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="111">
+      <node id="123">
         <label>IRepository&lt; TEntity &gt;</label>
         <link refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4"/>
       </node>
-      <node id="110">
+      <node id="122">
         <label>Architecture.Core.GenericRepository.RepositoryAbstract&lt; TEntity &gt;</label>
         <link refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4"/>
-        <childnode refid="111" relation="public-inheritance">
+        <childnode refid="123" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository/RepositoryAbstract.cs" line="10" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository/RepositoryAbstract.cs" bodystart="9" bodyend="77"/>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository/RepositoryAbstract.cs" line="10" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository/RepositoryAbstract.cs" bodystart="9" bodyend="82"/>
     <listofallmembers>
-      <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a21adda0bcef1651ed0b701d0b0fde8e8" prot="protected" virt="non-virtual"><scope>Architecture::Core::GenericRepository::RepositoryAbstract&lt; TEntity &gt;</scope><name>context</name></member>
+      <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1ac2d08d3d22261da2a8c6da6b5b1823fa" prot="protected" virt="non-virtual"><scope>Architecture::Core::GenericRepository::RepositoryAbstract&lt; TEntity &gt;</scope><name>_context</name></member>
+      <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a4fe543b10e46b29c8fc3fd8f2a0b7e90" prot="protected" virt="non-virtual"><scope>Architecture::Core::GenericRepository::RepositoryAbstract&lt; TEntity &gt;</scope><name>_entitySet</name></member>
       <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a31ade6d8674ee6e66e774174d7c1b079" prot="public" virt="virtual"><scope>Architecture::Core::GenericRepository::RepositoryAbstract&lt; TEntity &gt;</scope><name>Delete</name></member>
       <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1af30afeda1539fd737fa583903466a2bb" prot="public" virt="virtual"><scope>Architecture::Core::GenericRepository::RepositoryAbstract&lt; TEntity &gt;</scope><name>Delete</name></member>
-      <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1ab3076d6d939e71a304d65b4b827ccc0e" prot="protected" virt="non-virtual"><scope>Architecture::Core::GenericRepository::RepositoryAbstract&lt; TEntity &gt;</scope><name>entitySet</name></member>
       <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1ab4561a5b8730ab2be9ec31c28993520b" prot="public" virt="virtual"><scope>Architecture::Core::GenericRepository::RepositoryAbstract&lt; TEntity &gt;</scope><name>Get</name></member>
       <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a8791daa2bdbe5dfe2b26fe2ae82f5856" prot="public" virt="virtual"><scope>Architecture::Core::GenericRepository::RepositoryAbstract&lt; TEntity &gt;</scope><name>GetByID</name></member>
       <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1aaf893196318f5bb69b0789885f86d36b" prot="public" virt="virtual"><scope>Architecture::Core::GenericRepository::RepositoryAbstract&lt; TEntity &gt;</scope><name>Insert</name></member>
       <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1ad2224166b554dd38864219a834d862ce" prot="public" virt="non-virtual"><scope>Architecture::Core::GenericRepository::RepositoryAbstract&lt; TEntity &gt;</scope><name>RepositoryAbstract</name></member>
+      <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a7174e7dc005e260f18fd7ca657256dd3" prot="public" virt="virtual"><scope>Architecture::Core::GenericRepository::RepositoryAbstract&lt; TEntity &gt;</scope><name>SaveChanges</name></member>
       <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a76acef6b7d583392d59019d7e995f167" prot="public" virt="virtual"><scope>Architecture::Core::GenericRepository::RepositoryAbstract&lt; TEntity &gt;</scope><name>Update</name></member>
     </listofallmembers>
   </compounddef>

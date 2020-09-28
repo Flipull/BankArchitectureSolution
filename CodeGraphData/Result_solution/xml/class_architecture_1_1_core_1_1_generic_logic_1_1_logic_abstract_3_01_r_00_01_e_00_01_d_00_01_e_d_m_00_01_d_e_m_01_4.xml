@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4" kind="class" prot="public">
+    <compoundname>Architecture::Core::GenericLogic::LogicAbstract&lt; R, E, D, EDM, DEM &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>R</type>
+      </param>
+      <param>
+        <type>E</type>
+      </param>
+      <param>
+        <type>D</type>
+      </param>
+      <param>
+        <type>EDM</type>
+      </param>
+      <param>
+        <type>DEM</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1a33d43d9b38ffe41d624b5e444ebaf965" prot="private" static="no" mutable="no">
+        <type>readonly R</type>
+        <definition>readonly R Architecture.Core.GenericLogic.LogicAbstract&lt; R, E, D, EDM, DEM &gt;._repository</definition>
+        <argsstring></argsstring>
+        <name>_repository</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericLogic/LogicAbstract.cs" line="14" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericLogic/LogicAbstract.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1aa252122aa758e38deacaea6785844894" prot="private" static="no" mutable="no">
+        <type>readonly EDM</type>
+        <definition>readonly EDM Architecture.Core.GenericLogic.LogicAbstract&lt; R, E, D, EDM, DEM &gt;._dtoMapper</definition>
+        <argsstring></argsstring>
+        <name>_dtoMapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericLogic/LogicAbstract.cs" line="15" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericLogic/LogicAbstract.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1a5a83fccc1e77a735bccb736f5959f7d4" prot="private" static="no" mutable="no">
+        <type>readonly DEM</type>
+        <definition>readonly DEM Architecture.Core.GenericLogic.LogicAbstract&lt; R, E, D, EDM, DEM &gt;._entityMapper</definition>
+        <argsstring></argsstring>
+        <name>_entityMapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericLogic/LogicAbstract.cs" line="16" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericLogic/LogicAbstract.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1a9cb130e353984f6ca48f13b5b1caeeaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Architecture.Core.GenericLogic.LogicAbstract&lt; R, E, D, EDM, DEM &gt;.LogicAbstract</definition>
+        <argsstring>(R repo, EDM dtomapper, DEM entitymapper)</argsstring>
+        <name>LogicAbstract</name>
+        <param>
+          <type>R</type>
+          <declname>repo</declname>
+        </param>
+        <param>
+          <type>EDM</type>
+          <declname>dtomapper</declname>
+        </param>
+        <param>
+          <type>DEM</type>
+          <declname>entitymapper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericLogic/LogicAbstract.cs" line="17" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericLogic/LogicAbstract.cs" bodystart="17" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericLogic/LogicAbstract.cs" line="13" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericLogic/LogicAbstract.cs" bodystart="7" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1aa252122aa758e38deacaea6785844894" prot="private" virt="non-virtual"><scope>Architecture::Core::GenericLogic::LogicAbstract&lt; R, E, D, EDM, DEM &gt;</scope><name>_dtoMapper</name></member>
+      <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1a5a83fccc1e77a735bccb736f5959f7d4" prot="private" virt="non-virtual"><scope>Architecture::Core::GenericLogic::LogicAbstract&lt; R, E, D, EDM, DEM &gt;</scope><name>_entityMapper</name></member>
+      <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1a33d43d9b38ffe41d624b5e444ebaf965" prot="private" virt="non-virtual"><scope>Architecture::Core::GenericLogic::LogicAbstract&lt; R, E, D, EDM, DEM &gt;</scope><name>_repository</name></member>
+      <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1a9cb130e353984f6ca48f13b5b1caeeaa" prot="public" virt="non-virtual"><scope>Architecture::Core::GenericLogic::LogicAbstract&lt; R, E, D, EDM, DEM &gt;</scope><name>LogicAbstract</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

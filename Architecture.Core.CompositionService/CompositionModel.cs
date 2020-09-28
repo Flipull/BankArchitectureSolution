@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Architecture.DataAccess.CustomerRepositories;
+﻿using Architecture.DataAccess.CustomerRepositories;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Architecture.Core.CompositionService
 {

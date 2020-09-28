@@ -27,24 +27,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="23">
+      <node id="33">
         <label>IEntityTypeConfiguration&lt; Customer &gt;</label>
       </node>
-      <node id="22">
+      <node id="32">
         <label>Architecture.DataAccess.CustomerRepositories.CustomerEntityConfiguration</label>
         <link refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_entity_configuration"/>
-        <childnode refid="23" relation="public-inheritance">
+        <childnode refid="33" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="25">
+      <node id="35">
         <label>IEntityTypeConfiguration&lt; Customer &gt;</label>
       </node>
-      <node id="24">
+      <node id="34">
         <label>Architecture.DataAccess.CustomerRepositories.CustomerEntityConfiguration</label>
         <link refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_entity_configuration"/>
-        <childnode refid="25" relation="public-inheritance">
+        <childnode refid="35" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

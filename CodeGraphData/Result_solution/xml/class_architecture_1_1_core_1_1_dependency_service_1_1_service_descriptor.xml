@@ -54,7 +54,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" line="14" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService/DependencyInjector.cs" bodystart="14" bodyend="-1"/>
-        <referencedby refid="class_architecture_1_1_core_1_1_dependency_service_1_1_dependency_injector_1a4c0113e265fa1202a083d1cd526362b1" compoundref="_dependency_injector_8cs" startline="69" endline="101">Architecture.Core.DependencyService.DependencyInjector.GetService</referencedby>
+        <referencedby refid="class_architecture_1_1_core_1_1_dependency_service_1_1_dependency_injector_1a4c0113e265fa1202a083d1cd526362b1" compoundref="_dependency_injector_8cs" startline="67" endline="99">Architecture.Core.DependencyService.DependencyInjector.GetService</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor_1a7b0aebb12f45a67c61d07d413eddd239" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
         <type><ref refid="namespace_architecture_1_1_core_1_1_dependency_service_1a6f6f95293efdf593aa0583e1766c27c9" kindref="member">ServiceLifetime</ref></type>

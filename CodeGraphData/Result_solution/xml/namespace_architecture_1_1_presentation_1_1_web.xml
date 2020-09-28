@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="namespace_architecture_1_1_presentation_1_1_web" kind="namespace">
     <compoundname>Architecture::Presentation::Web</compoundname>
+    <innerclass refid="class_architecture_1_1_presentation_1_1_web_1_1_composition_model_factory" prot="public">Architecture::Presentation::Web::CompositionModelFactory</innerclass>
     <innerclass refid="class_architecture_1_1_presentation_1_1_web_1_1_program" prot="public">Architecture::Presentation::Web::Program</innerclass>
     <innerclass refid="class_architecture_1_1_presentation_1_1_web_1_1_startup" prot="public">Architecture::Presentation::Web::Startup</innerclass>
     <innernamespace refid="namespace_architecture_1_1_presentation_1_1_web_1_1_controllers">Architecture::Presentation::Web::Controllers</innernamespace>

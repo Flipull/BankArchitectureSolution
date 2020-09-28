@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerRepositories/CustomerRepository.cs" line="15" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerRepositories/CustomerRepository.cs" bodystart="15" bodyend="23"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerRepositories/CustomerRepository.cs" line="15" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerRepositories/CustomerRepository.cs" bodystart="15" bodyend="22"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -46,28 +46,6 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="50">
-        <label>Architecture.DataAccess.CustomerRepositories.CustomerRepository</label>
-        <link refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_repository"/>
-        <childnode refid="51" relation="public-inheritance">
-        </childnode>
-        <childnode refid="52" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="53">
-        <label>IRepository&lt; Customer &gt;</label>
-      </node>
-      <node id="52">
-        <label>ICustomerRepository</label>
-        <link refid="interface_architecture_1_1_data_access_1_1_customer_repositories_1_1_infra_1_1_i_customer_repository"/>
-        <childnode refid="53" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="51">
-        <label>RepositoryAbstract&lt; Customer &gt;</label>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="54">
         <label>Architecture.DataAccess.CustomerRepositories.CustomerRepository</label>
         <link refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_repository"/>
@@ -88,8 +66,30 @@
       <node id="55">
         <label>RepositoryAbstract&lt; Customer &gt;</label>
       </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="58">
+        <label>Architecture.DataAccess.CustomerRepositories.CustomerRepository</label>
+        <link refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_repository"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>IRepository&lt; Customer &gt;</label>
+      </node>
+      <node id="60">
+        <label>ICustomerRepository</label>
+        <link refid="interface_architecture_1_1_data_access_1_1_customer_repositories_1_1_infra_1_1_i_customer_repository"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>RepositoryAbstract&lt; Customer &gt;</label>
+      </node>
     </collaborationgraph>
-    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerRepositories/CustomerRepository.cs" line="11" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerRepositories/CustomerRepository.cs" bodystart="10" bodyend="24"/>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerRepositories/CustomerRepository.cs" line="11" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerRepositories/CustomerRepository.cs" bodystart="10" bodyend="23"/>
     <listofallmembers>
       <member refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_repository_1af85ea535b66d6afdddeb6a84ea80b86d" prot="public" virt="non-virtual"><scope>Architecture::DataAccess::CustomerRepositories::CustomerRepository</scope><name>CustomerRepository</name></member>
       <member refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_repository_1a59b4c3dc449571929a9eade14d061767" prot="public" virt="non-virtual"><scope>Architecture::DataAccess::CustomerRepositories::CustomerRepository</scope><name>GetByGuid</name></member>

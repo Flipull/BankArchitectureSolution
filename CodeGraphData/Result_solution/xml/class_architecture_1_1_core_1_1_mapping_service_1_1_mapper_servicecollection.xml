@@ -58,26 +58,26 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="101">
+      <node id="113">
         <label>IMapperServiceCollection</label>
         <link refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_collection"/>
       </node>
-      <node id="100">
+      <node id="112">
         <label>Architecture.Core.MappingService.MapperServicecollection</label>
         <link refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection"/>
-        <childnode refid="101" relation="public-inheritance">
+        <childnode refid="113" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="103">
+      <node id="115">
         <label>IMapperServiceCollection</label>
         <link refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_collection"/>
       </node>
-      <node id="102">
+      <node id="114">
         <label>Architecture.Core.MappingService.MapperServicecollection</label>
         <link refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection"/>
-        <childnode refid="103" relation="public-inheritance">
+        <childnode refid="115" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

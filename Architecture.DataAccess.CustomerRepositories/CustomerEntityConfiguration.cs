@@ -9,15 +9,15 @@ namespace Architecture.DataAccess.CustomerRepositories
         public void Configure(EntityTypeBuilder<Customer> builder)
         {
             builder.ToTable("Customers");
-            
-            
+
+
             builder.HasKey(c => c.Id).HasName("id");
             builder.Property(c => c.Guid)
                         .HasColumnName("guid")
                         .ValueGeneratedOnAdd();
             builder.HasIndex(c => c.Guid).IsUnique();
 
-            
+
             builder.Property(c => c.FirstName)
                     .HasColumnName("first_name")
                     .IsRequired()

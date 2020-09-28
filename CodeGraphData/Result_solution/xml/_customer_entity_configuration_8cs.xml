@@ -4,7 +4,6 @@
     <compoundname>CustomerEntityConfiguration.cs</compoundname>
     <innerclass refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_entity_configuration" prot="public">Architecture::DataAccess::CustomerRepositories::CustomerEntityConfiguration</innerclass>
     <innernamespace refid="namespace_architecture_1_1_data_access_1_1_customer_repositories">Architecture::DataAccess::CustomerRepositories</innernamespace>
-    <innernamespace refid="namespace_microsoft_1_1_entity_framework_core">Microsoft::EntityFrameworkCore</innernamespace>
     <innernamespace refid="namespace_microsoft_1_1_entity_framework_core_1_1_metadata_1_1_builders">Microsoft::EntityFrameworkCore::Metadata::Builders</innernamespace>
     <briefdescription>
     </briefdescription>
@@ -22,15 +21,15 @@
 <codeline lineno="9" refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_entity_configuration_1ad131b572d2157b8bce59dca3b3804e6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_entity_configuration_1ad131b572d2157b8bce59dca3b3804e6a" kindref="member">Configure</ref>(EntityTypeBuilder&lt;Customer&gt;<sp/>builder)</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>builder.ToTable(</highlight><highlight class="stringliteral">&quot;Customers&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>builder.HasKey(c<sp/>=&gt;<sp/>c.Id).HasName(</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>builder.Property(c<sp/>=&gt;<sp/>c.Guid)</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.HasColumnName(</highlight><highlight class="stringliteral">&quot;guid&quot;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.ValueGeneratedOnAdd();</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>builder.HasIndex(c<sp/>=&gt;<sp/>c.Guid).IsUnique();</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>builder.Property(c<sp/>=&gt;<sp/>c.FirstName)</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.HasColumnName(</highlight><highlight class="stringliteral">&quot;first_name&quot;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.IsRequired()</highlight></codeline>

@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" line="12" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" bodystart="12" bodyend="13"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" line="8" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" bodystart="8" bodyend="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" line="14" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" bodystart="14" bodyend="17"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" line="10" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" bodystart="10" bodyend="13"/>
       </memberdef>
       <memberdef kind="function" id="class_architecture_1_1_core_1_1_composition_service_1_1_composition_model_1a96ce1a8831021060615a4267cc3bfacd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" line="18" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" bodystart="18" bodyend="20"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" line="14" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" bodystart="14" bodyend="16"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -84,7 +84,7 @@
         <label>DbContext</label>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" line="11" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" bodystart="10" bodyend="21"/>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" line="7" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionModel.cs" bodystart="6" bodyend="17"/>
     <listofallmembers>
       <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_composition_model_1ab2d370aeb7d58adfae361eab6915b148" prot="public" virt="non-virtual"><scope>Architecture::Core::CompositionService::CompositionModel</scope><name>CompositionModel</name></member>
       <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_composition_model_1a96ce1a8831021060615a4267cc3bfacd" prot="protected" virt="non-virtual"><scope>Architecture::Core::CompositionService::CompositionModel</scope><name>OnConfiguring</name></member>

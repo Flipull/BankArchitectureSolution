@@ -11,6 +11,7 @@
     <innerdir refid="dir_538ac13d14cb39711fd95fa78264acdc">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService</innerdir>
     <innerdir refid="dir_3c9382ecd7b00740c4512b036b13f9bd">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.DependencyService</innerdir>
     <innerdir refid="dir_ec3351085dbc1c6f529d8d39d3035964">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericFactory</innerdir>
+    <innerdir refid="dir_73ab230d4e632fe741e14e4abcf1370d">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericLogic</innerdir>
     <innerdir refid="dir_1fb22651b151845f0ad28cddcdb4cf51">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository</innerdir>
     <innerdir refid="dir_0cc38ced9a1500791ea1843b348e09b1">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.BankEntities</innerdir>
     <innerdir refid="dir_620827ab52583b2c76c7870b4b90acad">C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.DataAccess.CustomerEntities</innerdir>

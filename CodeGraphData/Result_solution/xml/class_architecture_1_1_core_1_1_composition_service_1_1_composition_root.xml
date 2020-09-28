@@ -22,14 +22,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionRoot.cs" line="18" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionRoot.cs" bodystart="18" bodyend="56"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionRoot.cs" line="18" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionRoot.cs" bodystart="18" bodyend="54"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionRoot.cs" line="17" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionRoot.cs" bodystart="16" bodyend="57"/>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionRoot.cs" line="17" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.CompositionService/CompositionRoot.cs" bodystart="16" bodyend="55"/>
     <listofallmembers>
       <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_composition_root_1a7139824e907627ba1a8f151d85f4c577" prot="public" virt="non-virtual"><scope>Architecture::Core::CompositionService::CompositionRoot</scope><name>ConfigureServices</name></member>
     </listofallmembers>
