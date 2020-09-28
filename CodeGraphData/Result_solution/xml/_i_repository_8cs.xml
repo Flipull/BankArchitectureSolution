@@ -4,7 +4,6 @@
     <compoundname>IRepository.cs</compoundname>
     <innerclass refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4" prot="public">Architecture::Core::GenericRepository::IRepository&lt; TEntity &gt;</innerclass>
     <innernamespace refid="namespace_architecture_1_1_core_1_1_generic_repository">Architecture::Core::GenericRepository</innernamespace>
-    <innernamespace refid="namespace_system_1_1_linq_1_1_expressions">System::Linq::Expressions</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -15,7 +14,7 @@
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Linq;</highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Linq.Expressions;</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6" refid="namespace_architecture_1_1_core_1_1_generic_repository" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Architecture.Core.GenericRepository</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Architecture.Core.GenericRepository</highlight></codeline>
 <codeline lineno="7"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="8" refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal">IRepository&lt;TEntity&gt;<sp/>where<sp/>TEntity<sp/>:<sp/>class</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>

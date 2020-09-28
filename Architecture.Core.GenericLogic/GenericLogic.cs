@@ -1,15 +1,15 @@
 ﻿using Architecture.Core.GenericRepository;
 using Architecture.Core.MappingService;
-using System;
 
 namespace Architecture.Core.GenericLogic
 {
-    public class GenericLogic<R, E, D, EDM, DEM>
+    [System.Obsolete]
+    public abstract class GenericLogic<R, E, D, EDM, DEM>
             where R : IRepository<E>
             where E : class
             where D : class
-            where EDM : IConcreteMapper<E, D>, IConcreteCopier<E, D>
-            where DEM : IConcreteMapper<D, E>, IConcreteCopier<D, E>
+            where EDM : IMapper<E, D>
+            where DEM : IMapper<D, E>
     {
         protected readonly R _repository;
         protected readonly EDM _dtoMapper;

@@ -6,12 +6,12 @@ using System.Linq.Expressions;
 
 namespace Architecture.Core.GenericRepository
 {
-    public abstract class RepositoryAbstract<TEntity> : IRepository<TEntity> where TEntity : class
+    public class GenericRepository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         protected DbContext _context;
         protected DbSet<TEntity> _entitySet;
 
-        public RepositoryAbstract(DbContext context)
+        public GenericRepository(DbContext context)
         {
             this._context = context;
             this._entitySet = context.Set<TEntity>();

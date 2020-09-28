@@ -135,24 +135,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="62">
+      <node id="72">
         <label>Architecture.Core.DependencyService.DependencyInjector</label>
         <link refid="class_architecture_1_1_core_1_1_dependency_service_1_1_dependency_injector"/>
-        <childnode refid="63" relation="public-inheritance">
+        <childnode refid="73" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="63">
+      <node id="73">
         <label>IServiceProvider</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="64">
+      <node id="74">
         <label>Architecture.Core.DependencyService.DependencyInjector</label>
         <link refid="class_architecture_1_1_core_1_1_dependency_service_1_1_dependency_injector"/>
-        <childnode refid="65" relation="public-inheritance">
+        <childnode refid="75" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="65">
+      <node id="75">
         <label>IServiceProvider</label>
       </node>
     </collaborationgraph>

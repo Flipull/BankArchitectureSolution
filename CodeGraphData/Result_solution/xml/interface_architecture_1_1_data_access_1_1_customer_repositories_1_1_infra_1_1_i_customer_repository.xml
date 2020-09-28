@@ -29,30 +29,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="86">
+      <node id="98">
         <label>Architecture.DataAccess.CustomerRepositories.CustomerRepository</label>
         <link refid="class_architecture_1_1_data_access_1_1_customer_repositories_1_1_customer_repository"/>
-        <childnode refid="84" relation="public-inheritance">
+        <childnode refid="96" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="85">
+      <node id="97">
         <label>IRepository&lt; Customer &gt;</label>
       </node>
-      <node id="84">
+      <node id="96">
         <label>Architecture.DataAccess.CustomerRepositories.Infra.ICustomerRepository</label>
         <link refid="interface_architecture_1_1_data_access_1_1_customer_repositories_1_1_infra_1_1_i_customer_repository"/>
-        <childnode refid="85" relation="public-inheritance">
+        <childnode refid="97" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="88">
+      <node id="100">
         <label>IRepository&lt; Customer &gt;</label>
       </node>
-      <node id="87">
+      <node id="99">
         <label>Architecture.DataAccess.CustomerRepositories.Infra.ICustomerRepository</label>
         <link refid="interface_architecture_1_1_data_access_1_1_customer_repositories_1_1_infra_1_1_i_customer_repository"/>
-        <childnode refid="88" relation="public-inheritance">
+        <childnode refid="100" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -26,7 +26,7 @@
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>FUTURE<sp/>REPLACEMENT<sp/>FOR<sp/>UGLY<sp/>DBCONTEXT-FREAK?</highlight></codeline>
 <codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>public<sp/>class<sp/>CompositionModel<sp/>:<sp/>IModel</highlight></codeline>
 <codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>

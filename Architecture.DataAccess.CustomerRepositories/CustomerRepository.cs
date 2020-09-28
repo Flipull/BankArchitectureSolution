@@ -1,5 +1,4 @@
-﻿using Architecture.Core.GenericRepository;
-using Architecture.DataAccess.CustomerEntities;
+﻿using Architecture.DataAccess.CustomerEntities;
 using Architecture.DataAccess.CustomerRepositories.Infra;
 using Microsoft.EntityFrameworkCore;
 using System;

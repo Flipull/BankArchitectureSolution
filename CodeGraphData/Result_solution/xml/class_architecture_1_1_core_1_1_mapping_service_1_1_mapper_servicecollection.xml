@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" line="12" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" bodystart="12" bodyend="-1"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" line="14" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -36,21 +36,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" line="14" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" bodystart="14" bodyend="25"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" line="16" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" bodystart="16" bodyend="27"/>
       </memberdef>
-      <memberdef kind="function" id="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection_1a93c0d29438b57b5b34ec5d5f95d92f4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>IConcreteMapper&lt; S, T &gt;</type>
-        <definition>IConcreteMapper&lt;S, T&gt; Architecture.Core.MappingService.MapperServicecollection.GetMapper&lt; S, T &gt;</definition>
+      <memberdef kind="function" id="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection_1a2d37872f53708d2c39c58248d6964237" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IMapper&lt; S, T &gt;</type>
+        <definition>IMapper&lt;S, T&gt; Architecture.Core.MappingService.MapperServicecollection.GetMapper&lt; S, T &gt;</definition>
         <argsstring>()</argsstring>
         <name>GetMapper&lt; S, T &gt;</name>
-        <reimplements refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_collection_1a3970068707d60a1ff48437fae66bb940">GetMapper&lt; S, T &gt;</reimplements>
+        <reimplements refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_collection_1a41f5f13664bc3438c5c07c6532c837dc">GetMapper&lt; S, T &gt;</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" line="26" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" bodystart="26" bodyend="29"/>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" line="28" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" bodystart="28" bodyend="31"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -58,33 +58,33 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="113">
+      <node id="125">
         <label>IMapperServiceCollection</label>
         <link refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_collection"/>
       </node>
-      <node id="112">
+      <node id="124">
         <label>Architecture.Core.MappingService.MapperServicecollection</label>
         <link refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection"/>
-        <childnode refid="113" relation="public-inheritance">
+        <childnode refid="125" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="115">
+      <node id="127">
         <label>IMapperServiceCollection</label>
         <link refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_collection"/>
       </node>
-      <node id="114">
+      <node id="126">
         <label>Architecture.Core.MappingService.MapperServicecollection</label>
         <link refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection"/>
-        <childnode refid="115" relation="public-inheritance">
+        <childnode refid="127" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" line="11" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" bodystart="10" bodyend="30"/>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" line="13" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.AutoMapper/MapperServiceCollection.cs" bodystart="12" bodyend="32"/>
     <listofallmembers>
       <member refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection_1aeae3bd4112eecb19b2eef9a062cacdc6" prot="private" virt="non-virtual"><scope>Architecture::Core::MappingService::MapperServicecollection</scope><name>_mappers</name></member>
-      <member refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection_1a93c0d29438b57b5b34ec5d5f95d92f4c" prot="public" virt="non-virtual"><scope>Architecture::Core::MappingService::MapperServicecollection</scope><name>GetMapper&lt; S, T &gt;</name></member>
+      <member refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection_1a2d37872f53708d2c39c58248d6964237" prot="public" virt="non-virtual"><scope>Architecture::Core::MappingService::MapperServicecollection</scope><name>GetMapper&lt; S, T &gt;</name></member>
       <member refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection_1a242b547615c7fbe53ba73fb2e6e9a2f2" prot="public" virt="non-virtual"><scope>Architecture::Core::MappingService::MapperServicecollection</scope><name>RegisterMapping&lt; S, T &gt;</name></member>
     </listofallmembers>
   </compounddef>

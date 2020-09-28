@@ -5,6 +5,9 @@ using System.Linq.Expressions;
 
 namespace Architecture.Core.GenericRepository
 {
+    //need Generics and Interfaces for keyless repo's?
+    //for surrogate-key repo's?
+    //does this already work for compound-key repo's?
     public interface IRepository<TEntity> where TEntity : class
     {
         void Delete(object id);

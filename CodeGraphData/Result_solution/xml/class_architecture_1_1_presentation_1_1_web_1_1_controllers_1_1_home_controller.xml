@@ -98,31 +98,31 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="72">
+      <node id="88">
         <label>Architecture.Presentation.Web.Controllers.HomeController</label>
         <link refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller"/>
-        <childnode refid="73" relation="public-inheritance">
+        <childnode refid="89" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="73">
+      <node id="89">
         <label>Controller</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="76">
+      <node id="92">
         <label>Architecture.BusinessLogic.CustomerLogics.Infra.ICustomerLogic</label>
         <link refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic"/>
       </node>
-      <node id="74">
+      <node id="90">
         <label>Architecture.Presentation.Web.Controllers.HomeController</label>
         <link refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller"/>
-        <childnode refid="75" relation="public-inheritance">
+        <childnode refid="91" relation="public-inheritance">
         </childnode>
-        <childnode refid="76" relation="usage">
+        <childnode refid="92" relation="usage">
           <edgelabel>_customerLogic</edgelabel>
         </childnode>
       </node>
-      <node id="75">
+      <node id="91">
         <label>Controller</label>
       </node>
     </collaborationgraph>

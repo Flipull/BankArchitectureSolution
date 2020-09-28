@@ -2,8 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="dir_1fb22651b151845f0ad28cddcdb4cf51" kind="dir">
     <compoundname>C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository</compoundname>
+    <innerfile refid="_generic_repository_8cs">GenericRepository.cs</innerfile>
     <innerfile refid="_i_repository_8cs">IRepository.cs</innerfile>
-    <innerfile refid="_repository_abstract_8cs">RepositoryAbstract.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

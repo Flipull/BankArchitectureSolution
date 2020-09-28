@@ -53,6 +53,10 @@
   <compound refid="class_architecture_1_1_data_access_1_1_customer_factories_1_1_customer_factory" kind="class"><name>Architecture::DataAccess::CustomerFactories::CustomerFactory</name>
   </compound>
   <compound refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic" kind="class"><name>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</name>
+    <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a00b879eaa356c5efdc00ebfbe8cb96a5" kind="variable"><name>_repository</name></member>
+    <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a0e2d3d8a37c443c754385b05adc20afa" kind="variable"><name>_dtoMapper</name></member>
+    <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a532d3d75c8072cf6c0d7a55fce826935" kind="variable"><name>_entityMapper</name></member>
+    <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a8dd1ca0fb98f870cc8cc79b2559de3d6" kind="function"><name>CustomerLogic</name></member>
     <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a2b51fd5fd804dfe0f5d94aeca7d7f719" kind="function"><name>CreateCustomer</name></member>
     <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a679c2ec56b47681677992f8fa3712ceb" kind="function"><name>UpdateCustomer</name></member>
     <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a583e3b769abbf4b2b633452b71009fd6" kind="function"><name>ViewCustomer</name></member>
@@ -78,6 +82,24 @@
   <compound refid="class_architecture_1_1_core_1_1_generic_factory_1_1_generic_factory_3_01_t_01_4" kind="class"><name>Architecture::Core::GenericFactory::GenericFactory&lt; T &gt;</name>
     <member refid="class_architecture_1_1_core_1_1_generic_factory_1_1_generic_factory_3_01_t_01_4_1abdff008f3fe2618d6820da191398087b" kind="function"><name>Construct</name></member>
   </compound>
+  <compound refid="class_architecture_1_1_core_1_1_generic_logic_1_1_generic_logic_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4" kind="class"><name>Architecture::Core::GenericLogic::GenericLogic&lt; R, E, D, EDM, DEM &gt;</name>
+    <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_generic_logic_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1a9295b80ce9f22efe06882fc2045360a9" kind="variable"><name>_repository</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_generic_logic_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1af8cebddaa30bbe2b10277dd9916977e1" kind="variable"><name>_dtoMapper</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_generic_logic_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1abe334e3befee353569ae6a4bd9670516" kind="variable"><name>_entityMapper</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_generic_logic_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1af9683e8fb0d2a363e88be9899879265e" kind="function"><name>GenericLogic</name></member>
+  </compound>
+  <compound refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4" kind="class"><name>Architecture::Core::GenericRepository::GenericRepository&lt; TEntity &gt;</name>
+    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1ad663690b4c1b5e2faecb3fc40af3d4c7" kind="variable"><name>_context</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1ab6ab1a76deaa0097ac8c61c5c5076cca" kind="variable"><name>_entitySet</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1aa2bdeead483fc0105c0bfcb2d29253c9" kind="function"><name>GenericRepository</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1a4ecdbdd5d345c13fc0eed9efd4c156ff" kind="function"><name>Get</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1a829248d04a1bf687e04b33ddeca5cc5d" kind="function"><name>GetByID</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1a144d4e71f8ce3363f2999b0dbe06048d" kind="function"><name>Insert</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1adc66e44f75e3781aab97f23f3c7fc85b" kind="function"><name>Delete</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1aa3accf6ab9628be36e81ee591ac414ce" kind="function"><name>Delete</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1a035c71c8f696818aee3f0ac7d3bb9f41" kind="function"><name>Update</name></member>
+    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1ab6272309eb31576831558796c27b6794" kind="function"><name>SaveChanges</name></member>
+  </compound>
   <compound refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller" kind="class"><name>Architecture::Presentation::Web::Controllers::HomeController</name>
     <member refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a3a7542c73ab8a5f3b76499de78a6177d" kind="variable"><name>_logger</name></member>
     <member refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1abcb9a566f4396dc24c2eac9a6e829a64" kind="variable"><name>_customerLogic</name></member>
@@ -85,12 +107,6 @@
     <member refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a2bc96c4a5e5b3fe81d4b201a11333584" kind="function"><name>Index</name></member>
     <member refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a2b925ca496316ec7970be4a339a71109" kind="function"><name>Privacy</name></member>
     <member refid="class_architecture_1_1_presentation_1_1_web_1_1_controllers_1_1_home_controller_1a7ae5f14a24abc81e5a567960162ea793" kind="function"><name>Error</name></member>
-  </compound>
-  <compound refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_concrete_copier_3_01in_01_s_00_01in_01_t_01_4" kind="interface"><name>Architecture::Core::MappingService::IConcreteCopier&lt; in S, in T &gt;</name>
-    <member refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_concrete_copier_3_01in_01_s_00_01in_01_t_01_4_1a852e11aae9752f18af7b77e32ae681bd" kind="function"><name>CopyTo</name></member>
-  </compound>
-  <compound refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_concrete_mapper_3_01in_01_s_00_01out_01_t_01_4" kind="interface"><name>Architecture::Core::MappingService::IConcreteMapper&lt; in S, out T &gt;</name>
-    <member refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_concrete_mapper_3_01in_01_s_00_01out_01_t_01_4_1a7351edba57806a3f5f629b6224af8f02" kind="function"><name>Map</name></member>
   </compound>
   <compound refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic" kind="interface"><name>Architecture::BusinessLogic::CustomerLogics::Infra::ICustomerLogic</name>
     <member refid="interface_architecture_1_1_business_logic_1_1_customer_logics_1_1_infra_1_1_i_customer_logic_1a9b8eab0dde7ee83e008748c23539fdda" kind="function"><name>CreateCustomer</name></member>
@@ -103,11 +119,15 @@
   <compound refid="interface_architecture_1_1_core_1_1_generic_factory_1_1_i_factory_3_01_t_01_4" kind="interface"><name>Architecture::Core::GenericFactory::IFactory&lt; T &gt;</name>
     <member refid="interface_architecture_1_1_core_1_1_generic_factory_1_1_i_factory_3_01_t_01_4_1ac3db8e04c96c6c60b8bf6d64654378b2" kind="function"><name>Construct</name></member>
   </compound>
+  <compound refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_3_01_s_00_01_t_01_4" kind="interface"><name>Architecture::Core::MappingService::IMapper&lt; S, T &gt;</name>
+    <member refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_3_01_s_00_01_t_01_4_1a7e6cc0972824c62be35a3c0a92afa624" kind="function"><name>Map</name></member>
+    <member refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_3_01_s_00_01_t_01_4_1a6cb201bfcfb982df970b6ea865eec14d" kind="function"><name>CopyTo</name></member>
+  </compound>
   <compound refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service" kind="interface"><name>Architecture::Core::MappingService::IMapperService</name>
     <member refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_1af46ac9270d344179b1ca7af3b6e034b1" kind="function"><name>Convert&lt; S, T &gt;</name></member>
   </compound>
   <compound refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_collection" kind="interface"><name>Architecture::Core::MappingService::IMapperServiceCollection</name>
-    <member refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_collection_1a3970068707d60a1ff48437fae66bb940" kind="function"><name>GetMapper&lt; S, T &gt;</name></member>
+    <member refid="interface_architecture_1_1_core_1_1_mapping_service_1_1_i_mapper_service_collection_1a41f5f13664bc3438c5c07c6532c837dc" kind="function"><name>GetMapper&lt; S, T &gt;</name></member>
   </compound>
   <compound refid="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init" kind="class"><name>Architecture::Core::CompositionService::Migrations::Init</name>
     <member refid="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init_1a05d7e68b5140991db71a2f35187bb7a3" kind="function"><name>Up</name></member>
@@ -123,12 +143,6 @@
     <member refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4_1a015b1a9b8613ea85e323730c3d11ba11" kind="function"><name>Update</name></member>
     <member refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4_1aa8d7d147520f14aa56933b5229275898" kind="function"><name>SaveChanges</name></member>
   </compound>
-  <compound refid="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4" kind="class"><name>Architecture::Core::GenericLogic::LogicAbstract&lt; R, E, D, EDM, DEM &gt;</name>
-    <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1a33d43d9b38ffe41d624b5e444ebaf965" kind="variable"><name>_repository</name></member>
-    <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1aa252122aa758e38deacaea6785844894" kind="variable"><name>_dtoMapper</name></member>
-    <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1a5a83fccc1e77a735bccb736f5959f7d4" kind="variable"><name>_entityMapper</name></member>
-    <member refid="class_architecture_1_1_core_1_1_generic_logic_1_1_logic_abstract_3_01_r_00_01_e_00_01_d_00_01_e_d_m_00_01_d_e_m_01_4_1a9cb130e353984f6ca48f13b5b1caeeaa" kind="function"><name>LogicAbstract</name></member>
-  </compound>
   <compound refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_service" kind="class"><name>Architecture::Core::MappingService::MapperService</name>
     <member refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_service_1aa108820fe6ee9fa7b96f1f7de51fad96" kind="variable"><name>_mappingservice</name></member>
     <member refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_service_1a9005ecaeb90ab8eb3c09f7910397646e" kind="function"><name>MapperService</name></member>
@@ -137,7 +151,7 @@
   <compound refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection" kind="class"><name>Architecture::Core::MappingService::MapperServicecollection</name>
     <member refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection_1aeae3bd4112eecb19b2eef9a062cacdc6" kind="variable"><name>_mappers</name></member>
     <member refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection_1a242b547615c7fbe53ba73fb2e6e9a2f2" kind="function"><name>RegisterMapping&lt; S, T &gt;</name></member>
-    <member refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection_1a93c0d29438b57b5b34ec5d5f95d92f4c" kind="function"><name>GetMapper&lt; S, T &gt;</name></member>
+    <member refid="class_architecture_1_1_core_1_1_mapping_service_1_1_mapper_servicecollection_1a2d37872f53708d2c39c58248d6964237" kind="function"><name>GetMapper&lt; S, T &gt;</name></member>
   </compound>
   <compound refid="class_architecture_1_1_presentation_1_1_web_1_1_program" kind="class"><name>Architecture::Presentation::Web::Program</name>
     <member refid="class_architecture_1_1_presentation_1_1_web_1_1_program_1a0956ca0e2db1aba444ddf48e64230a35" kind="function"><name>Main</name></member>
@@ -145,18 +159,6 @@
   </compound>
   <compound refid="class_architecture_1_1_presentation_1_1_console_app_1_1_program" kind="class"><name>Architecture::Presentation::ConsoleApp::Program</name>
     <member refid="class_architecture_1_1_presentation_1_1_console_app_1_1_program_1a2a0cac9a9444dabfb3f0d97977a13a34" kind="function"><name>Main</name></member>
-  </compound>
-  <compound refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4" kind="class"><name>Architecture::Core::GenericRepository::RepositoryAbstract&lt; TEntity &gt;</name>
-    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1ac2d08d3d22261da2a8c6da6b5b1823fa" kind="variable"><name>_context</name></member>
-    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a4fe543b10e46b29c8fc3fd8f2a0b7e90" kind="variable"><name>_entitySet</name></member>
-    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1ad2224166b554dd38864219a834d862ce" kind="function"><name>RepositoryAbstract</name></member>
-    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1ab4561a5b8730ab2be9ec31c28993520b" kind="function"><name>Get</name></member>
-    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a8791daa2bdbe5dfe2b26fe2ae82f5856" kind="function"><name>GetByID</name></member>
-    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1aaf893196318f5bb69b0789885f86d36b" kind="function"><name>Insert</name></member>
-    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a31ade6d8674ee6e66e774174d7c1b079" kind="function"><name>Delete</name></member>
-    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1af30afeda1539fd737fa583903466a2bb" kind="function"><name>Delete</name></member>
-    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a76acef6b7d583392d59019d7e995f167" kind="function"><name>Update</name></member>
-    <member refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a7174e7dc005e260f18fd7ca657256dd3" kind="function"><name>SaveChanges</name></member>
   </compound>
   <compound refid="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor" kind="class"><name>Architecture::Core::DependencyService::ServiceDescriptor</name>
     <member refid="class_architecture_1_1_core_1_1_dependency_service_1_1_service_descriptor_1a517cbfe2db52280a69af073489dc7dd8" kind="property"><name>ServiceType</name></member>
@@ -308,11 +310,11 @@
   </compound>
   <compound refid="_i_factory_8cs" kind="file"><name>IFactory.cs</name>
   </compound>
-  <compound refid="_logic_abstract_8cs" kind="file"><name>LogicAbstract.cs</name>
+  <compound refid="_generic_logic_8cs" kind="file"><name>GenericLogic.cs</name>
+  </compound>
+  <compound refid="_generic_repository_8cs" kind="file"><name>GenericRepository.cs</name>
   </compound>
   <compound refid="_i_repository_8cs" kind="file"><name>IRepository.cs</name>
-  </compound>
-  <compound refid="_repository_abstract_8cs" kind="file"><name>RepositoryAbstract.cs</name>
   </compound>
   <compound refid="_account_8cs" kind="file"><name>Account.cs</name>
   </compound>

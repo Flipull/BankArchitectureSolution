@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="dir_73ab230d4e632fe741e14e4abcf1370d" kind="dir">
     <compoundname>C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericLogic</compoundname>
-    <innerfile refid="_logic_abstract_8cs">LogicAbstract.cs</innerfile>
+    <innerfile refid="_generic_logic_8cs">GenericLogic.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

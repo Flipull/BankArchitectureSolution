@@ -15,6 +15,8 @@ namespace Architecture.Core.CompositionService
 {
     public static class CompositionRoot
     {
+        //order of inserting is irrelevant for workings;
+        //but useful for understanding code
         public static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
         {
             services.AddTransient<DbContext>(
@@ -32,17 +34,21 @@ namespace Architecture.Core.CompositionService
                         }
                     );
 
+            //I WANT collections of these per component per layer, plz?
+            //calling CustomerComposite.ConfigureServices(services)
+            //so each layer can register itself, by my (WepApp's) request
+
             //register Entities
             services.AddTransient<Customer>();
             //register EntityFactories
-            services.AddTransient<CustomerFactory>();
+            services.AddSingleton<CustomerFactory>();
             //register Repositories
             services.AddTransient<ICustomerRepository, CustomerRepository>();
 
             //register DTOs
             services.AddTransient<CustomerDTO>();
             //register DTOFactories
-            services.AddTransient<CustomerDTOFactory>();
+            services.AddSingleton<CustomerDTOFactory>();
             //register BusinessLogic
             services.AddSingleton<ICustomerLogic, CustomerLogic>();
 

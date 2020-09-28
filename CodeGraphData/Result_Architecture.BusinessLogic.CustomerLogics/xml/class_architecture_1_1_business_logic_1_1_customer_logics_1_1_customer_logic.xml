@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic" kind="class" prot="public">
+    <compoundname>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ICustomerLogic</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a00b879eaa356c5efdc00ebfbe8cb96a5" prot="private" static="no" mutable="no">
+        <type>readonly ICustomerRepository</type>
+        <definition>readonly ICustomerRepository Architecture.BusinessLogic.CustomerLogics.CustomerLogic._repository</definition>
+        <argsstring></argsstring>
+        <name>_repository</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="11" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a0e2d3d8a37c443c754385b05adc20afa" prot="private" static="no" mutable="no">
+        <type>readonly CustomerEntityDTOMapper</type>
+        <definition>readonly CustomerEntityDTOMapper Architecture.BusinessLogic.CustomerLogics.CustomerLogic._dtoMapper</definition>
+        <argsstring></argsstring>
+        <name>_dtoMapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="12" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a532d3d75c8072cf6c0d7a55fce826935" prot="private" static="no" mutable="no">
+        <type>readonly CustomerDTOEntityMapper</type>
+        <definition>readonly CustomerDTOEntityMapper Architecture.BusinessLogic.CustomerLogics.CustomerLogic._entityMapper</definition>
+        <argsstring></argsstring>
+        <name>_entityMapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="13" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a8dd1ca0fb98f870cc8cc79b2559de3d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Architecture.BusinessLogic.CustomerLogics.CustomerLogic.CustomerLogic</definition>
+        <argsstring>(ICustomerRepository repo, CustomerEntityDTOMapper dtomapper, CustomerDTOEntityMapper entitymapper)</argsstring>
+        <name>CustomerLogic</name>
+        <param>
+          <type>ICustomerRepository</type>
+          <declname>repo</declname>
+        </param>
+        <param>
+          <type>CustomerEntityDTOMapper</type>
+          <declname>dtomapper</declname>
+        </param>
+        <param>
+          <type>CustomerDTOEntityMapper</type>
+          <declname>entitymapper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="14" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="14" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a2b51fd5fd804dfe0f5d94aeca7d7f719" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CustomerDTO</type>
+        <definition>CustomerDTO Architecture.BusinessLogic.CustomerLogics.CustomerLogic.CreateCustomer</definition>
+        <argsstring>(CustomerDTO customer)</argsstring>
+        <name>CreateCustomer</name>
+        <param>
+          <type>CustomerDTO</type>
+          <declname>customer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="24" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="24" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a679c2ec56b47681677992f8fa3712ceb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CustomerDTO</type>
+        <definition>CustomerDTO Architecture.BusinessLogic.CustomerLogics.CustomerLogic.UpdateCustomer</definition>
+        <argsstring>(CustomerDTO customer)</argsstring>
+        <name>UpdateCustomer</name>
+        <param>
+          <type>CustomerDTO</type>
+          <declname>customer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="32" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="32" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a583e3b769abbf4b2b633452b71009fd6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CustomerDTO</type>
+        <definition>CustomerDTO Architecture.BusinessLogic.CustomerLogics.CustomerLogic.ViewCustomer</definition>
+        <argsstring>(Guid guid)</argsstring>
+        <name>ViewCustomer</name>
+        <param>
+          <type>Guid</type>
+          <declname>guid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="46" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="46" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ICustomerLogic</label>
+      </node>
+      <node id="0">
+        <label>Architecture.BusinessLogic.CustomerLogics.CustomerLogic</label>
+        <link refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ICustomerLogic</label>
+      </node>
+      <node id="2">
+        <label>Architecture.BusinessLogic.CustomerLogics.CustomerLogic</label>
+        <link refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" line="10" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.BusinessLogic.CustomerLogic/CustomerLogic.cs" bodystart="9" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a0e2d3d8a37c443c754385b05adc20afa" prot="private" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</scope><name>_dtoMapper</name></member>
+      <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a532d3d75c8072cf6c0d7a55fce826935" prot="private" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</scope><name>_entityMapper</name></member>
+      <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a00b879eaa356c5efdc00ebfbe8cb96a5" prot="private" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</scope><name>_repository</name></member>
+      <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a2b51fd5fd804dfe0f5d94aeca7d7f719" prot="public" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</scope><name>CreateCustomer</name></member>
+      <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a8dd1ca0fb98f870cc8cc79b2559de3d6" prot="public" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</scope><name>CustomerLogic</name></member>
+      <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a679c2ec56b47681677992f8fa3712ceb" prot="public" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</scope><name>UpdateCustomer</name></member>
+      <member refid="class_architecture_1_1_business_logic_1_1_customer_logics_1_1_customer_logic_1a583e3b769abbf4b2b633452b71009fd6" prot="public" virt="non-virtual"><scope>Architecture::BusinessLogic::CustomerLogics::CustomerLogic</scope><name>ViewCustomer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

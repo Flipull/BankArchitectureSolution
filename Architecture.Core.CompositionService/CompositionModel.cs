@@ -15,7 +15,7 @@ namespace Architecture.Core.CompositionService
         {
         }
     }
-    /*
+    /* FUTURE REPLACEMENT FOR UGLY DBCONTEXT-FREAK?
     public class CompositionModel : IModel
     {
     }

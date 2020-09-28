@@ -61,24 +61,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="99">
+      <node id="113">
         <label>Migration</label>
       </node>
-      <node id="98">
+      <node id="112">
         <label>Architecture.Core.CompositionService.Migrations.Init</label>
         <link refid="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init"/>
-        <childnode refid="99" relation="public-inheritance">
+        <childnode refid="113" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="101">
+      <node id="115">
         <label>Migration</label>
       </node>
-      <node id="100">
+      <node id="114">
         <label>Architecture.Core.CompositionService.Migrations.Init</label>
         <link refid="class_architecture_1_1_core_1_1_composition_service_1_1_migrations_1_1_init"/>
-        <childnode refid="101" relation="public-inheritance">
+        <childnode refid="115" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

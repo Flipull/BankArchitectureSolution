@@ -29,13 +29,13 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="90">
+      <node id="102">
         <label>Architecture.Core.GenericFactory.GenericFactory&lt; T &gt;</label>
         <link refid="class_architecture_1_1_core_1_1_generic_factory_1_1_generic_factory_3_01_t_01_4"/>
-        <childnode refid="89" relation="public-inheritance">
+        <childnode refid="101" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="89">
+      <node id="101">
         <label>Architecture.Core.GenericFactory.IFactory&lt; T &gt;</label>
         <link refid="interface_architecture_1_1_core_1_1_generic_factory_1_1_i_factory_3_01_t_01_4"/>
       </node>

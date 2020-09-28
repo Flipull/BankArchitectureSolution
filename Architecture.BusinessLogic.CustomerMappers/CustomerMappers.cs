@@ -1,6 +1,5 @@
 ﻿using Architecture.BusinessLogic.CustomerDTOFactories;
 using Architecture.BusinessLogic.CustomerDTOs;
-using Architecture.Core.MappingService;
 using Architecture.DataAccess.CustomerEntities;
 using Architecture.DataAccess.CustomerFactories;
 

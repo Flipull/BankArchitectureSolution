@@ -3,10 +3,12 @@ using System.Collections.Generic;
 
 namespace Architecture.Core.MappingService
 {
+    [System.Obsolete]
     public interface IMapperServiceCollection
     {
-        IConcreteMapper<S, T> GetMapper<S, T>();
+        IMapper<S, T> GetMapper<S, T>();
     }
+    [System.Obsolete]
     public class MapperServicecollection : IMapperServiceCollection
     {
         private readonly Dictionary<Tuple<Type, Type>, Func<object>> _mappers =
@@ -23,9 +25,9 @@ namespace Architecture.Core.MappingService
                 throw new InvalidProgramException("Invalid mapper provided: " + mapper.ToString());
             }
         }
-        public IConcreteMapper<S, T> GetMapper<S, T>()
+        public IMapper<S, T> GetMapper<S, T>()
         {
-            return (IConcreteMapper<S, T>)_mappers[new Tuple<Type, Type>(typeof(S), typeof(T))]();
+            return (IMapper<S, T>)_mappers[new Tuple<Type, Type>(typeof(S), typeof(T))]();
         }
     }
 }

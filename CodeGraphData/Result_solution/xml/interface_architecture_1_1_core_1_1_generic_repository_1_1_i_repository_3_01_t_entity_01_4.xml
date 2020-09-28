@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4" kind="interface" prot="public">
     <compoundname>Architecture::Core::GenericRepository::IRepository&lt; TEntity &gt;</compoundname>
-    <derivedcompoundref refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4" prot="public" virt="non-virtual">Architecture.Core.GenericRepository.RepositoryAbstract&lt; TEntity &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4" prot="public" virt="non-virtual">Architecture.Core.GenericRepository.GenericRepository&lt; TEntity &gt;</derivedcompoundref>
     <templateparamlist>
       <param>
         <type>TEntity</type>
@@ -14,7 +14,7 @@
         <definition>void Architecture.Core.GenericRepository.IRepository&lt; TEntity &gt;.Delete</definition>
         <argsstring>(object id)</argsstring>
         <name>Delete</name>
-        <reimplementedby refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a31ade6d8674ee6e66e774174d7c1b079">Delete</reimplementedby>
+        <reimplementedby refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1adc66e44f75e3781aab97f23f3c7fc85b">Delete</reimplementedby>
         <param>
           <type>object</type>
           <declname>id</declname>
@@ -32,7 +32,7 @@
         <definition>void Architecture.Core.GenericRepository.IRepository&lt; TEntity &gt;.Delete</definition>
         <argsstring>(TEntity entityToDelete)</argsstring>
         <name>Delete</name>
-        <reimplementedby refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1af30afeda1539fd737fa583903466a2bb">Delete</reimplementedby>
+        <reimplementedby refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1aa3accf6ab9628be36e81ee591ac414ce">Delete</reimplementedby>
         <param>
           <type>TEntity</type>
           <declname>entityToDelete</declname>
@@ -50,7 +50,7 @@
         <definition>IEnumerable&lt;TEntity&gt; Architecture.Core.GenericRepository.IRepository&lt; TEntity &gt;.Get</definition>
         <argsstring>(Expression&lt; Func&lt; TEntity, bool &gt;&gt; filter=null, Func&lt; IQueryable&lt; TEntity &gt;, IOrderedQueryable&lt; TEntity &gt;&gt; orderBy=null, string includeProperties=&quot;&quot;)</argsstring>
         <name>Get</name>
-        <reimplementedby refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1ab4561a5b8730ab2be9ec31c28993520b">Get</reimplementedby>
+        <reimplementedby refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1a4ecdbdd5d345c13fc0eed9efd4c156ff">Get</reimplementedby>
         <param>
           <type>Expression&lt; Func&lt; TEntity, bool &gt;&gt;</type>
           <declname>filter</declname>
@@ -79,7 +79,7 @@
         <definition>TEntity Architecture.Core.GenericRepository.IRepository&lt; TEntity &gt;.GetByID</definition>
         <argsstring>(object id)</argsstring>
         <name>GetByID</name>
-        <reimplementedby refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a8791daa2bdbe5dfe2b26fe2ae82f5856">GetByID</reimplementedby>
+        <reimplementedby refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1a829248d04a1bf687e04b33ddeca5cc5d">GetByID</reimplementedby>
         <param>
           <type>object</type>
           <declname>id</declname>
@@ -97,7 +97,7 @@
         <definition>void Architecture.Core.GenericRepository.IRepository&lt; TEntity &gt;.Insert</definition>
         <argsstring>(TEntity entity)</argsstring>
         <name>Insert</name>
-        <reimplementedby refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1aaf893196318f5bb69b0789885f86d36b">Insert</reimplementedby>
+        <reimplementedby refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1a144d4e71f8ce3363f2999b0dbe06048d">Insert</reimplementedby>
         <param>
           <type>TEntity</type>
           <declname>entity</declname>
@@ -115,7 +115,7 @@
         <definition>void Architecture.Core.GenericRepository.IRepository&lt; TEntity &gt;.Update</definition>
         <argsstring>(TEntity entityToUpdate)</argsstring>
         <name>Update</name>
-        <reimplementedby refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a76acef6b7d583392d59019d7e995f167">Update</reimplementedby>
+        <reimplementedby refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1a035c71c8f696818aee3f0ac7d3bb9f41">Update</reimplementedby>
         <param>
           <type>TEntity</type>
           <declname>entityToUpdate</declname>
@@ -133,7 +133,7 @@
         <definition>void Architecture.Core.GenericRepository.IRepository&lt; TEntity &gt;.SaveChanges</definition>
         <argsstring>()</argsstring>
         <name>SaveChanges</name>
-        <reimplementedby refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4_1a7174e7dc005e260f18fd7ca657256dd3">SaveChanges</reimplementedby>
+        <reimplementedby refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4_1ab6272309eb31576831558796c27b6794">SaveChanges</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -148,15 +148,15 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="103">
-        <label>Architecture.Core.GenericRepository.RepositoryAbstract&lt; TEntity &gt;</label>
-        <link refid="class_architecture_1_1_core_1_1_generic_repository_1_1_repository_abstract_3_01_t_entity_01_4"/>
-        <childnode refid="102" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="102">
+      <node id="116">
         <label>Architecture.Core.GenericRepository.IRepository&lt; TEntity &gt;</label>
         <link refid="interface_architecture_1_1_core_1_1_generic_repository_1_1_i_repository_3_01_t_entity_01_4"/>
+      </node>
+      <node id="117">
+        <label>Architecture.Core.GenericRepository.GenericRepository&lt; TEntity &gt;</label>
+        <link refid="class_architecture_1_1_core_1_1_generic_repository_1_1_generic_repository_3_01_t_entity_01_4"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
       </node>
     </inheritancegraph>
     <location file="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository/IRepository.cs" line="9" column="1" bodyfile="C:/Users/Mark/source/repos/BankArchitectureSolution/Architecture.Core.GenericRepository/IRepository.cs" bodystart="8" bodyend="17"/>
