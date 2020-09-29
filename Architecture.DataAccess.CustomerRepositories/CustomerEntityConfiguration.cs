@@ -17,7 +17,6 @@ namespace Architecture.DataAccess.CustomerRepositories
                         .ValueGeneratedOnAdd();
             builder.HasIndex(c => c.Guid).IsUnique();
 
-
             builder.Property(c => c.FirstName)
                     .HasColumnName("first_name")
                     .IsRequired()
