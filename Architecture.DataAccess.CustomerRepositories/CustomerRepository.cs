@@ -1,4 +1,5 @@
-﻿using Architecture.DataAccess.CustomerEntities;
+﻿using Architecture.Core.GenericRepository;
+using Architecture.DataAccess.CustomerEntities;
 using Architecture.DataAccess.CustomerRepositories.Infra;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -6,7 +7,7 @@ using System.Linq;
 
 namespace Architecture.DataAccess.CustomerRepositories
 {
-    sealed public class CustomerRepository : RepositoryAbstract<Customer>, ICustomerRepository
+    sealed public class CustomerRepository : GenericRepository<Customer>, ICustomerRepository
     {
         public CustomerRepository(DbContext context) : base(context)
         { }

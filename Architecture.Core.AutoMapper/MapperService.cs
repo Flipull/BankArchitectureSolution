@@ -15,7 +15,7 @@
         }
         public T Convert<S, T>(S source)
         {
-            return _mappingservice.GetMapper<S, T>().Map(source);
+            return _mappingservice.GetMapper<S, T>().MapTo(source);
         }
     }
 }

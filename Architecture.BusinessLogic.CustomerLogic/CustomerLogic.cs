@@ -23,10 +23,10 @@ namespace Architecture.BusinessLogic.CustomerLogics
 
         public CustomerDTO CreateCustomer(CustomerDTO customer)
         {
-            var new_customer = _entityMapper.Map(customer);
+            var new_customer = _entityMapper.MapTo(customer);
             _repository.Insert(new_customer);
             _repository.SaveChanges();
-            return _dtoMapper.Map(new_customer);
+            return _dtoMapper.MapTo(new_customer);
         }
 
         public CustomerDTO UpdateCustomer(CustomerDTO customer)
@@ -38,7 +38,7 @@ namespace Architecture.BusinessLogic.CustomerLogics
                 _entityMapper.CopyTo(customer, entity);
                 _repository.Update(entity);
                 _repository.SaveChanges();
-                return _dtoMapper.Map(entity);
+                return _dtoMapper.MapTo(entity);
             }
             return null;
         }
@@ -47,7 +47,7 @@ namespace Architecture.BusinessLogic.CustomerLogics
         {
             if (guid == null | guid.Equals(Guid.Empty))
                 return null;
-            return _dtoMapper.Map(_repository.GetByGuid(guid));
+            return _dtoMapper.MapTo(_repository.GetByGuid(guid));
         }
 
     }
