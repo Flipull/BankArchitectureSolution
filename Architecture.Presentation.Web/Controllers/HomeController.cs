@@ -10,21 +10,19 @@ namespace Architecture.Presentation.Web.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly ICustomerLogic _customerLogic;
-        public HomeController(ICustomerLogic customerlogic, ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger)
         {
-            _customerLogic = customerlogic;
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index([FromServices] ICustomerLogic customerLogic)
         {
-            var new_customer = _customerLogic.CreateCustomer(
+            var new_customer = customerLogic.CreateCustomer(
                     new CustomerDTO { FirstName = "AAA", Initials = "B", LastName = "CCCCCC" });
             new_customer.LastName = "Di Daggio";
             new_customer.FirstName = "Marco";
-            var updated_customer = _customerLogic.UpdateCustomer(new_customer);
-            return View(_customerLogic.ViewCustomer(new_customer.Guid));
+            var updated_customer = customerLogic.UpdateCustomer(new_customer);
+            return View(customerLogic.ViewCustomer(new_customer.Guid));
         }
 
         public IActionResult Privacy()
