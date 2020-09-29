@@ -6,6 +6,7 @@ namespace Architecture.Core.DependencyService
     public enum ServiceLifetime { Singleton, Scoped, Transient }
 
     public delegate object Factory(Type Interfacetype, Type Concretetype);
+
     public class ServiceDescriptor
     {
         public Type ServiceType { get; set; }
@@ -15,14 +16,22 @@ namespace Architecture.Core.DependencyService
         public ServiceLifetime Lifetime { get; set; }
     }
 
+    //IServiceCollection keeps me from fully implementing a stand-alone service-provider,
+    //as all made applications have services registered, prior
+    //to having the chance creating my own DepInjector
+    //ergo need constructor with IServiceCollection == hard relation with MS.Ext.DepInj.ServiceDescriptor
+    //even worse; we need a different ImplementationFactory type to be compatible
+    //IGNORE DepInjector for now
+    [System.Obsolete]
     public class DependencyInjector : IServiceProvider
     {
         //services - DI Container
-        private Dictionary<Type, ServiceDescriptor> services = new Dictionary<Type, ServiceDescriptor>();
+        private Dictionary<Type, ServiceDescriptor> _services = new Dictionary<Type, ServiceDescriptor>();
 
+        public DependencyInjector() { }
         public bool RegisterTransient<T, U>(Factory factory)
         {
-            services.Add(typeof(T), new ServiceDescriptor()
+            _services.Add(typeof(T), new ServiceDescriptor()
             {
                 ServiceType = typeof(T),
                 ImplementationType = typeof(U),
@@ -39,7 +48,7 @@ namespace Architecture.Core.DependencyService
 
         public bool RegisterScoped(object implementation)
         {
-            services.Add(implementation.GetType(), new ServiceDescriptor()
+            _services.Add(implementation.GetType(), new ServiceDescriptor()
             {
                 ServiceType = implementation.GetType(),
                 ImplementationType = implementation.GetType(),
@@ -54,7 +63,7 @@ namespace Architecture.Core.DependencyService
         }
         public bool RegisterSingleton(object implementation)
         {
-            services.Add(implementation.GetType(), new ServiceDescriptor()
+            _services.Add(implementation.GetType(), new ServiceDescriptor()
             {
                 ServiceType = implementation.GetType(),
                 ImplementationType = implementation.GetType(),
@@ -67,7 +76,7 @@ namespace Architecture.Core.DependencyService
         public object GetService(Type serviceType)
         {
             ServiceDescriptor descr;
-            services.TryGetValue(serviceType, out descr);
+            _services.TryGetValue(serviceType, out descr);
 
             if (descr == null)
                 throw new Exception($"Service of type {serviceType.Name} isn't registered");

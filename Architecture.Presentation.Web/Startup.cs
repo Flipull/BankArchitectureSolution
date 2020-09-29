@@ -16,13 +16,16 @@ namespace Architecture.Presentation.Web
 
         public IConfiguration Configuration { get; }
 
-        public void ConfigureServices(IServiceCollection services)
+        public /*IServiceProvider*/void ConfigureServices(IServiceCollection services)
         {
             //Let CompositionRoot wire all dependent backend-services
             CompositionRoot.ConfigureServices(services, Configuration);
 
             //Continue wire frontend-services
             services.AddControllersWithViews();
+
+            //Build the Services in custom Dependency Injector
+            //return new DependencyInjector(services);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
