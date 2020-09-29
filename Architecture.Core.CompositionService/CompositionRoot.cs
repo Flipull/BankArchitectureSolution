@@ -76,7 +76,6 @@ namespace Architecture.Core.CompositionService
             //register Factories
             services.AddSingleton<CustomerDTOFactory>();
             services.AddSingleton<BankAccountDTOFactory>();
-            services.AddSingleton<BankTransactionSearchSROFactory>();
             services.AddSingleton<BankTransactionDTOFactory>();
             services.AddSingleton<BankTransactionSearchResultDTOFactory>();
             //register BusinessLogic

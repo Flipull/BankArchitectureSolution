@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Architect.BusinessLogic.BankSROs\Architect.BusinessLogic.BankSROs.csproj" />
     <ProjectReference Include="..\Architecture.BusinessLogic.BankViewModels\Architecture.BusinessLogic.BankDTOs.csproj" />
     <ProjectReference Include="..\Architecture.Core.GenericFactory\Architecture.Core.GenericFactory.csproj" />
   </ItemGroup>

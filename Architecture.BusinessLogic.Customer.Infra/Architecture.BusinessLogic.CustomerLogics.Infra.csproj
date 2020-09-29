@@ -9,7 +9,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Architecture.BusinessLogic.CustomerSROs\Architecture.BusinessLogic.CustomerSROs.csproj" />
     <ProjectReference Include="..\Architecture.BusinessLogic.CustomerViewModels\Architecture.BusinessLogic.CustomerDTOs.csproj" />
-    <ProjectReference Include="..\Architecture.DataAccess.CustomerEntities\Architecture.DataAccess.CustomerEntities.csproj" />
   </ItemGroup>
 
 </Project>
