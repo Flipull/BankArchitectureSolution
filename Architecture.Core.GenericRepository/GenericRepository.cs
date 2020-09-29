@@ -6,6 +6,8 @@ using System.Linq.Expressions;
 
 namespace Architecture.Core.GenericRepository
 {
+    //Does it need a Transaction-method so we can wrap every
+    //BusinessLogic in a Transaction if needed
     public class GenericRepository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         protected DbContext _context;
@@ -31,8 +33,8 @@ namespace Architecture.Core.GenericRepository
 
             if (includeProperties != null)
             {
-                foreach (var includeProperty in includeProperties.Split
-                (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                foreach (var includeProperty in includeProperties.Split(
+                            new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(includeProperty);
                 }
@@ -71,8 +73,13 @@ namespace Architecture.Core.GenericRepository
 
         public virtual void Update(TEntity entityToUpdate)
         {
-            _entitySet.Attach(entityToUpdate);
-            _context.Entry(entityToUpdate).State = EntityState.Modified;
+            //attachment not needed as updates occure
+            //in-place in BusinessLogic 
+            //_entitySet.Attach(entityToUpdate);
+
+            //probably also not needed to set state,
+            //as any change in properties already had set modified state
+            //_context.Entry(entityToUpdate).State = EntityState.Modified;
         }
 
         public virtual void SaveChanges()

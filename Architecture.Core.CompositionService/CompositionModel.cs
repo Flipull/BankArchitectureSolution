@@ -1,4 +1,5 @@
-﻿using Architecture.DataAccess.CustomerRepositories;
+﻿using Architecture.DataAccess.BankRepositories;
+using Architecture.DataAccess.CustomerRepositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace Architecture.Core.CompositionService
@@ -10,6 +11,8 @@ namespace Architecture.Core.CompositionService
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfiguration(new CustomerEntityConfiguration());
+            builder.ApplyConfiguration(new BankAccountEntityConfiguration());
+            builder.ApplyConfiguration(new BankTransactionEntityConfiguration());
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

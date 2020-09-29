@@ -2,13 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Architecture.BusinessLogic.BankLogics.Infra</AssemblyName>
-    <RootNamespace>Architecture.BusinessLogic.BankLogics.Infra</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Architect.BusinessLogic.BankSROs\Architect.BusinessLogic.BankSROs.csproj" />
     <ProjectReference Include="..\Architecture.BusinessLogic.BankViewModels\Architecture.BusinessLogic.BankDTOs.csproj" />
+    <ProjectReference Include="..\Architecture.Core.GenericFactory\Architecture.Core.GenericFactory.csproj" />
   </ItemGroup>
 
 </Project>

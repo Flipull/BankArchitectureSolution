@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Architecture.DataAccess.CustomerEntities\Architecture.DataAccess.CustomerEntities.csproj" />
+    <ProjectReference Include="..\Architecture.Core.GenericFactory\Architecture.Core.GenericFactory.csproj" />
   </ItemGroup>
 
 </Project>

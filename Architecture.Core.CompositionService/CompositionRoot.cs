@@ -1,8 +1,19 @@
-﻿using Architecture.BusinessLogic.CustomerDTOFactories;
+﻿using Architecture.BusinessLogic.BankDTOs;
+using Architecture.BusinessLogic.BankFactories;
+using Architecture.BusinessLogic.BankLogics;
+using Architecture.BusinessLogic.BankLogics.Infra;
+using Architecture.BusinessLogic.BankMappers;
+using Architecture.BusinessLogic.BankSROs;
 using Architecture.BusinessLogic.CustomerDTOs;
+using Architecture.BusinessLogic.CustomerFactories;
 using Architecture.BusinessLogic.CustomerLogics;
 using Architecture.BusinessLogic.CustomerLogics.Infra;
 using Architecture.BusinessLogic.CustomerMappers;
+using Architecture.BusinessLogic.CustomerSROs;
+using Architecture.DataAccess.BankEntities;
+using Architecture.DataAccess.BankFactories;
+using Architecture.DataAccess.BankRepositories;
+using Architecture.DataAccess.BankRepositories.Infra;
 using Architecture.DataAccess.CustomerEntities;
 using Architecture.DataAccess.CustomerFactories;
 using Architecture.DataAccess.CustomerRepositories;
@@ -40,22 +51,54 @@ namespace Architecture.Core.CompositionService
 
             //register Entities
             services.AddTransient<Customer>();
+            services.AddTransient<BankAccount>();
+            services.AddTransient<BankTransaction>();
             //register EntityFactories
             services.AddSingleton<CustomerFactory>();
+            services.AddSingleton<BankAccountFactory>();
+            services.AddSingleton<BankTransactionFactory>();
             //register Repositories
             services.AddTransient<ICustomerRepository, CustomerRepository>();
+            services.AddTransient<IBankAccountRepository, BankAccountRepository>();
+            services.AddTransient<IBankTransactionRepository, BankTransactionRepository>();
 
+            //register SROs
+            services.AddTransient<CustomerCreateSRO>();
+            services.AddTransient<CustomerUpdateSRO>();
+            services.AddTransient<BankTransactionExecuteSRO>();
+            services.AddTransient<BankTransactionSearchSRO>();
             //register DTOs
             services.AddTransient<CustomerDTO>();
-            //register DTOFactories
+            services.AddTransient<BankAccountDTO>();
+            services.AddTransient<BankTransactionDTO>();
+            services.AddTransient<BankTransactionSearchResultDTO>();
+
+            //register Factories
             services.AddSingleton<CustomerDTOFactory>();
+            services.AddSingleton<BankAccountDTOFactory>();
+            services.AddSingleton<BankTransactionSearchSROFactory>();
+            services.AddSingleton<BankTransactionDTOFactory>();
+            services.AddSingleton<BankTransactionSearchResultDTOFactory>();
             //register BusinessLogic
             services.AddSingleton<ICustomerLogic, CustomerLogic>();
+            services.AddSingleton<IBankAccountLogic, BankAccountLogic>();
+            services.AddSingleton<IBankTransactionLogic, BankTransactionLogic>();
 
-            //register DTOToEntityMappers
-            services.AddSingleton<CustomerEntityDTOMapper>();
+            //register SROToEntityMappers
+            services.AddSingleton<CustomerCreateEntityMapper>();
+            services.AddSingleton<CustomerUpdateEntityMapper>();
+
+            //register DTOToEntityMappers; probably never used
+            //as clients talk with SROs only
+            services.AddSingleton<CustomerEntityMapper>();
+            services.AddSingleton<BankAccountEntityMapper>();
+            services.AddSingleton<BankTransactionDepositsSearchResultDTOMapper>();
+            services.AddSingleton<BankTransactionWithdrawalsSearchResultDTOMapper>();
+            services.AddSingleton<BankTransactionExecuteEntityMapper>();
             //register EntityToDTOMappers
-            services.AddSingleton<CustomerDTOEntityMapper>();
+            services.AddSingleton<CustomerDTOMapper>();
+            services.AddSingleton<BankAccountDTOMapper>();
+            services.AddSingleton<BankTransactionDTOMapper>();
 
         }
     }

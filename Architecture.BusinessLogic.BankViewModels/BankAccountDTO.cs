@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Architecture.DataAccess.BankEntities
+namespace Architecture.BusinessLogic.BankDTOs
 {
-    public class Account
+    public class BankAccountDTO
     {
         public int Id { get; set; }
         public Guid Guid { get; set; }

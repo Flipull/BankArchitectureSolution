@@ -1,6 +1,8 @@
 ﻿using Architecture.BusinessLogic.CustomerDTOs;
+using Architecture.BusinessLogic.CustomerFactories;
 using Architecture.BusinessLogic.CustomerLogics.Infra;
 using Architecture.BusinessLogic.CustomerMappers;
+using Architecture.BusinessLogic.CustomerSROs;
 using Architecture.DataAccess.CustomerRepositories.Infra;
 using System;
 
@@ -9,36 +11,46 @@ namespace Architecture.BusinessLogic.CustomerLogics
     public class CustomerLogic : ICustomerLogic
     {
         private readonly ICustomerRepository _repository;
-        private readonly CustomerEntityDTOMapper _dtoMapper;
-        private readonly CustomerDTOEntityMapper _entityMapper;
+        private readonly CustomerDTOMapper _dtoMapper;
+        private readonly CustomerCreateEntityMapper _createEntityMapper;
+        private readonly CustomerUpdateEntityMapper _updateEntityMapper;
+        //unused objects, made obsolete by other design-decisions
+        private readonly CustomerDTOFactory _customerDTOFactory;
+        private readonly CustomerEntityMapper _entityMapper;
+
         public CustomerLogic(ICustomerRepository repo,
-                            CustomerEntityDTOMapper dtomapper,
-                            CustomerDTOEntityMapper entitymapper
+                            CustomerDTOMapper dtomapper,
+                            CustomerCreateEntityMapper create_entitymapper,
+                            CustomerUpdateEntityMapper update_entitymapper,
+                            CustomerEntityMapper entitymapper,
+                            CustomerDTOFactory customerdtofactory
                             )
         {
             _repository = repo;
             _dtoMapper = dtomapper;
             _entityMapper = entitymapper;
+            _customerDTOFactory = customerdtofactory;
+            _createEntityMapper = create_entitymapper;
+            _updateEntityMapper = update_entitymapper;
         }
 
-        public CustomerDTO CreateCustomer(CustomerDTO customer)
+        public CustomerDTO CreateCustomer(CustomerCreateSRO customer)
         {
-            var new_customer = _entityMapper.MapTo(customer);
+            var new_customer = _createEntityMapper.Map(customer);
             _repository.Insert(new_customer);
             _repository.SaveChanges();
-            return _dtoMapper.MapTo(new_customer);
+            return _dtoMapper.Map(new_customer);
         }
 
-        public CustomerDTO UpdateCustomer(CustomerDTO customer)
+        public CustomerDTO UpdateCustomer(CustomerUpdateSRO customer)
         {
             var entity = _repository.GetByGuid(customer.Guid);
-
             if (entity != null)
             {
-                _entityMapper.CopyTo(customer, entity);
+                _updateEntityMapper.CopyTo(customer, entity);
                 _repository.Update(entity);
                 _repository.SaveChanges();
-                return _dtoMapper.MapTo(entity);
+                return _dtoMapper.Map(entity);
             }
             return null;
         }
@@ -47,7 +59,7 @@ namespace Architecture.BusinessLogic.CustomerLogics
         {
             if (guid == null | guid.Equals(Guid.Empty))
                 return null;
-            return _dtoMapper.MapTo(_repository.GetByGuid(guid));
+            return _dtoMapper.Map(_repository.GetByGuid(guid));
         }
 
     }

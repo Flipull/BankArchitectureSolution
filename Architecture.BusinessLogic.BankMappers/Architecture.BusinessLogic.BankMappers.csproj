@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Architect.BusinessLogic.BankSROs\Architect.BusinessLogic.BankSROs.csproj" />
+    <ProjectReference Include="..\Architecture.BusinessLogic.BankDTOFactories\Architecture.BusinessLogic.BankFactories.csproj" />
+    <ProjectReference Include="..\Architecture.BusinessLogic.BankViewModels\Architecture.BusinessLogic.BankDTOs.csproj" />
+    <ProjectReference Include="..\Architecture.Core.AutoMapper\Architecture.Core.MappingService.csproj" />
+    <ProjectReference Include="..\Architecture.DataAccess.BankEntities\Architecture.DataAccess.BankEntities.csproj" />
+    <ProjectReference Include="..\Architecture.DataAccess.BankFactories\Architecture.DataAccess.BankFactories.csproj" />
+  </ItemGroup>
+
+</Project>

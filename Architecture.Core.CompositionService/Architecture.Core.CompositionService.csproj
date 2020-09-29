@@ -11,10 +11,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Architecture.BusinessLogic.CustomerDTOFactories\Architecture.BusinessLogic.CustomerDTOFactories.csproj" />
+    <ProjectReference Include="..\Architect.BusinessLogic.BankSROs\Architect.BusinessLogic.BankSROs.csproj" />
+    <ProjectReference Include="..\Architecture.BusinessLogic.BankDTOFactories\Architecture.BusinessLogic.BankFactories.csproj" />
+    <ProjectReference Include="..\Architecture.BusinessLogic.BankLogic\Architecture.BusinessLogic.BankLogics.csproj" />
+    <ProjectReference Include="..\Architecture.BusinessLogic.BankMappers\Architecture.BusinessLogic.BankMappers.csproj" />
+    <ProjectReference Include="..\Architecture.BusinessLogic.BankViewModels\Architecture.BusinessLogic.BankDTOs.csproj" />
+    <ProjectReference Include="..\Architecture.BusinessLogic.CustomerDTOFactories\Architecture.BusinessLogic.CustomerFactories.csproj" />
     <ProjectReference Include="..\Architecture.BusinessLogic.CustomerLogic\Architecture.BusinessLogic.CustomerLogics.csproj" />
     <ProjectReference Include="..\Architecture.BusinessLogic.CustomerMappers\Architecture.BusinessLogic.CustomerMappers.csproj" />
+    <ProjectReference Include="..\Architecture.BusinessLogic.CustomerSROs\Architecture.BusinessLogic.CustomerSROs.csproj" />
     <ProjectReference Include="..\Architecture.BusinessLogic.CustomerViewModels\Architecture.BusinessLogic.CustomerDTOs.csproj" />
+    <ProjectReference Include="..\Architecture.DataAccess.BankEntities\Architecture.DataAccess.BankEntities.csproj" />
+    <ProjectReference Include="..\Architecture.DataAccess.BankFactories\Architecture.DataAccess.BankFactories.csproj" />
+    <ProjectReference Include="..\Architecture.DataAccess.BankRepositories\Architecture.DataAccess.BankRepositories.csproj" />
     <ProjectReference Include="..\Architecture.DataAccess.CustomerEntities\Architecture.DataAccess.CustomerEntities.csproj" />
     <ProjectReference Include="..\Architecture.DataAccess.CustomerFactories\Architecture.DataAccess.CustomerFactories.csproj" />
     <ProjectReference Include="..\Architecture.DataAccess.CustomerRepositories\Architecture.DataAccess.CustomerRepositories.csproj" />

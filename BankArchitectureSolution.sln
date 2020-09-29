@@ -61,7 +61,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Architecture.BusinessLogic.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Architecture.Presentation.Web", "Architecture.Presentation.Web\Architecture.Presentation.Web.csproj", "{BABCAFA1-1FBF-490B-BE93-9700B6FCDBC4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Architecture.BusinessLogic.CustomerDTOFactories", "Architecture.BusinessLogic.CustomerDTOFactories\Architecture.BusinessLogic.CustomerDTOFactories.csproj", "{07D4E55E-66CC-4D09-A667-86B74B10F78D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Architecture.BusinessLogic.CustomerFactories", "Architecture.BusinessLogic.CustomerDTOFactories\Architecture.BusinessLogic.CustomerFactories.csproj", "{07D4E55E-66CC-4D09-A667-86B74B10F78D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Architecture.Core.GenericFactory", "Architecture.Core.GenericFactory\Architecture.Core.GenericFactory.csproj", "{84653644-443E-4834-BC0B-EAFEC62C6B25}"
 EndProject
@@ -74,6 +74,16 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.20 Business Logic", "0.20 Business Logic", "{C82B270D-D342-4E81-967C-42E72CAFD64F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Architecture.Core.GenericLogics", "Architecture.Core.GenericLogic\Architecture.Core.GenericLogics.csproj", "{F695DADB-367D-4B1A-95AA-8A7C50874590}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Architecture.DataAccess.BankFactories", "Architecture.DataAccess.BankFactories\Architecture.DataAccess.BankFactories.csproj", "{5210D76A-254F-4042-826D-912A1E677E67}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Architecture.BusinessLogic.BankMappers", "Architecture.BusinessLogic.BankMappers\Architecture.BusinessLogic.BankMappers.csproj", "{AB175B92-AA25-4C77-A34A-8997A55E7A23}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Architecture.BusinessLogic.BankFactories", "Architecture.BusinessLogic.BankDTOFactories\Architecture.BusinessLogic.BankFactories.csproj", "{6817F230-D750-42C8-88C6-48159ABF3305}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Architecture.BusinessLogic.CustomerSROs", "Architecture.BusinessLogic.CustomerSROs\Architecture.BusinessLogic.CustomerSROs.csproj", "{73A96CFD-3847-4A3F-9705-7518B0F74511}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Architect.BusinessLogic.BankSROs", "Architect.BusinessLogic.BankSROs\Architect.BusinessLogic.BankSROs.csproj", "{0CDA9381-27BE-42B3-AE8C-F19897A59BF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -173,6 +183,26 @@ Global
 		{F695DADB-367D-4B1A-95AA-8A7C50874590}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F695DADB-367D-4B1A-95AA-8A7C50874590}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F695DADB-367D-4B1A-95AA-8A7C50874590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5210D76A-254F-4042-826D-912A1E677E67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5210D76A-254F-4042-826D-912A1E677E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5210D76A-254F-4042-826D-912A1E677E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5210D76A-254F-4042-826D-912A1E677E67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB175B92-AA25-4C77-A34A-8997A55E7A23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB175B92-AA25-4C77-A34A-8997A55E7A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB175B92-AA25-4C77-A34A-8997A55E7A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB175B92-AA25-4C77-A34A-8997A55E7A23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6817F230-D750-42C8-88C6-48159ABF3305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6817F230-D750-42C8-88C6-48159ABF3305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6817F230-D750-42C8-88C6-48159ABF3305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6817F230-D750-42C8-88C6-48159ABF3305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73A96CFD-3847-4A3F-9705-7518B0F74511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73A96CFD-3847-4A3F-9705-7518B0F74511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73A96CFD-3847-4A3F-9705-7518B0F74511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73A96CFD-3847-4A3F-9705-7518B0F74511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CDA9381-27BE-42B3-AE8C-F19897A59BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CDA9381-27BE-42B3-AE8C-F19897A59BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CDA9381-27BE-42B3-AE8C-F19897A59BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CDA9381-27BE-42B3-AE8C-F19897A59BF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -208,6 +238,11 @@ Global
 		{6481F702-006C-497F-9782-DED08CD76D64} = {5160EEFC-4C62-434B-AE4A-F021344EBB4C}
 		{C82B270D-D342-4E81-967C-42E72CAFD64F} = {5160EEFC-4C62-434B-AE4A-F021344EBB4C}
 		{F695DADB-367D-4B1A-95AA-8A7C50874590} = {C82B270D-D342-4E81-967C-42E72CAFD64F}
+		{5210D76A-254F-4042-826D-912A1E677E67} = {F96EE428-BE27-4A8E-8582-A4F398E20139}
+		{AB175B92-AA25-4C77-A34A-8997A55E7A23} = {76936717-ECCC-4E42-BCD4-7A1D1B059E33}
+		{6817F230-D750-42C8-88C6-48159ABF3305} = {76936717-ECCC-4E42-BCD4-7A1D1B059E33}
+		{73A96CFD-3847-4A3F-9705-7518B0F74511} = {EEFF1410-289F-4CC1-A42D-CD830880B22A}
+		{0CDA9381-27BE-42B3-AE8C-F19897A59BF3} = {76936717-ECCC-4E42-BCD4-7A1D1B059E33}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E4237076-8092-4C7F-856E-F090AF8E52F0}

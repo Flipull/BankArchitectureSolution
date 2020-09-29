@@ -1,10 +1,9 @@
 ﻿using System;
 
-namespace Architecture.DataAccess.BankEntities
+namespace Architecture.BusinessLogic.BankDTOs
 {
-    public class Transaction
+    public class BankTransactionDTO
     {
-        public int Id { get; set; }
         public Guid Guid { get; set; }
         public string IbanSource { get; set; }
         public string IbanTarget { get; set; }

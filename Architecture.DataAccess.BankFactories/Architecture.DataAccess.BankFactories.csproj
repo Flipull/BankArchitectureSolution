@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Architecture.Core.GenericRepository\Architecture.Core.GenericRepository.csproj" />
+    <ProjectReference Include="..\Architecture.Core.GenericFactory\Architecture.Core.GenericFactory.csproj" />
     <ProjectReference Include="..\Architecture.DataAccess.BankEntities\Architecture.DataAccess.BankEntities.csproj" />
   </ItemGroup>
 
