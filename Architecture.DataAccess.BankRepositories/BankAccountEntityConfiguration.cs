@@ -33,7 +33,10 @@ namespace Architecture.DataAccess.BankRepositories
                     .HasColumnName("worth")
                     .IsRequired();
 
-            builder.HasOne(a => a.Owner).WithMany()
+            builder.HasOne(a => a.Owner)
+                   .WithMany()//no navigational property present
+                                //in customer-class (ofcourse)
+                   .HasForeignKey(c => c.Id)
                    .IsRequired()
                    .OnDelete(DeleteBehavior.Restrict);
         }
