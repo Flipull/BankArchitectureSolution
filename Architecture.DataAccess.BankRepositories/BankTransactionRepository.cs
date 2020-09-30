@@ -2,6 +2,9 @@
 using Architecture.DataAccess.BankEntities;
 using Architecture.DataAccess.BankRepositories.Infra;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace Architecture.DataAccess.BankRepositories
 {
@@ -10,6 +13,15 @@ namespace Architecture.DataAccess.BankRepositories
                                 IBankTransactionRepository
     {
         public BankTransactionRepository(DbContext context) : base(context)
-        { }
+        {
+        }
+        public BankTransaction GetByGuid(Guid guid)
+        {
+            var transaction =
+                from e in _entitySet
+                where e.Guid.Equals(guid)
+                select e;
+            return transaction.FirstOrDefault();
+        }
     }
 }
