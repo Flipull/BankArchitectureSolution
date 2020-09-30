@@ -4,7 +4,6 @@ using Architecture.DataAccess.BankRepositories.Infra;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
-using System.Collections.Generic;
 
 namespace Architecture.DataAccess.BankRepositories
 {
