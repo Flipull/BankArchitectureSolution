@@ -29,6 +29,11 @@ namespace Architecture.BusinessLogic.BankLogics
             _bankAccountFactory = bankaccountfactory;
             _customerLogic = customerlogic;
         }
+
+        //Do we need an event-based system? (so 
+        //BankAccountLogic can be told to create an
+        //account, when a new customer is made,
+        //without circular references)
         public BankAccountDTO CreateAccount(Guid owner)
         {
             var customer = _customerLogic.ViewCustomer(owner);
@@ -38,6 +43,9 @@ namespace Architecture.BusinessLogic.BankLogics
             var newaccount = _bankAccountFactory.Construct();
             newaccount.Iban = "NL59 AFCA 6611 0033 22";
             newaccount.Worth = 0;
+            //how can we use a dto to add a model here?
+            //maybe need an OwnerId property and fill that,
+            //and let EF fill Owner property?
             newaccount.Owner = customer;
             _repository.Insert(newaccount);
             _repository.SaveChanges();
