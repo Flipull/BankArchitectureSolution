@@ -16,11 +16,11 @@ namespace Architecture.DataAccess.BankRepositories
 
         public BankAccount GetByGuid(Guid guid)
         {
-            var customer =
+            var account =
                 from e in _entitySet
                 where e.Guid.Equals(guid)
                 select e;
-            return customer.FirstOrDefault();
+            return account.FirstOrDefault();
         }
 
     }
