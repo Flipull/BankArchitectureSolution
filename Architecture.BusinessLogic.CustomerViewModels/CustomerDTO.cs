@@ -6,10 +6,9 @@ namespace Architecture.BusinessLogic.CustomerDTOs
     {
         public int Id { get; set; }
         //bottom 4 properties can be removed as it's not DRY;
-        //with class CustomerDTO: CustomerUpgradeDTO
-        //not really interested as those DTOs are incoming actions from user,
+        //with class CustomerDTO: CustomerUpgradeRSO (and superclass CustomerCreateSRO)
+        //not really interested as those SROs are incoming actions from user,
         //and this one is outgoing DTOs of complete objects.
-        //ActionDTOs need better naming conventions (VMs?)
         public Guid Guid { get; set; }
         public string FirstName { get; set; }
         public string Initials { get; set; }
