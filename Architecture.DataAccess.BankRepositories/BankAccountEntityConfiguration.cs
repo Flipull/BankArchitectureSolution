@@ -1,4 +1,5 @@
 ﻿using Architecture.DataAccess.BankEntities;
+using Architecture.DataAccess.CustomerEntities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -11,7 +12,7 @@ namespace Architecture.DataAccess.BankRepositories
             builder.ToTable("Accounts");
 
 
-            builder.HasKey(a => a.Id).HasName("id");
+            builder.HasKey(a => a.Id);
             builder.Property(a => a.Guid)
                             .HasColumnName("guid")
                             .ValueGeneratedOnAdd();
@@ -33,12 +34,19 @@ namespace Architecture.DataAccess.BankRepositories
                     .HasColumnName("worth")
                     .IsRequired();
 
+            builder.HasOne<Customer>()
+                    .WithMany().HasForeignKey(a => a.OwnerId)
+                   .IsRequired()//no navigational properties at all; only id
+                   .OnDelete(DeleteBehavior.Restrict);
+
+            /*
             builder.HasOne(a => a.Owner)
                    .WithMany()//no navigational property present
                                 //in customer-class (ofcourse)
                    .HasForeignKey(c => c.Id)
                    .IsRequired()
                    .OnDelete(DeleteBehavior.Restrict);
+            */
         }
     }
 }

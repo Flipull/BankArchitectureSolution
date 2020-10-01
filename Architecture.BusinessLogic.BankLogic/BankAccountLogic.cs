@@ -1,6 +1,7 @@
 ﻿using Architecture.BusinessLogic.BankDTOs;
 using Architecture.BusinessLogic.BankLogics.Infra;
 using Architecture.BusinessLogic.BankMappers;
+using Architecture.BusinessLogic.BankSROs;
 using Architecture.BusinessLogic.CustomerLogics.Infra;
 using Architecture.DataAccess.BankFactories;
 using Architecture.DataAccess.BankRepositories.Infra;
@@ -34,23 +35,50 @@ namespace Architecture.BusinessLogic.BankLogics
         //BankAccountLogic can be told to create an
         //account, when a new customer is made,
         //without circular references)
+
         public BankAccountDTO CreateAccount(Guid owner)
         {
             var customer = _customerLogic.ViewCustomer(owner);
             if (customer == null)
                 return null;
-
+            //designchoice: construct new content in an Entity
+            //and trigger insert;
             var newaccount = _bankAccountFactory.Construct();
-            newaccount.Iban = "NL59 AFCA 6611 0033 22";
+            newaccount.Iban = "NL59AFCA6611003322";
             newaccount.Worth = 0;
-            //how can we use a dto to add a model here?
-            //maybe need an OwnerId property and fill that,
-            //and let EF fill Owner property?
-            newaccount.Owner = customer;
+            newaccount.OwnerId = customer.Id;
             _repository.Insert(newaccount);
             _repository.SaveChanges();
             return _dtoMapper.Map(newaccount);
         }
+        //WILL NEVER BE IN ANY STANDALONE-APP instead it should be transactionally coupled to the physical money-transaction
+        public BankAccountDTO Withdraw(BankAccountLiquidizeSRO liquidize)
+        {
+            var account = _repository.GetByGuid(liquidize.GuidAccount);
+            if (account == null
+                    | account.Worth < liquidize.Value)
+                return null;
+
+            account.Worth -= liquidize.Value;
+            //_transactionLogic.Transfer?
+            //          .TransferFromInternalLiquid() for
+            //concrete injection of BankTransactionLogic?
+            //create my own (new BankTransactionLogic() )?
+            _repository.SaveChanges();
+            return _dtoMapper.Map(account);
+        }
+        public BankAccountDTO Deposit(BankAccountLiquidizeSRO deliquidize)
+        {
+            var account = _repository.GetByGuid(deliquidize.GuidAccount);
+            if (account == null)
+                return null;
+
+            account.Worth += deliquidize.Value;
+            _repository.SaveChanges();
+            return _dtoMapper.Map(account);
+        }
+
+
         public BankAccountDTO ViewAccount(Guid account)
         {
             var accountentity = _repository.GetByGuid(account);
@@ -65,8 +93,7 @@ namespace Architecture.BusinessLogic.BankLogics
             if (customer == null)
                 return null;
 
-            var accounts = _repository.Get(filter: c => c.Owner.Id == customer.Id,
-                                    includeProperties: "Owner");
+            var accounts = _repository.Get(filter: c => c.OwnerId == customer.Id);
 
             return _dtoMapper.MapAll(accounts);
         }

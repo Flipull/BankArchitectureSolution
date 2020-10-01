@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -12,6 +12,7 @@
     <ProjectReference Include="..\Architecture.Core.GenericRepository\Architecture.Core.GenericRepository.csproj" />
     <ProjectReference Include="..\Architecture.DataAccess.BankEntities\Architecture.DataAccess.BankEntities.csproj" />
     <ProjectReference Include="..\Architecture.DataAccess.BankRepositories.Infra\Architecture.DataAccess.BankRepositories.Infra.csproj" />
+    <ProjectReference Include="..\Architecture.DataAccess.CustomerEntities\Architecture.DataAccess.CustomerEntities.csproj" />
   </ItemGroup>
 
 </Project>

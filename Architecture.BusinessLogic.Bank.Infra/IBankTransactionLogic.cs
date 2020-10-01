@@ -9,6 +9,6 @@ namespace Architecture.BusinessLogic.BankLogics.Infra
         IEnumerable<BankTransactionSearchResultDTO> SearchDeposits(BankTransactionSearchSRO search);
         IEnumerable<BankTransactionSearchResultDTO> SearchWithdrawals(BankTransactionSearchSRO search);
         IEnumerable<BankTransactionDTO> ViewTransactions(BankTransactionSearchSRO search);
-        BankTransactionDTO TransferMoney(BankTransactionExecuteSRO transaction);
+        BankTransactionDTO Transfer(BankTransactionExecuteSRO transaction);
     }
 }
