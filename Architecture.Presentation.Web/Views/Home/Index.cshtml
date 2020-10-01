@@ -1,12 +1,17 @@
-﻿@model Architecture.BusinessLogic.CustomerDTOs.CustomerDTO
+﻿@model IEnumerable<Architecture.BusinessLogic.BankDTOs.BankAccountDTO>
 @{
     ViewData["Title"] = "Home Page";
 }
 
     <div class="text-center">
-        <h1 class="display-4">Welcome @Model.FirstName @Model.Initials @Model.LastName</h1>
-        <h4>Your Inserted Guid was @Model.Guid</h4>
-        <h6>Your name is data from updating. Previous stored data was lost</h6>
-        <br />
-        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    </div>
+        <h1 class="display-4">Welcome whoever you are</h1>
+        <h2>We never received who you are<h2>
+    <br />
+    <h4>But we are sure that your bankaccounts have changed to:</h4>
+    @foreach (var account in Model)
+    {
+        <h6>@account.Iban @account.Guid : $@account.Worth</h6>
+    }
+    <br />
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
