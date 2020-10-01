@@ -1,5 +1,6 @@
 ﻿using Architecture.BusinessLogic.CustomerDTOs;
 using Architecture.BusinessLogic.CustomerLogics.Infra;
+using Architecture.BusinessLogic.CustomerSROs;
 using Architecture.Presentation.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -18,11 +19,19 @@ namespace Architecture.Presentation.Web.Controllers
         public IActionResult Index([FromServices] ICustomerLogic customerLogic)
         {
             var new_customer = customerLogic.CreateCustomer(
-                    new CustomerDTO { FirstName = "AAA", Initials = "B", LastName = "CCCCCC" });
-            new_customer.LastName = "Di Daggio";
-            new_customer.FirstName = "Marco";
-            var updated_customer = customerLogic.UpdateCustomer(new_customer);
-            return View(customerLogic.ViewCustomer(new_customer.Guid));
+                    new CustomerCreateSRO { FirstName = "AAA", Initials = "B", LastName = "CCCCCC" });
+
+            var update_customer =
+                    new CustomerUpdateSRO
+                    {
+                        Guid = new_customer.Guid,
+                        FirstName = "David",
+                        Initials = "J",
+                        LastName = "Solomons"
+                    };
+            var updated_customer = customerLogic.UpdateCustomer(update_customer);
+
+            return View(customerLogic.ViewCustomer(updated_customer.Guid));
         }
 
         public IActionResult Privacy()
