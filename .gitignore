@@ -342,3 +342,6 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/Architecture.Core.CompositionService/Migrations/CompositionModelModelSnapshot.cs
+/Architecture.Core.CompositionService/Migrations/20201001192916_Init.Designer.cs
+/Architecture.Core.CompositionService/Migrations/20201001192916_Init.cs
