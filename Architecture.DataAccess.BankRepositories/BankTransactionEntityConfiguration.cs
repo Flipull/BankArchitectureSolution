@@ -11,9 +11,10 @@ namespace Architecture.DataAccess.BankRepositories
             builder.ToTable("Transactions");
 
 
-            builder.Property(t => t.Guid)
-                            .HasColumnName("guid")
-                            .ValueGeneratedOnAdd();
+            builder.HasKey(t => t.Guid);
+            //builder.Property(t => t.Guid)
+            //                .HasColumnName("guid")
+            //                .ValueGeneratedOnAdd();
             builder.Property(t => t.IbanSource)
                             .HasColumnName("iban_source")
                             .HasMaxLength(32);
@@ -26,7 +27,6 @@ namespace Architecture.DataAccess.BankRepositories
                             .HasColumnName("pit")
                             .ValueGeneratedOnAdd();
 
-            builder.HasIndex(t => t.Guid);
             builder.HasIndex(t => t.IbanSource);
             builder.HasIndex(t => t.IbanTarget);
             builder.HasIndex(t => t.PointInTime);
