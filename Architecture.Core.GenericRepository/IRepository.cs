@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
 
 namespace Architecture.Core.GenericRepository
 {
+    public enum SortDirection { Ascending, Descending };
     //need Generics and Interfaces for keyless repo's?
     //for surrogate-key repo's?
     //does this already work for compound-key repo's?
@@ -13,7 +13,10 @@ namespace Architecture.Core.GenericRepository
         void Delete(object id);
         void Delete(TEntity entityToDelete);
         IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null,
-                                Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
+                            Expression<Func<TEntity, object>>
+                                        orderBy = null,
+                                int? skip = null,
+                                int? take = null,
                                 string includeProperties = "");
         TEntity GetByID(object id);
         void Insert(TEntity entity);

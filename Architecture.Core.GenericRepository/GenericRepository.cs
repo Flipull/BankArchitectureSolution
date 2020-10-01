@@ -18,10 +18,12 @@ namespace Architecture.Core.GenericRepository
             this._context = context;
             this._entitySet = context.Set<TEntity>();
         }
-
         public virtual IEnumerable<TEntity> Get(
             Expression<Func<TEntity, bool>> filter = null,
-            Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
+            Expression<Func<TEntity, object>>
+                        orderBy = null,
+            int? skip = null,
+            int? take = null,
             string includeProperties = "")
         {
             IQueryable<TEntity> query = _entitySet;
@@ -39,11 +41,20 @@ namespace Architecture.Core.GenericRepository
                     query = query.Include(includeProperty);
                 }
             }
+            if (skip.HasValue)
+                query.Skip(skip.Value);
+            if (take.HasValue)
+                query.Take(take.Value);
+            /*
+            if (orderBy != null)
+                return query.OrderBy( o => orderBy.(o). );
 
             if (orderBy != null)
                 return orderBy(query).ToList();
             else
                 return query.ToList();
+            */
+            return query.ToList();
         }
 
         public virtual TEntity GetByID(object id)
@@ -80,6 +91,17 @@ namespace Architecture.Core.GenericRepository
             //probably also not needed to set state,
             //as any change in properties already had set modified state
             //_context.Entry(entityToUpdate).State = EntityState.Modified;
+
+
+
+            /*
+            //New strategy: Repository is responsible for updating
+            //already-existing entities
+            IKey key = _context.Model.FindEntityType(typeof(TEntity)).FindPrimaryKey();
+            key.Properties.
+            _entitySet.Find(key);
+            //How to implement? lol
+            */
         }
 
         public virtual void SaveChanges()
