@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Architecture.BusinessLogic.Bank.Infra\Architecture.BusinessLogic.BankLogics.Infra.csproj" />
     <ProjectReference Include="..\Architecture.BusinessLogic.BankMappers\Architecture.BusinessLogic.BankMappers.csproj" />
+    <ProjectReference Include="..\Architecture.BusinessLogic.BankSROs\Architecture.BusinessLogic.BankSROs.csproj" />
     <ProjectReference Include="..\Architecture.BusinessLogic.Customer.Infra\Architecture.BusinessLogic.CustomerLogics.Infra.csproj" />
     <ProjectReference Include="..\Architecture.DataAccess.BankRepositories.Infra\Architecture.DataAccess.BankRepositories.Infra.csproj" />
   </ItemGroup>
