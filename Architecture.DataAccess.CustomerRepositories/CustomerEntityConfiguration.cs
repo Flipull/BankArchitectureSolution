@@ -11,7 +11,7 @@ namespace Architecture.DataAccess.CustomerRepositories
             builder.ToTable("Customers");
 
 
-            builder.HasKey(c => c.Id).HasName("id");
+            builder.HasKey(c => c.Id);
             builder.Property(c => c.Guid)
                         .HasColumnName("guid")
                         .ValueGeneratedOnAdd();
