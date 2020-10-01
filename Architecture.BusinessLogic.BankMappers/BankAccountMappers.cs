@@ -6,6 +6,52 @@ using Architecture.DataAccess.BankFactories;
 
 namespace Architecture.BusinessLogic.BankMappers
 {
+    /*
+    public static class BankMappingMethods
+    {
+        static readonly BankAccountFactory _entityFactory = new BankAccountFactory();
+        static readonly BankAccountDTOFactory _dtoFactory = new BankAccountDTOFactory();
+        static Expression<Func<BankAccount, BankAccountDTO>> a = 
+                (account=> { //create object, fill object, return object
+                    var d = _dtoFactory.Construct();
+                    d.Id = account.Id;
+                    d.Guid = account.Guid;
+                    d.Iban = account.Iban;
+                    d.Worth = account.Worth;
+                    d.Owner = account.Owner;
+                    return d;
+                });
+    }
+    */
+    /*
+    public static class ExtensionMethods
+    {
+        static readonly BankAccountFactory _entityFactory = new BankAccountFactory();
+        static readonly BankAccountDTOFactory _dtoFactory = new BankAccountDTOFactory();
+
+        public static BankAccount ToEntity(this BankAccountDTO account)
+        {
+            var e = _entityFactory.Construct();
+            e.Id = account.Id;
+            e.Guid = account.Guid;
+            e.Iban = account.Iban;
+            e.Worth = account.Worth;
+            e.Owner = account.;
+            return e;
+        }
+        public static BankAccountDTO ToDTO(this BankAccount account)
+        {
+            var d = _dtoFactory.Construct();
+            d.Id = account.Id;
+            d.Guid = account.Guid;
+            d.Iban = account.Iban;
+            d.Worth = account.Worth;
+            d.Owner = account.Owner;
+            return d;
+        }
+    }
+    */
+
     public class BankAccountDTOMapper : MapperAbstract<BankAccount, BankAccountDTO>
     {
         private readonly BankAccountDTOFactory _factory;
