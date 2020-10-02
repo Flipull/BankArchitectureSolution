@@ -26,10 +26,10 @@ namespace Architecture.BusinessLogic.BankMappers
             return newdto;
         }
     }
-    public class BankTransactionDepositsSearchResultDTOMapper : MapperAbstract<BankTransaction, BankTransactionSearchResultDTO>
+    public class BankTransactionSearchResultDTOMapper : MapperAbstract<BankTransaction, BankTransactionSearchResultDTO>
     {
         private readonly BankTransactionSearchResultDTOFactory _factory;
-        public BankTransactionDepositsSearchResultDTOMapper(BankTransactionSearchResultDTOFactory dtofactory)
+        public BankTransactionSearchResultDTOMapper(BankTransactionSearchResultDTOFactory dtofactory)
         {
             _factory = dtofactory;
         }
@@ -37,22 +37,6 @@ namespace Architecture.BusinessLogic.BankMappers
         {
             var newdto = _factory.Construct();
             newdto.IbanOther = source.IbanSource;
-            newdto.PointInTime = source.PointInTime;
-            newdto.Value = source.Value;
-            return newdto;
-        }
-    }
-    public class BankTransactionWithdrawalsSearchResultDTOMapper : MapperAbstract<BankTransaction, BankTransactionSearchResultDTO>
-    {
-        private readonly BankTransactionSearchResultDTOFactory _factory;
-        public BankTransactionWithdrawalsSearchResultDTOMapper(BankTransactionSearchResultDTOFactory dtofactory)
-        {
-            _factory = dtofactory;
-        }
-        public override BankTransactionSearchResultDTO Map(BankTransaction source)
-        {
-            var newdto = _factory.Construct();
-            newdto.IbanOther = source.IbanTarget;
             newdto.PointInTime = source.PointInTime;
             newdto.Value = source.Value;
             return newdto;

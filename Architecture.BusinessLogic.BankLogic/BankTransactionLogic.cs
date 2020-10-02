@@ -19,8 +19,7 @@ namespace Architecture.BusinessLogic.BankLogics
         private readonly BankTransactionFactory _transactionFactory;
         private readonly ICustomerLogic _customerLogic;
         private readonly IBankAccountLogic _bankAccountLogic;
-        private readonly BankTransactionDepositsSearchResultDTOMapper _depositSearchMapper;
-        private readonly BankTransactionWithdrawalsSearchResultDTOMapper _withdrawalSearchMapper;
+        private readonly BankTransactionSearchResultDTOMapper _searchMapper;
 
         public BankTransactionLogic(IBankTransactionRepository repo,
                                     BankTransactionDTOMapper dtomapper,
@@ -28,8 +27,7 @@ namespace Architecture.BusinessLogic.BankLogics
                                     BankTransactionFactory transactionfactory,
                                     ICustomerLogic customerlogic,
                                     IBankAccountLogic bankaccountlogic,
-                                    BankTransactionDepositsSearchResultDTOMapper depositsearchmapper,
-                                    BankTransactionWithdrawalsSearchResultDTOMapper withdrawalsearchmapper)
+                                    BankTransactionSearchResultDTOMapper searchmapper)
         {
             _repository = repo;
             _dtoMapper = dtomapper;
@@ -39,8 +37,7 @@ namespace Architecture.BusinessLogic.BankLogics
             _customerLogic = customerlogic;
             _bankAccountLogic = bankaccountlogic;
 
-            _depositSearchMapper = depositsearchmapper;
-            _withdrawalSearchMapper = withdrawalsearchmapper;
+            _searchMapper = searchmapper;
         }
 
         public IEnumerable<BankTransactionSearchResultDTO> SearchDeposits(BankTransactionSearchSRO search)
@@ -55,7 +52,7 @@ namespace Architecture.BusinessLogic.BankLogics
                                 skip: (search.PageNumber - 1) * search.PageSize,
                                 take: search.PageSize
                                );
-            return _depositSearchMapper.MapAll(searched_transactions);
+            return _searchMapper.MapAll(searched_transactions);
         }
         public IEnumerable<BankTransactionSearchResultDTO> SearchWithdrawals(BankTransactionSearchSRO search)
         {
@@ -69,7 +66,7 @@ namespace Architecture.BusinessLogic.BankLogics
                                 skip: (search.PageNumber - 1) * search.PageSize,
                                 take: search.PageSize
                                );
-            return _withdrawalSearchMapper.MapAll(searched_transactions);
+            return _searchMapper.MapAll(searched_transactions);
         }
 
         public IEnumerable<BankTransactionDTO> ViewTransactions(BankTransactionSearchSRO search)

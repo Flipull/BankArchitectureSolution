@@ -91,13 +91,12 @@ namespace Architecture.Core.CompositionService
             //as clients talk with SROs only
             services.AddSingleton<CustomerEntityMapper>();
             services.AddSingleton<BankAccountEntityMapper>();
-            services.AddSingleton<BankTransactionDepositsSearchResultDTOMapper>();
-            services.AddSingleton<BankTransactionWithdrawalsSearchResultDTOMapper>();
-            services.AddSingleton<BankTransactionExecuteEntityMapper>();
             //register EntityToDTOMappers
             services.AddSingleton<CustomerDTOMapper>();
             services.AddSingleton<BankAccountDTOMapper>();
             services.AddSingleton<BankTransactionDTOMapper>();
+            services.AddSingleton<BankTransactionSearchResultDTOMapper>();
+            services.AddSingleton<BankTransactionExecuteEntityMapper>();
 
         }
     }
