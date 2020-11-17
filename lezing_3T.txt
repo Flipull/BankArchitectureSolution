@@ -1,0 +1,75 @@
+TOON PRESENTATIE 3T ENTERPRISEY
+Concepten bepraten
+-PL/BBL/DAL het scheiden van verantwoordelijkheden S.... 
+	+ het horizontaal scheiden (meerdere BBL assemblies naasdt elkaar, meerdere DAL assemblies naast elkaar)
+	S.... dmv POCO data-objecten, Factories, Mappers 
+			-Data-Objecten (DTOs, Entities); en de scheiding is voor bescherm van interne objecten-referenties.
+					als je die vrij zou geven kunnen externe partijen wijzigingen in je data maken.
+(kort)
+	S.L.D dmv Composition Root
+	.OLI. dmv Interfaces/Infra
+	..L.D dmv Dependency Injection
+
+
+-vele contexten van DTOs (als DAL boundery object, als BBL internal object, als BBL boundary object,
+				ik heb de laatste 2 een beetje door elkaar gebruikt; bedoeling was de laatste, 
+				maar vb Logic praat met andere logic interface en gebruikt DTO dus ook intern)
+	en waarom ze eigenlijk als DAL boundery objects geinterpreteerd/gecodeerd moeten worden
+		- BLL is een stateless "controller" en heeft dus nooit een referentiele afhankelijkheid met deze DTOs
+		- waardoor er maar 1 soort pakket nodig is om uit te geven, wat via BLL ook naar buiten kan als een 
+			soort pseudo-VM (less work === happy coding time)
+
+TOON PRESENTATIE NOW
+
+INTERACTIEVERPLICHTING problemen laten zoeken van mijn huidige aanpak 
+	+ nog andere opvallendheden?
+
+problemen vertellen van huidige aanpak
+-non-bounded datalayer;businesslogic speelt met Entities
+-harde relaties met de Entities?
+-harde relaties met de DTOs?
+-harde relaties met de Mappers?
+-harde relaties met de Factories?
+- Testbaarheid?
+-SROs?
+
+
+Wildgroei: #MapperClasses
+	+ SROs overbodig?
+		- Gebruik individuele parameters als input in je ILogic-methods?
+		- Gebruik DTOs als input in je ILogic-methods?
+	(concrete pakketten waarin alleen de benodigde properties in zitten lijken efficienter
+			voor transport dan pakketten met vele nulls; premature optimization + more work?)
+
+voordelen huidige aanpak
+-uitwisselbaarheid van Logics
+-uitwisselbaarheid van Repositories
+-bounded (aan de) businesslayer; Ik heb eigenlijk een BLLDAL-combolayer (wel lekker .OL.. met niet genoeg S.... )
+
+
+TOON PRESENTATIE DAL-BOUND + PRESENTATIE  CCCED
+	-Leuk: Te complex voor de benodigdheden
+		- DAL-BOUND en BBL-BOUND (dus 2 verschillende DTO-objecten, 1 voor iedere laag)
+TOON PRESENTATIE TARGET + PRESENTATIE TARGET2
+	-verschil tussen DAL-BOUND en TARGET laten zien
+	-Gemak van DAL-Bound DTOs (maar 1 mapping nodig)
+	-Toch me afvragen of er geen plek is voor SROs
+
+TOON PRESENTATIE HORZ
+	- toon horizontale schaling
+
+TOON PRESENTATIE PUPPETMASTER
+	- (mijn idee voor een distributable 'processing pipeline')
+
+Vraagstukken
+Is het nuttig om Data-Objecten (DTOs of Entities) te 'ver-interfacen'?
+	- De domheid in properties interfacen; Test je dan of de computer vergeetachtig is?
+	- De nut van (extern-geleverde) objecten interfacen, zodat je niet alle properties toegankelijk maakt
+		-Voelt nutteloos omdat Reflection zoveel veiligheid kapot kan maken.
+Is het nuttig om Data-ObjectFactories te 'ver-interfacen'?
+implementatie van Echte mappers (niet te zien op presentatie-afbeeldingen) overbodig? 
+				Extension methods een betere (less work) mogelijkheid?
+
+
+Natuurlijk: Welke onderdelen heb ik gemist?
+Natuurlijk: Hebben anderen nog vragen?
