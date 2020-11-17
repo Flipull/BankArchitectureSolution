@@ -14,19 +14,16 @@ namespace Architecture.BusinessLogic.BankLogics
     {
         private readonly IBankAccountRepository _repository;
         private readonly BankAccountDTOMapper _dtoMapper;
-        private readonly BankAccountEntityMapper _entityMapper;
         private readonly BankAccountFactory _bankAccountFactory;
         private readonly ICustomerLogic _customerLogic;
 
         public BankAccountLogic(IBankAccountRepository repo,
                                     BankAccountDTOMapper dtomapper,
-                                    BankAccountEntityMapper entitymapper,
                                     BankAccountFactory bankaccountfactory,
                                     ICustomerLogic customerlogic)
         {
             _repository = repo;
             _dtoMapper = dtomapper;
-            _entityMapper = entitymapper;
             _bankAccountFactory = bankaccountfactory;
             _customerLogic = customerlogic;
         }

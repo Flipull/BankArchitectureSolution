@@ -16,19 +16,16 @@ namespace Architecture.BusinessLogic.CustomerLogics
         private readonly CustomerUpdateEntityMapper _updateEntityMapper;
         //unused objects, made obsolete by other design-decisions
         private readonly CustomerDTOFactory _customerDTOFactory;
-        private readonly CustomerEntityMapper _entityMapper;
-
+        
         public CustomerLogic(ICustomerRepository repo,
                             CustomerDTOMapper dtomapper,
                             CustomerCreateEntityMapper create_entitymapper,
                             CustomerUpdateEntityMapper update_entitymapper,
-                            CustomerEntityMapper entitymapper,
                             CustomerDTOFactory customerdtofactory
                             )
         {
             _repository = repo;
             _dtoMapper = dtomapper;
-            _entityMapper = entitymapper;
             _customerDTOFactory = customerdtofactory;
             _createEntityMapper = create_entitymapper;
             _updateEntityMapper = update_entitymapper;
